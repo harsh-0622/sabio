@@ -1,0 +1,24 @@
+/**** Global Css Variables Definitions *****/
+$white: #FFFFFF;
+$creamWhite: #F5F5F3;
+$silver: #D7D9DB;
+$silverGrey: #95989A;
+$grey: #8C8C8C;
+$yellow: #FEC430;
+$lightBlack: #323232;
+$darkBlack: #1B1B1B;
+
+
+
+.container{
+    .row{
+        color: black;
+    }
+    .abc{
+        text-align: center;
+    }
+    h3{
+        font-family: "Source Sans Pro";
+        font-weight: 700;
+    }
+}
