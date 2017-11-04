@@ -1,82 +1,238 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>SABIO</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SABIO</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-        <!-- Import CSS -->
+    <!-- Import CSS -->
 
-        <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.css">
 
-        <!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.css">
 
-        <!-- Font Awesome Css -->
-        <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Font Awesome Css -->
+    <link rel="stylesheet" href="css/font-awesome.css">
 
-        <!-- Main/Custom CSS -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/custom.css">
+    <!-- Main/Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
 
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Hi this Boiler Plate</h3>
-                        <h1 class="fa fa-arrow-circle-o-up"></h1>
-
-                        <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Dropdown
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <div class="sabio-logo">
+        <img class="img-responsive" src="img/logos/Sabio_logo_yellow.svg">
+    </div>
+    <div class="slide-tabs">
+        <a href="#">OUR TECHNOLOGY</a>
+        <a href="#">OUR WORK</a>
+        <a href="#">OUR TEAM</a>
+        <a href="#">CONTACT US</a>
+    </div>
+    <div class="social-links">
+        <div class="social-links-container">
+            <div class="col-xs-3 link">
+                <i class="fa fa-facebook fa-2x"></i>
+            </div>
+            <div class="col-xs-3 link">
+                <i class="fa fa-twitter fa-2x"></i>
+            </div>
+            <div class="col-xs-3 link">
+                <i class="fa fa-instagram fa-2x"></i>
+            </div>
+            <div class="col-xs-3 link">
+                <i class="fa fa-link fa-2x"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="menu visible-xs col-xs-3">
+        <img class="img-responsive" src="img/menu.png" width="40px" height="40px">
+    </div>
+    <div class="sabio-logo col-sm-5 col-xs-9">
+        <img src="img/logos/Sabio_logo_yellow.svg">
+    </div>
+    <div class="header-tabs col-sm-7 hidden-xs">
+        <ul>
+            <li class="col-sm-3 col-xs-12">OUR TECHNOLOGY</li>
+            <li class="col-sm-3 col-xs-12">OUR WORK</li>
+            <li class="col-sm-3 col-xs-12">OUR TEAM</li>
+            <li class="col-sm-3 col-xs-12">CONTACT US</li>
+        </ul>
+    </div>
+</div>
+<div class="overflow-wrapper">
+    <div class="landing-page">
+        <div class="landing-page-overlay d-hidden"></div>
+        <div class="sabio-video hidden-xs">
+            <video autoplay>
+                <source src="img/sabio_header_v3.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="visible-xs">
+            <img src="img/header_mobile.jpg" class="img-responsive">
+        </div>
+        <div class="clients-and-partners">
+            <div class="heading-text">
+                <div>Our Clients And Partners</div>
+                <p>Lorem ipsunm dolor sit amet,</p>
+            </div>
+            <div class="carousel-sec">
+                <div class="container-fluid">
+                    <div class="clients-carousel" data-wrap="true">
+                        <div class="carousel-sec-inner owl-carousel" id="owl-carousel-clients">
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Chevrolet-Logo_2007.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Chevron_Logo.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/E!_logo.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Ford_Motor_Company_Logo.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Hulu_logo.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Hyundai_Motor_Company_logo.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/KIA_logo2.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Lyft_logo.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partners-carousel" data-wrap="true">
+                        <div class="carousel-sec-inner owl-carousel" id="owl-carousel-partners">
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Mars_Inc.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Mcdonalds-90s-logo.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Pandora_2016_logo.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Showtime-Logo.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/The_Wrigley_Company_logo._2012.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Toyota_carlogo.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class="img-responsive" src="img/logos/Walgreens_Logo.svg">
+                            </div>
+                            <div class="img-container">
+                                <img class=img-responsive"" src="img/logos/Wells_Fargo_Bank.svg">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <footer>
+            <div class="yellow-top"></div>
+            <div class="mid-content make-flex">
+                <div class="logo-link make-flex">
+                    <div class="footer-logo hidden-xs">
+                        <img src="img/logos/Sabio_logo_white.svg">
+                    </div>
+                    <div class="sabio-logo visible-xs">
+                        <img class="img-responsive" src="img/logos/Sabio_logo_yellow.svg">
+                    </div>
+                    <div class="follow-us">Follow Us</div>
+                    <div class="social-links-container">
+                        <div class="col-xs-3 link">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </div>
+                        <div class="col-xs-3 link">
+                            <i class="fa fa-twitter fa-2x"></i>
+                        </div>
+                        <div class="col-xs-3 link">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </div>
+                        <div class="col-xs-3 link">
+                            <i class="fa fa-link fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="sabio-tweets">
+                    <div class="tweet-header">
+                        <div class="">
+                            <i class="fa fa-twitter fa-3x"></i>
+                        </div>
+                        <div>
+                            <p>Sabio Tweets</p>
+                            <div>@SABIOmobile.49s</div>
+                        </div>
+                    </div>
+                    <div class="tweets">
+                        <div class="twitter-image">
+                            <img src="">
+                        </div>
+                        <div class="twitter-message"></div>
+                        <div class="vertical-dots"></div>
+                    </div>
+                </div>
+                <div class="connect">
+                    <div class="">Connect with us.</div>
+                    <div class="form-container">
+                        <form>
+                            <input class="form-control" type="text" name="user_name" fieldDisplayName="User name" placeholder="Coach Name">
+                            <input class="form-control" type="email" name="email_id" fieldDisplayName="email" placeholder="Email Address">
+                            <input class="form-control" type="text" name="text_message" placeholder="Message">
+                        </form>
+                    </div>
+                    <div class="sbmt-btn"></div>
+                </div>
+            </div>
+            <div class="bottom-tabs"></div>
+        </footer>
+    </div>
+</div>
 
-        <!-- Imports Scripts -->
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
 
-        <!-- Bootstrap JS -->
-        <script src="js/bootstrap/bootstrap.min.js"></script>
-
-        <!-- Owl Carousel JS -->
-        <script src="js/owl-carousel/owl.carousel.min.js"></script>
-
-        <!-- Custom JS -->
-        <script src="js/main.js"></script>
+<!-- Add your site or application content here -->
 
 
-    </body>
+<!-- Imports Scripts -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
 </html>

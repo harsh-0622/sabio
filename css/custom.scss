@@ -8,17 +8,227 @@ $yellow: #FEC430;
 $lightBlack: #323232;
 $darkBlack: #1B1B1B;
 
+.make-flex{
+    display: flex;
+}
 
+.flt {
+    float: left;
+}
 
-.container{
-    .row{
-        color: black;
+.clr {
+    clear: both;
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.d-hidden{
+    display: none;
+}
+
+.sidenav{
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s linear;
+    padding-top: 60px;
+    .sabio-logo{
+        img{
+            height: 70px;
+            width: 120px;
+        }
     }
-    .abc{
-        text-align: center;
+    .slide-tabs{
+        background-color: $lightBlack;
+        a{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #818181;
+            display: block;
+            //transition: 0.5s;
+            border-bottom: 1px solid $silver;
+        }
+        a:hover{
+            color: #f1f1f1;
+        }
+        .closebtn{
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px
+        }
     }
-    h3{
-        font-family: "Source Sans Pro";
-        font-weight: 700;
+    .social-links{
+        position: absolute;
+        bottom:0;
+        height: 100px;
+        background-color: $darkBlack;
+        .social-links-container{
+            padding: 20px;
+            .link{
+                padding: 0!important;
+                height: 40px;
+                width: 40px;
+                border: 1px solid $yellow;
+                border-radius: 50%;
+                text-align: center;
+                margin: 0 6px;
+                line-height: 48px;
+                i{
+                    color: $white;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+div.header {
+    height: 70px;
+    background-color: $darkBlack;
+    z-index: 1;
+    width: 100%;
+    .sabio-logo {
+        padding: 0 30px;
+        img {
+            height: 70px;
+            width: 120px;
+        }
+    }
+    .header-tabs {
+        margin-top: 22px;
+        ul {
+            text-align: center;
+            li {
+                font-size: 16px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .menu {
+            img {
+                margin-top: 15px;
+            }
+        }
+
     }
 }
+@media screen and (max-width: 480px) {
+    .header{
+        position: fixed;
+    }
+}
+
+.overflow-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .landing-page {
+        transition: all 0.5s linear;
+        .landing-page-overlay{
+            position: absolute;
+            background: rgba(0,0,0,.7);
+            height: 100%;
+            width: 100%;
+        }
+        .sabio-video {
+            video {
+            }
+        }
+        .clients-and-partners {
+            .heading-text{
+                margin-top: 40px;
+                margin-bottom: 30px;
+                text-align: center;
+                div{
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+            }
+            .carousel-sec {
+                .clients-carousel, .partners-carousel {
+                    margin-bottom: 20px;
+                    .carousel-sec-inner {
+                        .img-container {
+                            img {
+                                height: 80px;
+                                width: 80px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .yellow-top{
+                height: 7px;
+                width: 100%;
+                background-color: $yellow;
+            }
+            .mid-content{
+                background-color: $darkBlack;
+                justify-content: space-around;
+                padding-top: 40px;
+            }
+            .bottom-tabs{
+                background-color: $darkBlack;
+            }
+            @media screen and (max-width: 480px) {
+                .mid-content{
+                    flex-direction: column;
+                    .sabio-tweets{
+                        order: 1;
+                    }
+                    .connect{
+                        order: 2;
+                    }
+                    .logo-link{
+                        order: 3;
+                        flex-direction: column;
+                        .follow-us{
+                            order: 1;
+                        }
+                        .social-links-container{
+                            order: 2;
+                        }
+                        .sabio-logo{
+                            order: 3;
+                            img{
+                                width: 120px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        .landing-page{
+            margin-top: 70px;
+        }
+    }
+}
+
+
