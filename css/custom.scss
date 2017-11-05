@@ -36,26 +36,30 @@ li {
     height: 100vh;
     width: 250px;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: -250px;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s linear;
-    padding-top: 60px;
     .sabio-logo{
+        height: 15%;
         img{
             height: 70px;
             width: 120px;
+            padding-left: 15px;
+            padding-top: 35px;
         }
     }
     .slide-tabs{
         background-color: $lightBlack;
+        height: 75%;
         a{
-            padding: 8px 8px 8px 32px;
+            padding: 22px 8px 22px 32px;
             text-decoration: none;
             font-size: 16px;
-            color: #818181;
+            color: $creamWhite;
+            font-weight: bold;
             display: block;
             //transition: 0.5s;
             border-bottom: 1px solid $silver;
@@ -63,21 +67,12 @@ li {
         a:hover{
             color: #f1f1f1;
         }
-        .closebtn{
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px
-        }
     }
     .social-links{
-        position: absolute;
-        bottom:0;
-        height: 100px;
+        height: 10%;
         background-color: $darkBlack;
         .social-links-container{
-            padding: 20px;
+            padding: 18px 20px;
             .link{
                 padding: 0!important;
                 height: 40px;
@@ -103,8 +98,8 @@ li {
 div.header {
     height: 70px;
     background-color: $darkBlack;
-    z-index: 1;
     width: 100%;
+    z-index: 2;
     .sabio-logo {
         padding: 0 30px;
         img {
@@ -152,16 +147,19 @@ div.header {
             width: 100%;
         }
         .sabio-video {
-            video {
+            img{
+                height: 100%;
+                width: 100%;
             }
         }
         .clients-and-partners {
+            margin-bottom: 30px;
             .heading-text{
-                margin-top: 40px;
+                margin-top: 30px;
                 margin-bottom: 30px;
                 text-align: center;
                 div{
-                    font-size: 20px;
+                    font-size: 22px;
                     font-weight: bold;
                     margin-bottom: 10px;
                 }
@@ -179,6 +177,17 @@ div.header {
                         }
                     }
                 }
+                @media screen and (max-width: 480px){
+                    .partners-carousel{
+                        .carousel-sec-inner{
+                            .img-container{
+                                .width-expand{
+                                    width: 120px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
         footer{
@@ -187,36 +196,211 @@ div.header {
                 width: 100%;
                 background-color: $yellow;
             }
-            .mid-content{
+            .content{
                 background-color: $darkBlack;
-                justify-content: space-around;
-                padding-top: 40px;
-            }
-            .bottom-tabs{
-                background-color: $darkBlack;
+                .logo-link{
+                    color: white;
+                    .footer-heading{
+                        font-size: 22px;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                    .sabio-logo{
+                        margin-top: 30px;
+                        img{
+                            margin: 0 auto;
+                        }
+                    }
+                    .social-links-container {
+                        margin: 0 auto;
+                        .link {
+                            padding: 0 !important;
+                            height: 40px;
+                            width: 40px;
+                            border: 1px solid $yellow;
+                            border-radius: 50%;
+                            text-align: center;
+                            margin: 0 6px;
+                            line-height: 48px;
+                            i {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+                .mid-content{
+                    justify-content: space-around;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    .logo-link{
+                        flex-direction: column;
+                        .footer-logo{
+                            margin-top: 50px;
+                            margin-bottom: 40px;
+                            img{
+                                width: 225px;
+                            }
+                        }
+                    }
+                    @media screen and (max-width: 480px){
+                        .logo-link{
+                            flex-direction: column;
+                        }
+                    }
+                    .sabio-tweets{
+                        overflow: hidden;
+                        .tweet-header {
+                            display: flex;
+                            div.tweet-bird {
+                                margin-right: 20px;
+                                i.fa-twitter{
+                                    color: $yellow;
+                                    font-size: 48px;
+                                }
+                            }
+                            .tag{
+                                color: $white;
+                                p{
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    margin-bottom: 4px;
+                                }
+                                div{
+                                    font-size: 11px;
+                                }
+                            }
+                        }
+                        .tweets{
+                            overflow: auto;
+                            height: 300px;
+                            margin-top: 20px;
+                            .user-tweet{
+                                margin-bottom: 20px;
+                                .image-message{
+                                    padding: 15px;
+                                    .twitter-image{
+                                        margin-right: 20px;
+                                        img{
+                                            height: 50px;
+                                            width: 50px;
+                                        }
+                                    }
+                                    .twitter-message{
+                                        width: 330px;
+                                        color: $white;
+                                        .profile-name{
+                                            font-weight: 600;
+                                            font-size: 11px;
+                                        }
+                                        .profile-tweet{
+                                            font-size: 11px;
+                                        }
+                                    }
+                                }
+                                .vertical-dots{
+                                    .dot{
+                                        background-color: $white;
+                                        height: 3px;
+                                        width: 3px;
+                                        border-radius: 50%;
+                                        margin-bottom: 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    @media screen and (max-width: 480px){
+                        .sabio-tweets::after, .connect::after{
+                            content: '';
+                            height: 1px;
+                            width: 100%;
+                            background-color: $silver;
+                            opacity: .7;
+                            display: block;
+                            margin-top: 30px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+                .connect{
+                    color: $white;
+                    .footer-heading{
+                        font-size: 22px;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                    .form-container{
+                        form{
+                            input.form-control{
+                                background-color: $lightBlack;
+                                margin-bottom: 15px;
+                                border: none;
+                                padding: 8px 14px;
+                                color: white;
+                                width: 90%;
+                            }
+                            div{
+                                position: relative;
+                                button{
+                                    background-color: $yellow;
+                                    padding: 10px;
+                                    color: $darkBlack;
+                                    font-weight: bold;
+                                    border: none;
+                                    text-align: left;
+                                    width: 140px;
+                                }
+                                i{
+                                    position: absolute;
+                                    left: 106px;
+                                    top: 5px;
+                                    color: $darkBlack;
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottom-tabs{
+                    border-top: 1px solid $silver;
+                    .slide-tabs{
+                        padding-top: 20px;
+                        padding-bottom: 30px;
+                        a{
+                            font-size: 18px;
+                            margin-right: 25px;
+                            color: $silverGrey;
+                            font-weight: 700;
+                        }
+                    }
+                    //background-color: $darkBlack;
+                }
             }
             @media screen and (max-width: 480px) {
-                .mid-content{
-                    flex-direction: column;
-                    .sabio-tweets{
-                        order: 1;
-                    }
-                    .connect{
-                        order: 2;
-                    }
-                    .logo-link{
-                        order: 3;
+                .content{
+                    .mid-content{
                         flex-direction: column;
-                        .follow-us{
+                        .sabio-tweets{
                             order: 1;
                         }
-                        .social-links-container{
+                        .connect{
                             order: 2;
                         }
-                        .sabio-logo{
+                        .logo-link{
                             order: 3;
-                            img{
-                                width: 120px;
+                            flex-direction: column;
+                            .follow-us{
+                                order: 1;
+                            }
+                            .social-links-container{
+                                order: 2;
+                            }
+                            .sabio-logo{
+                                order: 3;
+                                img{
+                                    width: 120px;
+                                }
                             }
                         }
                     }

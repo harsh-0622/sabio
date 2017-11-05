@@ -48,6 +48,78 @@ $(function () {
         }
     });
 
+    var owl1 = $('.owl-carousel#owl-carousel-webOne');
+    owl1.owlCarousel({
+        loop: true,
+        margin: 40,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: [""],
+        moveSlides: 1,
+        dots: false,
+        responsive: {
+            320:{
+                items: 2
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 4
+            }
+        }
+    });
+
+    var owl1 = $('.owl-carousel#owl-carousel-webTwo');
+    owl1.owlCarousel({
+        loop: true,
+        margin: 40,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: [""],
+        moveSlides: 1,
+        dots: false,
+        responsive: {
+            320:{
+                items: 2
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 4
+            }
+        }
+    });
+
+    var owl1 = $('.owl-carousel#owl-carousel-webThree');
+    owl1.owlCarousel({
+        loop: true,
+        margin: 40,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: [""],
+        moveSlides: 1,
+        dots: false,
+        responsive: {
+            320:{
+                items: 2
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 4
+            }
+        }
+    });
+
     var original_html_vh = $('html').height();
     var original_html_vw = $('html').width();
     var original_body_vh = $('body').height();
