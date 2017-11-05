@@ -112,9 +112,11 @@ div.header {
         ul {
             text-align: center;
             li {
-                font-size: 16px;
-                color: white;
-                font-weight: bold;
+                a{
+                    font-size: 16px;
+                    color: white;
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -159,20 +161,29 @@ div.header {
                 margin-bottom: 30px;
                 text-align: center;
                 div{
-                    font-size: 22px;
+                    font-size: 26px;
                     font-weight: bold;
                     margin-bottom: 10px;
                 }
             }
             .carousel-sec {
                 .clients-carousel, .partners-carousel {
-                    margin-bottom: 20px;
+                    margin-bottom: 40px;
                     .carousel-sec-inner {
-                        .img-container {
-                            img {
-                                height: 80px;
-                                width: 80px;
+                        .img-container{
+                            img{
+                                width: 112px;
+                                height: 92px;
                                 margin: 0 auto;
+                            }
+                        }
+                        @media screen and (max-width: 480px){
+                            .img-container {
+                                img {
+                                    height: 80px;
+                                    width: 80px;
+                                    margin: 0 auto;
+                                }
                             }
                         }
                     }
