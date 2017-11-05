@@ -110,7 +110,7 @@ div.header {
     .header-tabs {
         margin-top: 22px;
         ul {
-            text-align: center;
+            justify-content: space-around;
             li {
                 a{
                     font-size: 16px;
@@ -247,7 +247,7 @@ div.header {
                     .logo-link{
                         flex-direction: column;
                         .footer-logo{
-                            margin-top: 50px;
+                            margin-top: 40px;
                             margin-bottom: 40px;
                             img{
                                 width: 225px;
@@ -284,7 +284,7 @@ div.header {
                         }
                         .tweets{
                             overflow: auto;
-                            height: 300px;
+                            height: 200px;
                             margin-top: 20px;
                             .user-tweet{
                                 margin-bottom: 20px;
@@ -327,6 +327,11 @@ div.header {
                         }
                     }
                     @media screen and (max-width: 480px){
+                        .sabio-tweets{
+                            .tweets{
+                                height: 300px;
+                            }
+                        }
                         .sabio-tweets::after, .connect::after{
                             content: '';
                             height: 1px;
@@ -345,17 +350,28 @@ div.header {
                         font-size: 22px;
                         font-weight: bold;
                         margin-bottom: 20px;
-                        text-align: center;
+                        text-align: left;
+                    }
+                    @media screen and (max-width: 480px) {
+                        .footer-heading{
+                            text-align: center;
+                        }
                     }
                     .form-container{
                         form{
-                            padding: 15px;
+                            padding: 0px;
                             input.form-control{
                                 background-color: $lightBlack;
                                 margin-bottom: 15px;
                                 border: none;
                                 padding: 8px 14px;
                                 color: white;
+                                width: 250px;
+                            }
+                            @media screen and (max-width: 480px){
+                                input.form-control{
+                                    width: 100%;
+                                }
                             }
                             div{
                                 position: relative;
@@ -379,6 +395,13 @@ div.header {
                             }
                         }
                     }
+                    @media screen and (max-width: 480px) {
+                        .form-container{
+                            form{
+                                padding: 15px;
+                            }
+                        }
+                    }
                 }
                 .bottom-tabs{
                     border-top: 1px solid $silver;
@@ -386,12 +409,18 @@ div.header {
                         padding-top: 20px;
                         padding-bottom: 30px;
                         flex-wrap: wrap;
-                        justify-content: center;
+                        justify-content: left;
+                        margin-left: 40px;
                         a{
                             font-size: 14px;
                             margin-right: 25px;
                             color: $silverGrey;
                             font-weight: 700;
+                        }
+                    }
+                    @media screen and (max-width: 480px) {
+                        .slide-tabs{
+                            justify-content: center;
                         }
                     }
                     //background-color: $darkBlack;

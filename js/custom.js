@@ -14,8 +14,8 @@ $(function () {
             320:{
                 items: 2
             },
-            768: {
-                items: 2
+            767: {
+                items: 3
             },
             992: {
                 items: 4
@@ -39,8 +39,8 @@ $(function () {
             320:{
                 items: 2
             },
-            768: {
-                items: 2
+            767: {
+                items: 3
             },
             992: {
                 items: 4
@@ -48,8 +48,8 @@ $(function () {
         }
     });
 
-    var owl1 = $('.owl-carousel#owl-carousel-webOne');
-    owl1.owlCarousel({
+    var owl2 = $('.owl-carousel#owl-carousel-webOne');
+    owl2.owlCarousel({
         loop: true,
         margin: 40,
         autoplay: true,
@@ -64,7 +64,7 @@ $(function () {
                 items: 2
             },
             768: {
-                items: 2
+                items: 3
             },
             992: {
                 items: 4
@@ -72,8 +72,8 @@ $(function () {
         }
     });
 
-    var owl1 = $('.owl-carousel#owl-carousel-webTwo');
-    owl1.owlCarousel({
+    var owl3 = $('.owl-carousel#owl-carousel-webTwo');
+    owl3.owlCarousel({
         loop: true,
         margin: 40,
         autoplay: true,
@@ -88,7 +88,7 @@ $(function () {
                 items: 2
             },
             768: {
-                items: 2
+                items: 3
             },
             992: {
                 items: 4
@@ -96,8 +96,8 @@ $(function () {
         }
     });
 
-    var owl1 = $('.owl-carousel#owl-carousel-webThree');
-    owl1.owlCarousel({
+    var owl4 = $('.owl-carousel#owl-carousel-webThree');
+    owl4.owlCarousel({
         loop: true,
         margin: 40,
         autoplay: true,
@@ -112,7 +112,7 @@ $(function () {
                 items: 2
             },
             768: {
-                items: 2
+                items: 3
             },
             992: {
                 items: 4
