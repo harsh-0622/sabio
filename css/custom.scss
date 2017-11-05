@@ -297,6 +297,11 @@ div.header {
                                             font-size: 11px;
                                         }
                                     }
+                                    @media screen and (max-width: 480px){
+                                        .twitter-message{
+                                            width: 250px;
+                                        }
+                                    }
                                 }
                                 .vertical-dots{
                                     .dot{
@@ -333,16 +338,17 @@ div.header {
                     }
                     .form-container{
                         form{
+                            padding: 15px;
                             input.form-control{
                                 background-color: $lightBlack;
                                 margin-bottom: 15px;
                                 border: none;
                                 padding: 8px 14px;
                                 color: white;
-                                width: 90%;
                             }
                             div{
                                 position: relative;
+                                margin-top: 30px;
                                 button{
                                     background-color: $yellow;
                                     padding: 10px;
@@ -351,10 +357,11 @@ div.header {
                                     border: none;
                                     text-align: left;
                                     width: 140px;
+                                    font-size: 15px;
                                 }
                                 i{
                                     position: absolute;
-                                    left: 106px;
+                                    left: 108px;
                                     top: 5px;
                                     color: $darkBlack;
                                 }
@@ -367,14 +374,38 @@ div.header {
                     .slide-tabs{
                         padding-top: 20px;
                         padding-bottom: 30px;
+                        flex-wrap: wrap;
+                        justify-content: center;
                         a{
-                            font-size: 18px;
+                            font-size: 14px;
                             margin-right: 25px;
                             color: $silverGrey;
                             font-weight: 700;
                         }
                     }
                     //background-color: $darkBlack;
+                }
+                @media screen and (max-width: 480px){
+                    .bottom-tabs{
+                        border: none;
+                        .slide-tabs {
+                            height: 70px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            a{
+                                font-size: 11px;
+                                margin-right: 10px;
+                            }
+                            a::after{
+                                content: '';
+                                display: inline-block;
+                                height: 27%;
+                                width: 1px;
+                                background-color: $silver;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
                 }
             }
             @media screen and (max-width: 480px) {
