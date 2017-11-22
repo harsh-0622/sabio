@@ -9,7 +9,8 @@
   clear: both; }
 
 ul {
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-padding-start: 0; }
 
 li {
   list-style-type: none; }
@@ -20,13 +21,12 @@ li {
 .sidenav {
   height: 100vh;
   width: 250px;
-  position: fixed;
+  position: absolute;
   z-index: 3;
   top: 0;
   left: -250px;
   background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s linear; }
+  overflow-x: hidden; }
   .sidenav .sabio-logo {
     height: 15%; }
     .sidenav .sabio-logo img {
@@ -83,8 +83,8 @@ div.header {
   div.header .header-tabs {
     margin-top: 22px; }
     div.header .header-tabs ul {
-      text-align: center; }
-      div.header .header-tabs ul li {
+      justify-content: space-around; }
+      div.header .header-tabs ul li a {
         font-size: 16px;
         color: white;
         font-weight: bold; }
@@ -100,192 +100,290 @@ div.header {
   height: 100%;
   overflow: hidden;
   position: relative; }
-  .overflow-wrapper .landing-page {
-    transition: all 0.5s linear; }
-    .overflow-wrapper .landing-page .landing-page-overlay {
-      position: absolute;
-      background: rgba(0, 0, 0, 0.7);
-      height: 100%;
-      width: 100%; }
-    .overflow-wrapper .landing-page .sabio-video img {
-      height: 100%;
-      width: 100%; }
-    .overflow-wrapper .landing-page .clients-and-partners {
-      margin-bottom: 30px; }
-      .overflow-wrapper .landing-page .clients-and-partners .heading-text {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        text-align: center; }
-        .overflow-wrapper .landing-page .clients-and-partners .heading-text div {
-          font-size: 22px;
-          font-weight: bold;
-          margin-bottom: 10px; }
-      .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel {
-        margin-bottom: 20px; }
+  .overflow-wrapper .overflow-wrapper-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%; }
+  .overflow-wrapper .landing-page .sabio-video img {
+    height: 100%;
+    width: 100%; }
+  .overflow-wrapper .landing-page .clients-and-partners {
+    margin-bottom: 30px; }
+    .overflow-wrapper .landing-page .clients-and-partners .heading-text {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center; }
+      .overflow-wrapper .landing-page .clients-and-partners .heading-text div {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 10px; }
+    .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel {
+      margin-bottom: 40px; }
+      .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel .carousel-sec-inner .img-container img, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container img {
+        width: 112px;
+        height: 92px;
+        margin: 0 auto; }
+      @media screen and (max-width: 480px) {
         .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel .carousel-sec-inner .img-container img, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container img {
           height: 80px;
           width: 80px;
+          margin: 0 auto; } }
+    @media screen and (max-width: 480px) {
+      .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container .width-expand {
+        width: 120px; } }
+  @media screen and (max-width: 480px) {
+    .overflow-wrapper .landing-page {
+      margin-top: 70px; } }
+  .overflow-wrapper .our_team_page .owl-carousel .carousel-img-container img {
+    height: 80vh;
+    width: 100vw; }
+  .overflow-wrapper .our_team_page .owl-theme .owl-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%); }
+    .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot span {
+      width: 108px;
+      margin: 0;
+      height: 3px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 0; }
+    .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot.active span, .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot:hover span {
+      background: #C3C3C3; }
+  .overflow-wrapper .our_team_page .owl-theme .owl-nav {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    transform: translate(-50%, 0%); }
+  .overflow-wrapper .team-profiles .row {
+    width: fit-content;
+    margin: 0 auto; }
+    .overflow-wrapper .team-profiles .row .profile {
+      padding: 0;
+      position: relative; }
+      .overflow-wrapper .team-profiles .row .profile .pos_r .profile-img .img-up-over {
+        position: relative; }
+        .overflow-wrapper .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-over {
+          height: 285px;
+          width: 325px;
+          position: absolute;
+          left: 0;
+          top: 0; }
+        .overflow-wrapper .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
+          height: 285px;
+          width: 325px; }
+      .overflow-wrapper .team-profiles .row .profile .pos_r .profile-description {
+        height: 285px;
+        width: 325px;
+        background-color: #F4F5F3; }
+      .overflow-wrapper .team-profiles .row .profile .profile-caret-left, .overflow-wrapper .team-profiles .row .profile .profile-caret-right {
+        position: absolute;
+        top: 102px; }
+        .overflow-wrapper .team-profiles .row .profile .profile-caret-left i, .overflow-wrapper .team-profiles .row .profile .profile-caret-right i {
+          font-size: 90px; }
+      .overflow-wrapper .team-profiles .row .profile .profile-caret-left {
+        left: 292px; }
+      .overflow-wrapper .team-profiles .row .profile .profile-caret-right {
+        left: 322px; }
+  .overflow-wrapper footer .yellow-top {
+    height: 7px;
+    width: 100%;
+    background-color: #FEC430; }
+  .overflow-wrapper footer .content {
+    background-color: #1B1B1B; }
+    .overflow-wrapper footer .content .logo-link {
+      color: white; }
+      .overflow-wrapper footer .content .logo-link .footer-heading {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center; }
+      .overflow-wrapper footer .content .logo-link .sabio-logo {
+        margin-top: 30px; }
+        .overflow-wrapper footer .content .logo-link .sabio-logo img {
           margin: 0 auto; }
+      .overflow-wrapper footer .content .logo-link .social-links-container {
+        margin: 0 auto; }
+        .overflow-wrapper footer .content .logo-link .social-links-container .link {
+          padding: 0 !important;
+          height: 40px;
+          width: 40px;
+          border: 1px solid #FEC430;
+          border-radius: 50%;
+          text-align: center;
+          margin: 0 6px;
+          line-height: 48px; }
+          .overflow-wrapper footer .content .logo-link .social-links-container .link i {
+            color: #FFFFFF; }
+    .overflow-wrapper footer .content .mid-content {
+      justify-content: space-around;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .overflow-wrapper footer .content .mid-content .logo-link {
+        flex-direction: column; }
+        .overflow-wrapper footer .content .mid-content .logo-link .footer-logo {
+          margin-top: 40px;
+          margin-bottom: 40px; }
+          .overflow-wrapper footer .content .mid-content .logo-link .footer-logo img {
+            width: 225px; }
       @media screen and (max-width: 480px) {
-        .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container .width-expand {
-          width: 120px; } }
-    .overflow-wrapper .landing-page footer .yellow-top {
-      height: 7px;
-      width: 100%;
-      background-color: #FEC430; }
-    .overflow-wrapper .landing-page footer .content {
-      background-color: #1B1B1B; }
-      .overflow-wrapper .landing-page footer .content .logo-link {
-        color: white; }
-        .overflow-wrapper .landing-page footer .content .logo-link .footer-heading {
-          font-size: 22px;
-          font-weight: bold;
-          margin-bottom: 20px;
-          text-align: center; }
-        .overflow-wrapper .landing-page footer .content .logo-link .sabio-logo {
-          margin-top: 30px; }
-          .overflow-wrapper .landing-page footer .content .logo-link .sabio-logo img {
-            margin: 0 auto; }
-        .overflow-wrapper .landing-page footer .content .logo-link .social-links-container {
-          margin: 0 auto; }
-          .overflow-wrapper .landing-page footer .content .logo-link .social-links-container .link {
-            padding: 0 !important;
-            height: 40px;
-            width: 40px;
-            border: 1px solid #FEC430;
-            border-radius: 50%;
-            text-align: center;
-            margin: 0 6px;
-            line-height: 48px; }
-            .overflow-wrapper .landing-page footer .content .logo-link .social-links-container .link i {
-              color: #FFFFFF; }
-      .overflow-wrapper .landing-page footer .content .mid-content {
-        justify-content: space-around;
-        padding-top: 30px;
-        padding-bottom: 30px; }
-        .overflow-wrapper .landing-page footer .content .mid-content .logo-link {
-          flex-direction: column; }
-          .overflow-wrapper .landing-page footer .content .mid-content .logo-link .footer-logo {
-            margin-top: 50px;
-            margin-bottom: 40px; }
-            .overflow-wrapper .landing-page footer .content .mid-content .logo-link .footer-logo img {
-              width: 225px; }
-        @media screen and (max-width: 480px) {
-          .overflow-wrapper .landing-page footer .content .mid-content .logo-link {
-            flex-direction: column; } }
-        .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets {
-          overflow: hidden; }
-          .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweet-header {
-            display: flex; }
-            .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweet-header div.tweet-bird {
-              margin-right: 20px; }
-              .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweet-header div.tweet-bird i.fa-twitter {
-                color: #FEC430;
-                font-size: 48px; }
-            .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweet-header .tag {
-              color: #FFFFFF; }
-              .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweet-header .tag p {
-                font-size: 18px;
-                font-weight: 700;
-                margin-bottom: 4px; }
-              .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweet-header .tag div {
-                font-size: 11px; }
-          .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweets {
-            overflow: auto;
-            height: 300px;
-            margin-top: 20px; }
-            .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweets .user-tweet {
-              margin-bottom: 20px; }
-              .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message {
-                padding: 15px; }
-                .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-image {
-                  margin-right: 20px; }
-                  .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-image img {
-                    height: 50px;
-                    width: 50px; }
-                .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message {
-                  width: 330px;
-                  color: #FFFFFF; }
-                  .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message .profile-name {
-                    font-weight: 600;
-                    font-size: 11px; }
-                  .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message .profile-tweet {
-                    font-size: 11px; }
-              .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets .tweets .user-tweet .vertical-dots .dot {
-                background-color: #FFFFFF;
-                height: 3px;
-                width: 3px;
-                border-radius: 50%;
-                margin-bottom: 3px; }
-        @media screen and (max-width: 480px) {
-          .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets::after, .overflow-wrapper .landing-page footer .content .mid-content .connect::after {
-            content: '';
-            height: 1px;
-            width: 100%;
-            background-color: #D7D9DB;
-            opacity: .7;
-            display: block;
-            margin-top: 30px;
-            margin-bottom: 30px; } }
-      .overflow-wrapper .landing-page footer .content .connect {
-        color: #FFFFFF; }
-        .overflow-wrapper .landing-page footer .content .connect .footer-heading {
-          font-size: 22px;
-          font-weight: bold;
-          margin-bottom: 20px;
-          text-align: center; }
-        .overflow-wrapper .landing-page footer .content .connect .form-container form input.form-control {
+        .overflow-wrapper footer .content .mid-content .logo-link {
+          flex-direction: column; } }
+      .overflow-wrapper footer .content .mid-content .sabio-tweets {
+        overflow: hidden; }
+        .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header {
+          display: flex; }
+          .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header div.tweet-bird {
+            margin-right: 20px; }
+            .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header div.tweet-bird i.fa-twitter {
+              color: #FEC430;
+              font-size: 48px; }
+          .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header .tag {
+            color: #FFFFFF; }
+            .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header .tag p {
+              font-size: 18px;
+              font-weight: 700;
+              margin-bottom: 4px; }
+            .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header .tag div {
+              font-size: 11px; }
+        .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets {
+          overflow: auto;
+          height: 200px;
+          margin-top: 20px; }
+          .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet {
+            margin-bottom: 20px; }
+            .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message {
+              padding: 15px; }
+              .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-image {
+                margin-right: 20px; }
+                .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-image img {
+                  height: 50px;
+                  width: 50px; }
+              .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message {
+                width: 330px;
+                color: #FFFFFF; }
+                .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message .profile-name {
+                  font-weight: 600;
+                  font-size: 11px; }
+                .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message .profile-tweet {
+                  font-size: 11px; }
+              @media screen and (max-width: 480px) {
+                .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message {
+                  width: 230px; } }
+            .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .vertical-dots .dot {
+              background-color: #FFFFFF;
+              height: 3px;
+              width: 3px;
+              border-radius: 50%;
+              margin-bottom: 3px; }
+      @media screen and (max-width: 480px) {
+        .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets {
+          height: 300px; }
+        .overflow-wrapper footer .content .mid-content .sabio-tweets::after, .overflow-wrapper footer .content .mid-content .connect::after {
+          content: '';
+          height: 1px;
+          width: 100%;
+          background-color: #D7D9DB;
+          opacity: .7;
+          display: block;
+          margin-top: 30px;
+          margin-bottom: 30px; } }
+    .overflow-wrapper footer .content .connect {
+      color: #FFFFFF; }
+      .overflow-wrapper footer .content .connect .footer-heading {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: left; }
+      @media screen and (max-width: 480px) {
+        .overflow-wrapper footer .content .connect .footer-heading {
+          text-align: center; } }
+      .overflow-wrapper footer .content .connect .form-container form {
+        padding: 0px; }
+        .overflow-wrapper footer .content .connect .form-container form input.form-control {
           background-color: #323232;
           margin-bottom: 15px;
           border: none;
           padding: 8px 14px;
           color: white;
-          width: 90%; }
-        .overflow-wrapper .landing-page footer .content .connect .form-container form div {
-          position: relative; }
-          .overflow-wrapper .landing-page footer .content .connect .form-container form div button {
+          width: 250px; }
+        @media screen and (max-width: 480px) {
+          .overflow-wrapper footer .content .connect .form-container form input.form-control {
+            width: 100%; } }
+        .overflow-wrapper footer .content .connect .form-container form div {
+          position: relative;
+          margin-top: 30px; }
+          .overflow-wrapper footer .content .connect .form-container form div button {
             background-color: #FEC430;
             padding: 10px;
             color: #1B1B1B;
             font-weight: bold;
             border: none;
             text-align: left;
-            width: 140px; }
-          .overflow-wrapper .landing-page footer .content .connect .form-container form div i {
+            width: 140px;
+            font-size: 15px; }
+          .overflow-wrapper footer .content .connect .form-container form div i {
             position: absolute;
-            left: 106px;
+            left: 108px;
             top: 5px;
             color: #1B1B1B; }
-      .overflow-wrapper .landing-page footer .content .bottom-tabs {
-        border-top: 1px solid #D7D9DB; }
-        .overflow-wrapper .landing-page footer .content .bottom-tabs .slide-tabs {
-          padding-top: 20px;
-          padding-bottom: 30px; }
-          .overflow-wrapper .landing-page footer .content .bottom-tabs .slide-tabs a {
-            font-size: 18px;
-            margin-right: 25px;
-            color: #95989A;
-            font-weight: 700; }
+      @media screen and (max-width: 480px) {
+        .overflow-wrapper footer .content .connect .form-container form {
+          padding: 15px; } }
+    .overflow-wrapper footer .content .bottom-tabs {
+      border-top: 1px solid #D7D9DB; }
+      .overflow-wrapper footer .content .bottom-tabs .slide-tabs {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-left: 40px; }
+        .overflow-wrapper footer .content .bottom-tabs .slide-tabs a {
+          font-size: 14px;
+          margin-right: 25px;
+          color: #95989A;
+          font-weight: 700; }
+      @media screen and (max-width: 480px) {
+        .overflow-wrapper footer .content .bottom-tabs .slide-tabs {
+          justify-content: center; } }
     @media screen and (max-width: 480px) {
-      .overflow-wrapper .landing-page footer .content .mid-content {
-        flex-direction: column; }
-        .overflow-wrapper .landing-page footer .content .mid-content .sabio-tweets {
-          order: 1; }
-        .overflow-wrapper .landing-page footer .content .mid-content .connect {
-          order: 2; }
-        .overflow-wrapper .landing-page footer .content .mid-content .logo-link {
-          order: 3;
-          flex-direction: column; }
-          .overflow-wrapper .landing-page footer .content .mid-content .logo-link .follow-us {
-            order: 1; }
-          .overflow-wrapper .landing-page footer .content .mid-content .logo-link .social-links-container {
-            order: 2; }
-          .overflow-wrapper .landing-page footer .content .mid-content .logo-link .sabio-logo {
-            order: 3; }
-            .overflow-wrapper .landing-page footer .content .mid-content .logo-link .sabio-logo img {
-              width: 120px; } }
+      .overflow-wrapper footer .content .bottom-tabs {
+        border: none; }
+        .overflow-wrapper footer .content .bottom-tabs .slide-tabs {
+          height: 70px;
+          padding-top: 10px;
+          padding-bottom: 10px; }
+          .overflow-wrapper footer .content .bottom-tabs .slide-tabs a {
+            font-size: 11px;
+            margin-right: 10px; }
+          .overflow-wrapper footer .content .bottom-tabs .slide-tabs a::after {
+            content: '';
+            display: inline-block;
+            height: 27%;
+            width: 1px;
+            background-color: #D7D9DB;
+            margin-left: 10px; } }
   @media screen and (max-width: 480px) {
-    .overflow-wrapper .landing-page {
-      margin-top: 70px; } }
+    .overflow-wrapper footer .content .mid-content {
+      flex-direction: column; }
+      .overflow-wrapper footer .content .mid-content .sabio-tweets {
+        order: 1; }
+      .overflow-wrapper footer .content .mid-content .connect {
+        order: 2; }
+      .overflow-wrapper footer .content .mid-content .logo-link {
+        order: 3;
+        flex-direction: column; }
+        .overflow-wrapper footer .content .mid-content .logo-link .follow-us {
+          order: 1; }
+        .overflow-wrapper footer .content .mid-content .logo-link .social-links-container {
+          order: 2; }
+        .overflow-wrapper footer .content .mid-content .logo-link .sabio-logo {
+          order: 3; }
+          .overflow-wrapper footer .content .mid-content .logo-link .sabio-logo img {
+            width: 120px; } }
 
 /*# sourceMappingURL=custom.css.map */

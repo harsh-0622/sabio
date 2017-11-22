@@ -11,7 +11,7 @@ $(function () {
         moveSlides: 4,
         dots: false,
         responsive: {
-            320:{
+            320: {
                 items: 2
             },
             767: {
@@ -36,7 +36,7 @@ $(function () {
         moveSlides: 1,
         dots: false,
         responsive: {
-            320:{
+            320: {
                 items: 2
             },
             767: {
@@ -60,7 +60,7 @@ $(function () {
         moveSlides: 1,
         dots: false,
         responsive: {
-            320:{
+            320: {
                 items: 2
             },
             768: {
@@ -84,7 +84,7 @@ $(function () {
         moveSlides: 1,
         dots: false,
         responsive: {
-            320:{
+            320: {
                 items: 2
             },
             768: {
@@ -108,7 +108,7 @@ $(function () {
         moveSlides: 1,
         dots: false,
         responsive: {
-            320:{
+            320: {
                 items: 2
             },
             768: {
@@ -120,37 +120,71 @@ $(function () {
         }
     });
 
-    var original_html_vh = $('html').height();
-    var original_html_vw = $('html').width();
-    var original_body_vh = $('body').height();
-    var original_body_vw = $('body').width();
+    var count = 0;
 
     $('.menu img').on('click', function () {
-        if ($('div.sidenav').offset().left == -250) {
-            $('html, body').css({'overflow':'hidden'});
-            $('div.sidenav').css({'transform':'translateX(250px)'});
-            var width_final = $('.landing-page').width();
-            $('.landing-page').css({'transform':'translateX(250px)'});
-            $('.landing-page .landing-page-overlay').removeClass('d-hidden');
-            $('.landing-page .landing-page-overlay').css('z-index', '99999999');
-            $('.landing-page .landing-page-overlay').on('click', function () {
-                $('div.sidenav').css({'transform':'translateX(0px)'});
-                $('.landing-page').css({'transform':'translateX(0px)'});
-                $('.landing-page .landing-page-overlay').addClass('d-hidden');
-                $('html, body').css({'overflow':'unset'});
-                // $('html').width(original_html_vw).height(original_html_vh);
-                // $('body').width(original_body_vw).height(original_body_vh);
+        if ($('div.sidenav').position().left === -250) {
+            $('html, body').css({'overflow': 'hidden'});
+            $('div.sidenav').animate({
+                'left': 0
+            }, 200);
+            $('.overflow-wrapper').animate({
+                'left': 250
+            }, 200);
+            $('.overflow-wrapper .overflow-wrapper-overlay').removeClass('d-hidden');
+            if (count === 0) {
+                $('.overflow-wrapper .overflow-wrapper-overlay').css('z-index', '99');
+                count += 1;
+            }
+            $('.overflow-wrapper .overflow-wrapper-overlay').on('click', function () {
+                $('div.sidenav').animate({
+                    'left': -250
+                }, 200);
+                $('.overflow-wrapper').animate({
+                    'left': 0
+                }, 200);
+                setTimeout(function () {
+                    $('.overflow-wrapper .overflow-wrapper-overlay').addClass('d-hidden');
+                    $('html, body').css({'overflow': 'unset'});
+                }, 200);
+
             })
         }
     });
 
-    var stickyHeaderTop = $('.header').offset().top;
 
-    // $(window).scroll(function(){
+    var owl_our_team = $('.owl-carousel#owl_our_team');
+    var owlCarouselTimeout = 2500;
+    owl_our_team.owlCarousel({
+        loop: true,
+        margin: 25,
+        autoplay: true,
+        autoplayTimeout: owlCarouselTimeout,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"],
+        moveSlides: 1,
+        dots: true,
+        responsive: {
+            320: {
+                items: 1
+            }
+        }
+    });
+    owl_our_team.on('mouseleave', function () {
+        owl_our_team.trigger('stop.owl.autoplay'); //this is main line to fix it
+        owl_our_team.trigger('play.owl.autoplay', [owlCarouselTimeout]);
+    })
+
+
+    // var carousel_el_count = 0;
     //
-    //         $('.header').css({position: 'fixed', top: '0px'});
-    //         // $('.landing-page').css({'margin-top':'70px'})
-    //         // $('#stickyalias').css('display', 'block');
-    //
+    // $('.our_team_page .custom-carousel .carousel-overflow-wrapper ul li').each(function () {
+    //     carousel_el_count += 1;
     // });
+    // $('.indicator').width($('.indicator-rail').width());
+    // $('.our_team_page .custom-carousel .custom-indicators .fa.fa-arrow-right').on('click', function () {
+    //     $('.our_team_page .custom-carousel .carousel-overflow-wrapper ul li').last()
+    // })
+
 });
