@@ -293,6 +293,17 @@ div.header {
             }
         }
     }
+    .our-team-text{
+        margin: 0 auto;
+        padding: 48px 0;
+        h2{
+            text-align: center;
+            font-weight: bold;
+        }
+        p{
+            margin-top: 36px;
+        }
+    }
     .team-profiles{
         .row{
             width: fit-content;
@@ -318,9 +329,23 @@ div.header {
                         }
                     }
                     .profile-description{
+                        padding: 36px 24px 24px 24px;
                         height: 285px;
                         width: 325px;
                         background-color: #F4F5F3;
+                        .profile-name{
+                            font-weight: bold;
+                            font-size: 20px;
+                            text-align: center;
+                        }
+                        .profile-appointment{
+                            font-weight: 500;
+                            font-size: 18px;
+                            text-align: center;
+                        }
+                        .profile-summary{
+                            margin-top: 20px;
+                        }
                     }
                 }
                 .profile-caret-left, .profile-caret-right{
@@ -334,7 +359,17 @@ div.header {
                     left: 292px;
                 }
                 .profile-caret-right{
-                    left: 322px;
+                    left: 324px;
+                }
+            }
+            .toggle-img-description{
+                .pos_r{
+                    .profile-img{
+                        order: 2;
+                    }
+                    .profile-description{
+                        order: 1;
+                    }
                 }
             }
         }
