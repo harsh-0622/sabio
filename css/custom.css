@@ -1,4 +1,10 @@
 /**** Global Css Variables Definitions *****/
+@media screen and (max-width: 768px) {
+  .desktop-none {
+    display: none; } }
+@media screen and (min-width: 1200px) {
+  .mob-none {
+    display: none; } }
 .make-flex {
   display: flex; }
 
@@ -159,59 +165,221 @@ div.header {
     bottom: 10px;
     right: 30px;
     transform: translate(-50%, 0%); }
-  .overflow-wrapper .our-team-text {
+  .overflow-wrapper .our_team_page .our-team-text {
     margin: 0 auto;
     padding: 48px 0; }
-    .overflow-wrapper .our-team-text h2 {
+    .overflow-wrapper .our_team_page .our-team-text h2 {
       text-align: center;
       font-weight: bold; }
-    .overflow-wrapper .our-team-text p {
+    .overflow-wrapper .our_team_page .our-team-text p {
       margin-top: 36px; }
-  .overflow-wrapper .team-profiles .row {
+  .overflow-wrapper .our_team_page .team-profiles .row {
+    background-color: #F4F5F3;
     width: fit-content;
     margin: 0 auto; }
-    .overflow-wrapper .team-profiles .row .profile {
+    .overflow-wrapper .our_team_page .team-profiles .row .profile {
       padding: 0;
       position: relative; }
-      .overflow-wrapper .team-profiles .row .profile .pos_r .profile-img .img-up-over {
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over {
         position: relative; }
-        .overflow-wrapper .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-over {
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-over {
           height: 285px;
           width: 325px;
           position: absolute;
           left: 0;
-          top: 0; }
-        .overflow-wrapper .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
+          top: 0;
+          transition: opacity .3s ease-in; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
           height: 285px;
-          width: 325px; }
-      .overflow-wrapper .team-profiles .row .profile .pos_r .profile-description {
+          width: 325px;
+          transition: opacity .3s ease-in; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description {
         padding: 36px 24px 24px 24px;
         height: 285px;
         width: 325px;
-        background-color: #F4F5F3; }
-        .overflow-wrapper .team-profiles .row .profile .pos_r .profile-description .profile-name {
+        background-color: #F4F5F3;
+        transition: background-color .3s linear; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-name {
           font-weight: bold;
           font-size: 20px;
           text-align: center; }
-        .overflow-wrapper .team-profiles .row .profile .pos_r .profile-description .profile-appointment {
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-appointment {
           font-weight: 500;
           font-size: 18px;
           text-align: center; }
-        .overflow-wrapper .team-profiles .row .profile .pos_r .profile-description .profile-summary {
-          margin-top: 20px; }
-      .overflow-wrapper .team-profiles .row .profile .profile-caret-left, .overflow-wrapper .team-profiles .row .profile .profile-caret-right {
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-summary {
+          margin-top: 20px;
+          opacity: 0;
+          transition: opacity 0.3s linear; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
         position: absolute;
-        top: 102px; }
-        .overflow-wrapper .team-profiles .row .profile .profile-caret-left i, .overflow-wrapper .team-profiles .row .profile .profile-caret-right i {
-          font-size: 90px; }
-      .overflow-wrapper .team-profiles .row .profile .profile-caret-left {
-        left: 292px; }
-      .overflow-wrapper .team-profiles .row .profile .profile-caret-right {
-        left: 324px; }
-    .overflow-wrapper .team-profiles .row .toggle-img-description .pos_r .profile-img {
+        top: 102px;
+        color: #F4F5F3; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left i, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right i {
+          font-size: 90px;
+          transition: color .3s linear; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left {
+        left: 296px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
+        left: 320px; }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile:hover .pos_r .profile-img .img-up-over .img-over {
+      opacity: 0; }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile:hover .pos_r .profile-img .img-up-over .img-up {
+      opacity: 1; }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile:hover .pos_r .profile-description {
+      background-color: #FEC430; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile:hover .pos_r .profile-description .profile-summary {
+        opacity: 1; }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile:hover .profile-caret-left i, .overflow-wrapper .our_team_page .team-profiles .row .profile:hover .profile-caret-right i {
+      color: #FEC430; }
+    .overflow-wrapper .our_team_page .team-profiles .row .toggle-img-description .pos_r .profile-img {
       order: 2; }
-    .overflow-wrapper .team-profiles .row .toggle-img-description .pos_r .profile-description {
+    .overflow-wrapper .our_team_page .team-profiles .row .toggle-img-description .pos_r .profile-description {
       order: 1; }
+  @media screen and (max-width: 768px) {
+    .overflow-wrapper .our_team_page .team-profiles .row .profile {
+      height: auto; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img {
+        width: 50%; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-over {
+          width: 100%;
+          height: 175px; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
+          width: 100%;
+          height: 175px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description {
+        width: 50%;
+        height: 175px; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-summary {
+          display: none; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
+        top: 70px; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left i, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right i {
+          font-size: 40px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left {
+        left: calc(50% - 13px); }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
+        left: calc(50% - 1px); }
+    .overflow-wrapper .our_team_page .team-profiles .toggle-img-description-mob .pos_r {
+      flex-direction: row-reverse; } }
+  .overflow-wrapper .contact_us_page .locations .row.city {
+    margin: 0; }
+  .overflow-wrapper .contact_us_page .locations .city {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 453px;
+    width: 100%; }
+    .overflow-wrapper .contact_us_page .locations .city .l-side .card {
+      background-color: #FFFFFF;
+      padding: 16px; }
+      .overflow-wrapper .contact_us_page .locations .city .l-side .card .city-header {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 6px;
+        padding-top: 15px; }
+      .overflow-wrapper .contact_us_page .locations .city .l-side .card .city-header:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #FEC430; }
+      .overflow-wrapper .contact_us_page .locations .city .l-side .card .sabio-address {
+        margin: 20px 0; }
+      .overflow-wrapper .contact_us_page .locations .city .l-side .card .email-us {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 6px;
+        padding-top: 15px; }
+      .overflow-wrapper .contact_us_page .locations .city .l-side .card .email-us:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #FEC430; }
+      .overflow-wrapper .contact_us_page .locations .city .l-side .card .direction-link a {
+        background-color: #FEC430; }
+  .overflow-wrapper .contact_us_page .locations .city.santa-monica {
+    background-image: url("../img/locations/bg_Santa_Monica.jpg"); }
+    .overflow-wrapper .contact_us_page .locations .city.santa-monica .l-side .card .city-header:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+    .overflow-wrapper .contact_us_page .locations .city.santa-monica .l-side .card .email-us:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+  .overflow-wrapper .contact_us_page .locations .city.san-francisco {
+    background-image: url("../img/locations/bg_San_Francisco.jpg"); }
+    .overflow-wrapper .contact_us_page .locations .city.san-francisco .l-side .card .city-header:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+    .overflow-wrapper .contact_us_page .locations .city.san-francisco .l-side .card .email-us:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+  .overflow-wrapper .contact_us_page .locations .city.new-york {
+    background-image: url("../img/locations/bg_NY.jpg"); }
+    .overflow-wrapper .contact_us_page .locations .city.new-york .l-side .card .city-header:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+    .overflow-wrapper .contact_us_page .locations .city.new-york .l-side .card .email-us:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+  .overflow-wrapper .contact_us_page .locations .city.chicago {
+    background-image: url("../img/locations/bg_Chicago.jpg"); }
+    .overflow-wrapper .contact_us_page .locations .city.chicago .l-side .card .city-header:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+    .overflow-wrapper .contact_us_page .locations .city.chicago .l-side .card .email-us:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+  .overflow-wrapper .contact_us_page .locations .city.detroit {
+    background-image: url("../img/locations/bg_Detroit.jpg"); }
+    .overflow-wrapper .contact_us_page .locations .city.detroit .l-side .card .city-header:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+    .overflow-wrapper .contact_us_page .locations .city.detroit .l-side .card .email-us:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+  .overflow-wrapper .contact_us_page .locations .city.washington-dc {
+    background-image: url("../img/locations/bg_DC.jpg"); }
+    .overflow-wrapper .contact_us_page .locations .city.washington-dc .l-side .card .city-header:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+    .overflow-wrapper .contact_us_page .locations .city.washington-dc .l-side .card .email-us:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+  .overflow-wrapper .contact_us_page .locations .city.india {
+    background-image: url("../img/locations/bg_India.jpg"); }
+    .overflow-wrapper .contact_us_page .locations .city.india .l-side .card .city-header:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
+    .overflow-wrapper .contact_us_page .locations .city.india .l-side .card .email-us:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #FEC430; }
   .overflow-wrapper footer .yellow-top {
     height: 7px;
     width: 100%;

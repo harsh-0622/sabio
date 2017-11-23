@@ -172,19 +172,7 @@ $(function () {
         }
     });
     owl_our_team.on('mouseleave', function () {
-        owl_our_team.trigger('stop.owl.autoplay'); //this is main line to fix it
+        owl_our_team.trigger('stop.owl.autoplay'); //this is main line to resume auto-play
         owl_our_team.trigger('play.owl.autoplay', [owlCarouselTimeout]);
     })
-
-
-    // var carousel_el_count = 0;
-    //
-    // $('.our_team_page .custom-carousel .carousel-overflow-wrapper ul li').each(function () {
-    //     carousel_el_count += 1;
-    // });
-    // $('.indicator').width($('.indicator-rail').width());
-    // $('.our_team_page .custom-carousel .custom-indicators .fa.fa-arrow-right').on('click', function () {
-    //     $('.our_team_page .custom-carousel .carousel-overflow-wrapper ul li').last()
-    // })
-
 });
