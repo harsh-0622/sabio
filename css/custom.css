@@ -567,6 +567,8 @@ div.header {
         left: calc(50% - 13px); }
       .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
         left: calc(50% - 1px); }
+  .overflow-wrapper .contact_us_page .locations .row.city {
+    background-position-x: 60%; }
   .overflow-wrapper footer .content .logo-link .social-links-container .link {
     line-height: 41px; }
     .overflow-wrapper footer .content .logo-link .social-links-container .link i {
