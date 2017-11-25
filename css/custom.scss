@@ -80,12 +80,9 @@ li {
         a {
             padding: 22px 8px 22px 32px;
             text-decoration: none;
-            font-size: 16px;
-            color: $creamWhite;
-            font-weight: bold;
             display: block;
-            //transition: 0.5s;
             border-bottom: 1px solid $silver;
+            @include set_font_size_family_color(18px, "Source Sans Pro Semibold", #FFFFFF);
         }
         a:hover {
             color: #f1f1f1;
@@ -257,10 +254,11 @@ div.header {
             padding: 48px 0;
             h2 {
                 text-align: center;
-                font-weight: bold;
+                @include set_font_size_family_color(53px, "Source Sans Pro Semibold", #1B1B1B);
             }
             p {
                 margin-top: 36px;
+                @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
             }
         }
         .team-profiles {
@@ -281,12 +279,12 @@ div.header {
                                     position: absolute;
                                     left: 0;
                                     top: 0;
-                                    transition: opacity .3s ease-in;
+                                    transition: opacity .3s linear;
                                 }
                                 .img-up {
                                     height: 285px;
                                     width: 325px;
-                                    transition: opacity .3s ease-in;
+                                    transition: opacity .3s linear;
                                 }
                             }
                         }
@@ -297,16 +295,15 @@ div.header {
                             background-color: #F4F5F3;
                             transition: background-color .3s linear;
                             .profile-name {
-                                font-weight: bold;
-                                font-size: 20px;
+                                @include set_font_size_family_color(22px, "Source Sans Pro Black", #323232);
                                 text-align: center;
                             }
                             .profile-appointment {
-                                font-weight: 500;
-                                font-size: 18px;
+                                @include set_font_size_family_color(18px, "Source Sans Pro Light", #323232);
                                 text-align: center;
                             }
                             .profile-summary {
+                                @include set_font_size_family_color(12px, "Source Sans Pro Light", #1B1B1B);
                                 margin-top: 20px;
                                 opacity: 0;
                                 transition: opacity 0.3s linear;
@@ -410,6 +407,7 @@ div.header {
                     margin-top: 50px;
                     margin-left: 50px;
                     .card{
+                        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
                         background-color: $white;
                         padding: 12px 20px 12px 20px;
                         .city-header{
@@ -676,7 +674,6 @@ div.header {
                     }
                 }
                 .sabio-tweets {
-                    @include set_font_size_family_color(22px, "Source Sans Pro Semibold", #FFFFFF);
                     overflow: hidden;
                     .tweet-header {
                         display: flex;
@@ -690,13 +687,11 @@ div.header {
                         .tag {
                             color: $white;
                             p {
-                                font-size: 18px;
-                                font-weight: 700;
+                                @include set_font_size_family_color(22px, "Source Sans Pro Semibold", #FFFFFF);
                                 margin-bottom: 4px;
                             }
                             div {
-                                font-size: 11px;
-                                font-family: "Source Sans Pro";
+                                @include set_font_size_family_color(14px, "Source Sans Pro", #FFFFFF);
                             }
                         }
                     }
@@ -1831,7 +1826,10 @@ div.header {
                 .heading-text {
 
                     div {
-
+                        @include set_font_size_family_color(30px, "Source Sans Pro Semibold", #1B1B1B);
+                    }
+                    p{
+                        @include set_font_size_family_color(19px, "Source Sans Pro", #95989A);
                     }
                 }
                 .carousel-sec {
@@ -1886,10 +1884,12 @@ div.header {
             .our-team-text {
 
                 h2 {
-
+                    @include set_font_size_family_color(30px, "Source Sans Pro Semibold", #1B1B1B);
                 }
                 p {
-
+                    margin-top: 16px;
+                    padding: 0 24px;
+                    @include set_font_size_family_color(14px, "Source Sans Pro", #959894);
                 }
             }
             .team-profiles {
@@ -1914,10 +1914,10 @@ div.header {
                                 width: 50%;
                                 height: 175px;
                                 .profile-name {
-
+                                    @include set_font_size_family_color(14px, "Source Sans Pro Black", #323232);
                                 }
                                 .profile-appointment {
-
+                                    @include set_font_size_family_color(11px, "Source Sans Pro Light", #323232);
                                 }
                                 .profile-summary {
                                     display: none;
@@ -1960,31 +1960,36 @@ div.header {
             }
             .locations{
                 .row.city{
-
+                    margin-bottom: 86px;
+                    background-position-x: 56%;
                 }
                 .city{
-
+                    height: 205px;
                     .l-side{
+                        margin-left: 8px;
                         .card{
-
+                            padding: 8px 14px 8px 14px;
                             .city-header{
-
+                                @include set_font_size_family_color(16px, "Source Sans Pro Black", #323232);
                             }
                             .city-header:after{
 
                             }
                             .sabio-address{
-
+                                margin: 16px 0;
+                                @include set_font_size_family_color(13px, "Source Sans Pro Light", #323232);
                             }
                             .email-us{
-
+                                padding-top: 0px;
+                                @include set_font_size_family_color(13px, "Source Sans Pro", #323232);
                             }
                             .email-us:after{
 
                             }
                             .direction-link{
+                                margin-top: 20px;
                                 a{
-
+                                    @include set_font_size_family_color(12px, "Source Sans Pro Semibold", #323232);
                                 }
                             }
                         }
@@ -2186,6 +2191,8 @@ div.header {
                 .logo-link {
 
                     .footer-heading {
+                        text-align: center;
+                        @include set_font_size_family_color(30px, "Source Sans Pro Semibold", #FFFFFF);
 
                     }
                     .sabio-logo {
@@ -2227,7 +2234,6 @@ div.header {
                             .tag {
 
                                 p {
-
                                 }
                                 div {
 
@@ -2268,6 +2274,7 @@ div.header {
 
                     .footer-heading {
                         text-align: center;
+                        @include set_font_size_family_color(30px, "Source Sans Pro Semibold", #FFFFFF);
                     }
                     .form-container {
                         form {
@@ -2302,7 +2309,7 @@ div.header {
                     .slide-tabs {
                         justify-content: center;
                         a {
-
+                            @include set_font_size_family_color(11px, "Source Sans Pro Semibold", #95989A);
                         }
                     }
                     //background-color: $darkBlack;

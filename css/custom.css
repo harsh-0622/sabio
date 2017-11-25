@@ -47,11 +47,11 @@ li {
     .sidenav .slide-tabs a {
       padding: 22px 8px 22px 32px;
       text-decoration: none;
-      font-size: 16px;
-      color: #F5F5F3;
-      font-weight: bold;
       display: block;
-      border-bottom: 1px solid #D7D9DB; }
+      border-bottom: 1px solid #D7D9DB;
+      font-size: 18px;
+      font-family: "Source Sans Pro Semibold";
+      color: #FFFFFF; }
     .sidenav .slide-tabs a:hover {
       color: #f1f1f1; }
   .sidenav .social-links {
@@ -164,9 +164,14 @@ div.header {
     padding: 48px 0; }
     .overflow-wrapper .our_team_page .our-team-text h2 {
       text-align: center;
-      font-weight: bold; }
+      font-size: 53px;
+      font-family: "Source Sans Pro Semibold";
+      color: #1B1B1B; }
     .overflow-wrapper .our_team_page .our-team-text p {
-      margin-top: 36px; }
+      margin-top: 36px;
+      font-size: 18px;
+      font-family: "Source Sans Pro";
+      color: #95989A; }
   .overflow-wrapper .our_team_page .team-profiles .row {
     background-color: #F4F5F3;
     width: fit-content;
@@ -182,11 +187,11 @@ div.header {
           position: absolute;
           left: 0;
           top: 0;
-          transition: opacity .3s ease-in; }
+          transition: opacity .3s linear; }
         .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
           height: 285px;
           width: 325px;
-          transition: opacity .3s ease-in; }
+          transition: opacity .3s linear; }
       .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description {
         padding: 36px 24px 24px 24px;
         height: 285px;
@@ -194,14 +199,19 @@ div.header {
         background-color: #F4F5F3;
         transition: background-color .3s linear; }
         .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-name {
-          font-weight: bold;
-          font-size: 20px;
+          font-size: 22px;
+          font-family: "Source Sans Pro Black";
+          color: #323232;
           text-align: center; }
         .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-appointment {
-          font-weight: 500;
           font-size: 18px;
+          font-family: "Source Sans Pro Light";
+          color: #323232;
           text-align: center; }
         .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-summary {
+          font-size: 12px;
+          font-family: "Source Sans Pro Light";
+          color: #1B1B1B;
           margin-top: 20px;
           opacity: 0;
           transition: opacity 0.3s linear; }
@@ -253,6 +263,7 @@ div.header {
       margin-top: 50px;
       margin-left: 50px; }
       .overflow-wrapper .contact_us_page .locations .city .l-side .card {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         background-color: #FFFFFF;
         padding: 12px 20px 12px 20px; }
         .overflow-wrapper .contact_us_page .locations .city .l-side .card .city-header {
@@ -365,9 +376,6 @@ div.header {
           .overflow-wrapper footer .content .mid-content .logo-link .footer-logo img {
             width: 225px; }
       .overflow-wrapper footer .content .mid-content .sabio-tweets {
-        font-size: 22px;
-        font-family: "Source Sans Pro Semibold";
-        color: #FFFFFF;
         overflow: hidden; }
         .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header {
           display: flex; }
@@ -379,12 +387,14 @@ div.header {
           .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header .tag {
             color: #FFFFFF; }
             .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header .tag p {
-              font-size: 18px;
-              font-weight: 700;
+              font-size: 22px;
+              font-family: "Source Sans Pro Semibold";
+              color: #FFFFFF;
               margin-bottom: 4px; }
             .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header .tag div {
-              font-size: 11px;
-              font-family: "Source Sans Pro"; }
+              font-size: 14px;
+              font-family: "Source Sans Pro";
+              color: #FFFFFF; }
         .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets {
           overflow: auto;
           height: 200px;
@@ -577,6 +587,14 @@ div.header {
 @media screen and (max-width: 767px) {
   .overflow-wrapper .landing-page {
     margin-top: 70px; }
+    .overflow-wrapper .landing-page .clients-and-partners .heading-text div {
+      font-size: 30px;
+      font-family: "Source Sans Pro Semibold";
+      color: #1B1B1B; }
+    .overflow-wrapper .landing-page .clients-and-partners .heading-text p {
+      font-size: 19px;
+      font-family: "Source Sans Pro";
+      color: #95989A; }
     .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel .carousel-sec-inner .img-container img, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container img {
       height: 80px;
       width: 80px;
@@ -590,6 +608,16 @@ div.header {
   .overflow-wrapper .our_team_page .owl-theme .owl-nav {
     bottom: -44px;
     right: -22px; }
+  .overflow-wrapper .our_team_page .our-team-text h2 {
+    font-size: 30px;
+    font-family: "Source Sans Pro Semibold";
+    color: #1B1B1B; }
+  .overflow-wrapper .our_team_page .our-team-text p {
+    margin-top: 16px;
+    padding: 0 24px;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    color: #959894; }
   .overflow-wrapper .our_team_page .team-profiles .row .profile {
     height: auto; }
     .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img {
@@ -603,6 +631,14 @@ div.header {
     .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description {
       width: 50%;
       height: 175px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-name {
+        font-size: 14px;
+        font-family: "Source Sans Pro Black";
+        color: #323232; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-appointment {
+        font-size: 11px;
+        font-family: "Source Sans Pro Light";
+        color: #323232; }
       .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-summary {
         display: none; }
     .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
@@ -617,6 +653,40 @@ div.header {
     flex-direction: row-reverse; }
   .overflow-wrapper .contact_us_page {
     margin-top: 70px; }
+    .overflow-wrapper .contact_us_page .locations .row.city {
+      margin-bottom: 86px;
+      background-position-x: 56%; }
+    .overflow-wrapper .contact_us_page .locations .city {
+      height: 205px; }
+      .overflow-wrapper .contact_us_page .locations .city .l-side {
+        margin-left: 8px; }
+        .overflow-wrapper .contact_us_page .locations .city .l-side .card {
+          padding: 8px 14px 8px 14px; }
+          .overflow-wrapper .contact_us_page .locations .city .l-side .card .city-header {
+            font-size: 16px;
+            font-family: "Source Sans Pro Black";
+            color: #323232; }
+          .overflow-wrapper .contact_us_page .locations .city .l-side .card .sabio-address {
+            margin: 16px 0;
+            font-size: 13px;
+            font-family: "Source Sans Pro Light";
+            color: #323232; }
+          .overflow-wrapper .contact_us_page .locations .city .l-side .card .email-us {
+            padding-top: 0px;
+            font-size: 13px;
+            font-family: "Source Sans Pro";
+            color: #323232; }
+          .overflow-wrapper .contact_us_page .locations .city .l-side .card .direction-link {
+            margin-top: 20px; }
+            .overflow-wrapper .contact_us_page .locations .city .l-side .card .direction-link a {
+              font-size: 12px;
+              font-family: "Source Sans Pro Semibold";
+              color: #323232; }
+  .overflow-wrapper footer .content .logo-link .footer-heading {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Source Sans Pro Semibold";
+    color: #FFFFFF; }
   .overflow-wrapper footer .content .mid-content .logo-link {
     flex-direction: column; }
   .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets {
@@ -624,7 +694,10 @@ div.header {
     .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message {
       width: 230px; }
   .overflow-wrapper footer .content .connect .footer-heading {
-    text-align: center; }
+    text-align: center;
+    font-size: 30px;
+    font-family: "Source Sans Pro Semibold";
+    color: #FFFFFF; }
   .overflow-wrapper footer .content .connect .form-container form {
     padding: 15px; }
     .overflow-wrapper footer .content .connect .form-container form input.form-control {
@@ -639,6 +712,10 @@ div.header {
     margin-top: 30px;
     margin-bottom: 30px; }
   .overflow-wrapper footer .content .bottom-tabs .slide-tabs {
-    justify-content: center; } }
+    justify-content: center; }
+    .overflow-wrapper footer .content .bottom-tabs .slide-tabs a {
+      font-size: 11px;
+      font-family: "Source Sans Pro Semibold";
+      color: #95989A; } }
 
 /*# sourceMappingURL=custom.css.map */
