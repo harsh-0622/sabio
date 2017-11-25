@@ -1,5 +1,6 @@
 /**** Global Css Variables Definitions *****/
-@media screen and (max-width: 768px) {
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@media screen and (max-width: 767px) {
   .desktop-none {
     display: none; } }
 @media screen and (min-width: 1200px) {
@@ -27,7 +28,7 @@ li {
 .sidenav {
   height: 100vh;
   width: 250px;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   top: 0;
   left: -250px;
@@ -91,9 +92,9 @@ div.header {
     div.header .header-tabs ul {
       justify-content: space-around; }
       div.header .header-tabs ul li a {
-        font-size: 16px;
-        color: white;
-        font-weight: bold; }
+        font-size: 18px;
+        font-family: "Source Sans Pro Semibold";
+        color: #FFFFFF; }
   @media screen and (max-width: 768px) {
     div.header .menu img {
       margin-top: 15px; } }
@@ -112,41 +113,34 @@ div.header {
     height: 100%;
     width: 100%; }
   .overflow-wrapper .landing-page .sabio-video img {
-    height: 100%;
+    height: calc(100vh - 169px);
     width: 100%; }
   .overflow-wrapper .landing-page .clients-and-partners {
     margin-bottom: 30px; }
     .overflow-wrapper .landing-page .clients-and-partners .heading-text {
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 15px;
+      margin-bottom: 40px;
       text-align: center; }
       .overflow-wrapper .landing-page .clients-and-partners .heading-text div {
+        font-size: 53px;
+        font-family: "Source Sans Semibold";
+        color: #323232; }
+      .overflow-wrapper .landing-page .clients-and-partners .heading-text p {
         font-size: 26px;
-        font-weight: bold;
-        margin-bottom: 10px; }
+        font-family: "Source Sans Semibold";
+        color: #95989A; }
     .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel {
       margin-bottom: 40px; }
       .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel .carousel-sec-inner .img-container img, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container img {
         width: 112px;
         height: 92px;
         margin: 0 auto; }
-      @media screen and (max-width: 480px) {
-        .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel .carousel-sec-inner .img-container img, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container img {
-          height: 80px;
-          width: 80px;
-          margin: 0 auto; } }
-    @media screen and (max-width: 480px) {
-      .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container .width-expand {
-        width: 120px; } }
-  @media screen and (max-width: 480px) {
-    .overflow-wrapper .landing-page {
-      margin-top: 70px; } }
   .overflow-wrapper .our_team_page .owl-carousel .carousel-img-container img {
     height: 80vh;
     width: 100vw; }
   .overflow-wrapper .our_team_page .owl-theme .owl-dots {
     position: absolute;
-    bottom: 10px;
+    bottom: -35px;
     left: 50%;
     transform: translate(-50%, 0%); }
     .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot span {
@@ -162,7 +156,7 @@ div.header {
       background: #C3C3C3; }
   .overflow-wrapper .our_team_page .owl-theme .owl-nav {
     position: absolute;
-    bottom: 10px;
+    bottom: -47px;
     right: 30px;
     transform: translate(-50%, 0%); }
   .overflow-wrapper .our_team_page .our-team-text {
@@ -236,32 +230,18 @@ div.header {
       order: 2; }
     .overflow-wrapper .our_team_page .team-profiles .row .toggle-img-description .pos_r .profile-description {
       order: 1; }
-  @media screen and (max-width: 768px) {
-    .overflow-wrapper .our_team_page .team-profiles .row .profile {
-      height: auto; }
-      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img {
-        width: 50%; }
-        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-over {
-          width: 100%;
-          height: 175px; }
-        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
-          width: 100%;
-          height: 175px; }
-      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description {
-        width: 50%;
-        height: 175px; }
-        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-summary {
-          display: none; }
-      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
-        top: 70px; }
-        .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left i, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right i {
-          font-size: 40px; }
-      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left {
-        left: calc(50% - 13px); }
-      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
-        left: calc(50% - 1px); }
-    .overflow-wrapper .our_team_page .team-profiles .toggle-img-description-mob .pos_r {
-      flex-direction: row-reverse; } }
+  .overflow-wrapper .contact_us_page .connect-heading {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px; }
+    .overflow-wrapper .contact_us_page .connect-heading h1 {
+      font-size: 53px;
+      font-family: "Source Sans Pro Semibold";
+      color: #1B1B1B; }
+    .overflow-wrapper .contact_us_page .connect-heading p {
+      font-size: 26px;
+      font-family: "Source Sans Pro";
+      color: #95989A; }
   .overflow-wrapper .contact_us_page .locations .row.city {
     margin: 0; }
   .overflow-wrapper .contact_us_page .locations .city {
@@ -269,117 +249,79 @@ div.header {
     background-size: cover;
     height: 453px;
     width: 100%; }
-    .overflow-wrapper .contact_us_page .locations .city .l-side .card {
-      background-color: #FFFFFF;
-      padding: 16px; }
-      .overflow-wrapper .contact_us_page .locations .city .l-side .card .city-header {
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 6px;
-        padding-top: 15px; }
-      .overflow-wrapper .contact_us_page .locations .city .l-side .card .city-header:after {
-        content: '';
-        display: inline-block;
-        width: 100%;
-        border-bottom: 1px solid #FEC430; }
-      .overflow-wrapper .contact_us_page .locations .city .l-side .card .sabio-address {
-        margin: 20px 0; }
-      .overflow-wrapper .contact_us_page .locations .city .l-side .card .email-us {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 6px;
-        padding-top: 15px; }
-      .overflow-wrapper .contact_us_page .locations .city .l-side .card .email-us:after {
-        content: '';
-        display: inline-block;
-        width: 100%;
-        border-bottom: 1px solid #FEC430; }
-      .overflow-wrapper .contact_us_page .locations .city .l-side .card .direction-link a {
-        background-color: #FEC430; }
+    .overflow-wrapper .contact_us_page .locations .city .l-side {
+      margin-top: 50px;
+      margin-left: 50px; }
+      .overflow-wrapper .contact_us_page .locations .city .l-side .card {
+        background-color: #FFFFFF;
+        padding: 12px 20px 12px 20px; }
+        .overflow-wrapper .contact_us_page .locations .city .l-side .card .city-header {
+          margin-top: 15px;
+          font-size: 22px;
+          font-family: "Source Sans Pro Black";
+          color: #323232;
+          line-height: 6px; }
+        .overflow-wrapper .contact_us_page .locations .city .l-side .card .city-header:after {
+          content: '';
+          display: block;
+          padding-top: 10px;
+          border-bottom: 1px solid #FEC430; }
+        .overflow-wrapper .contact_us_page .locations .city .l-side .card .sabio-address {
+          margin: 20px 0;
+          font-size: 18px;
+          font-family: "Source Sans Pro Light";
+          color: #323232; }
+        .overflow-wrapper .contact_us_page .locations .city .l-side .card .email-us {
+          font-size: 18px;
+          font-family: "Source Sans Pro";
+          color: #323232;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 6px;
+          padding-top: 15px; }
+        .overflow-wrapper .contact_us_page .locations .city .l-side .card .email-us:after {
+          content: '';
+          display: block;
+          padding-top: 10px;
+          width: 24%;
+          border-bottom: 1px solid #FEC430; }
+        .overflow-wrapper .contact_us_page .locations .city .l-side .card .direction-link {
+          margin-top: 28px;
+          margin-bottom: 15px; }
+          .overflow-wrapper .contact_us_page .locations .city .l-side .card .direction-link a {
+            padding: 12px 14px 12px 14px;
+            font-size: 18px;
+            font-family: "Source Sans Pro Semibold";
+            color: #323232;
+            background-color: #FEC430; }
   .overflow-wrapper .contact_us_page .locations .city.santa-monica {
     background-image: url("../img/locations/bg_Santa_Monica.jpg"); }
     .overflow-wrapper .contact_us_page .locations .city.santa-monica .l-side .card .city-header:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
-    .overflow-wrapper .contact_us_page .locations .city.santa-monica .l-side .card .email-us:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
+      width: 61%; }
   .overflow-wrapper .contact_us_page .locations .city.san-francisco {
     background-image: url("../img/locations/bg_San_Francisco.jpg"); }
     .overflow-wrapper .contact_us_page .locations .city.san-francisco .l-side .card .city-header:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
-    .overflow-wrapper .contact_us_page .locations .city.san-francisco .l-side .card .email-us:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
+      width: 63%; }
   .overflow-wrapper .contact_us_page .locations .city.new-york {
     background-image: url("../img/locations/bg_NY.jpg"); }
     .overflow-wrapper .contact_us_page .locations .city.new-york .l-side .card .city-header:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
-    .overflow-wrapper .contact_us_page .locations .city.new-york .l-side .card .email-us:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
+      width: 63%; }
   .overflow-wrapper .contact_us_page .locations .city.chicago {
     background-image: url("../img/locations/bg_Chicago.jpg"); }
     .overflow-wrapper .contact_us_page .locations .city.chicago .l-side .card .city-header:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
-    .overflow-wrapper .contact_us_page .locations .city.chicago .l-side .card .email-us:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
+      width: 36%; }
   .overflow-wrapper .contact_us_page .locations .city.detroit {
     background-image: url("../img/locations/bg_Detroit.jpg"); }
     .overflow-wrapper .contact_us_page .locations .city.detroit .l-side .card .city-header:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
-    .overflow-wrapper .contact_us_page .locations .city.detroit .l-side .card .email-us:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
+      width: 35%; }
   .overflow-wrapper .contact_us_page .locations .city.washington-dc {
     background-image: url("../img/locations/bg_DC.jpg"); }
     .overflow-wrapper .contact_us_page .locations .city.washington-dc .l-side .card .city-header:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
-    .overflow-wrapper .contact_us_page .locations .city.washington-dc .l-side .card .email-us:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
+      width: 68%; }
   .overflow-wrapper .contact_us_page .locations .city.india {
     background-image: url("../img/locations/bg_India.jpg"); }
     .overflow-wrapper .contact_us_page .locations .city.india .l-side .card .city-header:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
-    .overflow-wrapper .contact_us_page .locations .city.india .l-side .card .email-us:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      border-bottom: 1px solid #FEC430; }
+      width: 23%; }
   .overflow-wrapper footer .yellow-top {
     height: 7px;
     width: 100%;
@@ -389,10 +331,11 @@ div.header {
     .overflow-wrapper footer .content .logo-link {
       color: white; }
       .overflow-wrapper footer .content .logo-link .footer-heading {
-        font-size: 22px;
-        font-weight: bold;
+        font-size: 18px;
+        font-family: "Source Sans Pro Semibold";
+        color: #FFFFFF;
         margin-bottom: 20px;
-        text-align: center; }
+        margin-left: 15px; }
       .overflow-wrapper footer .content .logo-link .sabio-logo {
         margin-top: 30px; }
         .overflow-wrapper footer .content .logo-link .sabio-logo img {
@@ -421,10 +364,10 @@ div.header {
           margin-bottom: 40px; }
           .overflow-wrapper footer .content .mid-content .logo-link .footer-logo img {
             width: 225px; }
-      @media screen and (max-width: 480px) {
-        .overflow-wrapper footer .content .mid-content .logo-link {
-          flex-direction: column; } }
       .overflow-wrapper footer .content .mid-content .sabio-tweets {
+        font-size: 22px;
+        font-family: "Source Sans Pro Semibold";
+        color: #FFFFFF;
         overflow: hidden; }
         .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header {
           display: flex; }
@@ -440,7 +383,8 @@ div.header {
               font-weight: 700;
               margin-bottom: 4px; }
             .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header .tag div {
-              font-size: 11px; }
+              font-size: 11px;
+              font-family: "Source Sans Pro"; }
         .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets {
           overflow: auto;
           height: 200px;
@@ -456,43 +400,26 @@ div.header {
                   width: 50px; }
               .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message {
                 width: 330px;
-                color: #FFFFFF; }
+                color: #FFFFFF;
+                font-family: "Source Sans Pro"; }
                 .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message .profile-name {
                   font-weight: 600;
                   font-size: 11px; }
                 .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message .profile-tweet {
                   font-size: 11px; }
-              @media screen and (max-width: 480px) {
-                .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message {
-                  width: 230px; } }
             .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .vertical-dots .dot {
               background-color: #FFFFFF;
               height: 3px;
               width: 3px;
               border-radius: 50%;
               margin-bottom: 3px; }
-      @media screen and (max-width: 480px) {
-        .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets {
-          height: 300px; }
-        .overflow-wrapper footer .content .mid-content .sabio-tweets::after, .overflow-wrapper footer .content .mid-content .connect::after {
-          content: '';
-          height: 1px;
-          width: 100%;
-          background-color: #D7D9DB;
-          opacity: .7;
-          display: block;
-          margin-top: 30px;
-          margin-bottom: 30px; } }
     .overflow-wrapper footer .content .connect {
       color: #FFFFFF; }
       .overflow-wrapper footer .content .connect .footer-heading {
-        font-size: 22px;
-        font-weight: bold;
-        margin-bottom: 20px;
-        text-align: left; }
-      @media screen and (max-width: 480px) {
-        .overflow-wrapper footer .content .connect .footer-heading {
-          text-align: center; } }
+        font-size: 18px;
+        font-family: "Source Sans Pro Semibold";
+        color: #FFFFFF;
+        margin-bottom: 20px; }
       .overflow-wrapper footer .content .connect .form-container form {
         padding: 0px; }
         .overflow-wrapper footer .content .connect .form-container form input.form-control {
@@ -501,30 +428,28 @@ div.header {
           border: none;
           padding: 8px 14px;
           color: white;
-          width: 250px; }
-        @media screen and (max-width: 480px) {
-          .overflow-wrapper footer .content .connect .form-container form input.form-control {
-            width: 100%; } }
+          width: 250px;
+          font-size: 14px;
+          font-family: "Source Sans Pro";
+          color: #8C8C8C; }
         .overflow-wrapper footer .content .connect .form-container form div {
           position: relative;
           margin-top: 30px; }
           .overflow-wrapper footer .content .connect .form-container form div button {
             background-color: #FEC430;
             padding: 10px;
-            color: #1B1B1B;
-            font-weight: bold;
             border: none;
             text-align: left;
             width: 140px;
-            font-size: 15px; }
+            font-size: 14px;
+            font-family: "Source Sans Semibold";
+            color: black; }
           .overflow-wrapper footer .content .connect .form-container form div i {
             position: absolute;
             left: 108px;
-            top: 5px;
-            color: #1B1B1B; }
-      @media screen and (max-width: 480px) {
-        .overflow-wrapper footer .content .connect .form-container form {
-          padding: 15px; } }
+            top: 7px;
+            color: #1B1B1B;
+            font-size: 24px; }
     .overflow-wrapper footer .content .bottom-tabs {
       border-top: 1px solid #D7D9DB; }
       .overflow-wrapper footer .content .bottom-tabs .slide-tabs {
@@ -534,13 +459,10 @@ div.header {
         justify-content: left;
         margin-left: 40px; }
         .overflow-wrapper footer .content .bottom-tabs .slide-tabs a {
-          font-size: 14px;
           margin-right: 25px;
-          color: #95989A;
-          font-weight: 700; }
-      @media screen and (max-width: 480px) {
-        .overflow-wrapper footer .content .bottom-tabs .slide-tabs {
-          justify-content: center; } }
+          font-size: 14px;
+          font-family: "Source Sans Semibold";
+          color: #B4B4B4; }
     @media screen and (max-width: 480px) {
       .overflow-wrapper footer .content .bottom-tabs {
         border: none; }
@@ -576,5 +498,147 @@ div.header {
           order: 3; }
           .overflow-wrapper footer .content .mid-content .logo-link .sabio-logo img {
             width: 120px; } }
+
+@media screen and (min-width: 991px) and (max-width: 1300px) {
+  .overflow-wrapper .our_team_page .team-profiles .row {
+    width: 100%; }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile {
+      height: auto; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img {
+        width: 50%; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-over {
+          width: 100%;
+          height: 240px; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
+          width: 100%;
+          height: 240px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description {
+        width: 50%;
+        height: 240px; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-summary {
+          display: none; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
+        top: 70px; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left i, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right i {
+          font-size: 40px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left {
+        left: calc(50% - 13px); }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
+        left: calc(50% - 1px); } }
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .overflow-wrapper .our_team_page .owl-theme .owl-dots {
+    bottom: -32px; }
+    .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot span {
+      width: 66px; }
+  .overflow-wrapper .our_team_page .owl-theme .owl-nav {
+    bottom: -43px; }
+  .overflow-wrapper .our_team_page .team-profiles .row {
+    width: 100%; }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile {
+      height: auto; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img {
+        width: 50%; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-over {
+          width: 100%;
+          height: 190px; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
+          width: 100%;
+          height: 190px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description {
+        width: 50%;
+        height: 190px; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-summary {
+          display: none; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
+        top: 70px; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left i, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right i {
+          font-size: 40px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left {
+        left: calc(50% - 13px); }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
+        left: calc(50% - 1px); }
+  .overflow-wrapper footer .content .logo-link .social-links-container .link {
+    line-height: 41px; }
+    .overflow-wrapper footer .content .logo-link .social-links-container .link i {
+      font-size: 1.35rem; }
+  .overflow-wrapper footer .content .mid-content .logo-link .footer-logo {
+    text-align: center; }
+    .overflow-wrapper footer .content .mid-content .logo-link .footer-logo img {
+      width: 175px; }
+  .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message {
+    width: 170px; }
+  .overflow-wrapper footer .content .connect .form-container form input.form-control {
+    width: 160px; }
+  .overflow-wrapper footer .content .connect .form-container form div button {
+    width: 130px; }
+  .overflow-wrapper footer .content .connect .form-container form div i {
+    font-size: 22px;
+    top: 9px; } }
+@media screen and (max-width: 767px) {
+  .overflow-wrapper .landing-page {
+    margin-top: 70px; }
+    .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel .carousel-sec-inner .img-container img, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container img {
+      height: 80px;
+      width: 80px;
+      margin: 0 auto; }
+    .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel .carousel-sec-inner .img-container .width-expand, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container .width-expand {
+      width: 120px; }
+  .overflow-wrapper .our_team_page .owl-theme .owl-dots {
+    bottom: -33px; }
+    .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot span {
+      width: 33px; }
+  .overflow-wrapper .our_team_page .owl-theme .owl-nav {
+    bottom: -44px;
+    right: -22px; }
+  .overflow-wrapper .our_team_page .team-profiles .row .profile {
+    height: auto; }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img {
+      width: 50%; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-over {
+        width: 100%;
+        height: 175px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
+        width: 100%;
+        height: 175px; }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description {
+      width: 50%;
+      height: 175px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-summary {
+        display: none; }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
+      top: 70px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left i, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right i {
+        font-size: 40px; }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left {
+      left: calc(50% - 13px); }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
+      left: calc(50% - 1px); }
+  .overflow-wrapper .our_team_page .team-profiles .toggle-img-description-mob .pos_r {
+    flex-direction: row-reverse; }
+  .overflow-wrapper .contact_us_page {
+    margin-top: 70px; }
+  .overflow-wrapper footer .content .mid-content .logo-link {
+    flex-direction: column; }
+  .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets {
+    height: 300px; }
+    .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message .twitter-message {
+      width: 230px; }
+  .overflow-wrapper footer .content .connect .footer-heading {
+    text-align: center; }
+  .overflow-wrapper footer .content .connect .form-container form {
+    padding: 15px; }
+    .overflow-wrapper footer .content .connect .form-container form input.form-control {
+      width: 100%; }
+  .overflow-wrapper footer .content .sabio-tweets::after, .overflow-wrapper footer .content .connect::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #D7D9DB;
+    opacity: .7;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .overflow-wrapper footer .content .bottom-tabs .slide-tabs {
+    justify-content: center; } }
 
 /*# sourceMappingURL=custom.css.map */
