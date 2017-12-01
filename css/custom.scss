@@ -621,6 +621,67 @@ div.header {
         }
     }
 
+    .app_science_page{
+        .hero-background{
+            background: url("../img/AppScience_bg.jpg") no-repeat;
+            background-size: 100vw 125vh;
+            height: calc(125vh);
+            .container{
+                .app-science-header{
+                    margin-top: 12px;
+                    background-color: transparent;
+                    text-align: center;
+                    @include set_font_size_family_color(72px, "Source Sans Pro Semibold", #FFFFFF);
+                }
+                div:nth-child(2){
+                    line-height: 40px;
+                    margin-top: 4px;
+                    @include set_font_size_family_color(60px, "Source Sans Pro Light", #FFFFFF);
+                }
+                div:nth-child(3){
+                    margin-top: 24px;
+                    margin-bottom: 40px;
+                    text-align: center;
+                    @include set_font_size_family_color(40px, "Source Sans Pro", #FFFFFF);
+                }
+                .row{
+                    .app-text{
+                        margin-left: 69%;
+                        .sub-header{
+                            @include set_font_size_family_color(20px, "Source Sans Semibold", #1B1B1B);
+                        }
+                        p{
+                            @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
+                            line-height: 26px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+        .bottom-container{
+            margin-top: -90px;
+            .bottom-container-flex{
+                .bottom-text{
+                    .sub-header{
+                        @include set_font_size_family_color(20px, "Source Sans Semibold", #1B1B1B);
+                    }
+                    p{
+                        @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
+                        line-height: 26px;
+                    }
+                }
+                .bottom-image{
+                    margin-top: -22%;
+                    img{
+                        margin-left: 29.33%;
+                    }
+                }
+            }
+        }
+    }
+
     footer {
         .yellow-top {
             height: 7px;
@@ -1199,6 +1260,49 @@ div.header {
             }
         }
 
+        .app_science_page{
+            .hero-background{
+                padding: 14px 36px 14px 36px;
+                background-size: 100vw 160vh;
+                height: calc(150vh);
+                .container{
+                    .app-science-header{
+                        margin-top: 36px;
+                    }
+                    div:nth-child(2){
+                        margin-top: 4px;
+                    }
+                    div:nth-child(3){
+                        margin-top: 24px;
+                        margin-bottom: 60px;
+                    }
+                    .row{
+                        .app-text{
+                            margin-left: 58%;
+                            .sub-header{
+                            }
+                            p{
+                                line-height: 26px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+            .bottom-container{
+                margin-top: 25px;
+                .bottom-container-flex{
+                    .bottom-text{}
+                    .bottom-image{
+                        img{
+                            margin-left: -1.7%;
+                        }
+                    }
+                }
+            }
+        }
+
         footer {
             .yellow-top {
 
@@ -1677,6 +1781,54 @@ div.header {
                     }
                     .r-side{
                     }
+                }
+            }
+        }
+
+        .app_science_page{
+            .hero-background{
+                padding: 14px 36px 14px 36px;
+                background: url("../img/AppScience_bg.jpg") no-repeat;
+                background-size: 100vw 160vh;
+                height: calc(150vh);
+                .container{
+                    .app-science-header{
+                        margin-top: 36px;
+                        background-color: transparent;
+                        text-align: center;
+                        @include set_font_size_family_color(72px, "Source Sans Pro Semibold", #FFFFFF);
+                    }
+                    div:nth-child(2){
+                        margin-top: 4px;
+                        text-align: center;
+                        @include set_font_size_family_color(60px, "Source Sans Pro Light", #FFFFFF);
+                    }
+                    div:nth-child(3){
+                        margin-top: 24px;
+                        margin-bottom: 60px;
+                        text-align: center;
+                        @include set_font_size_family_color(40px, "Source Sans Pro", #FFFFFF);
+                    }
+                    .row{
+                        .app-text{
+                            margin-left: 58%;
+                            .sub-header{
+                                @include set_font_size_family_color(20px, "Source Sans Semibold", #1B1B1B);
+                            }
+                            p{
+                                @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
+                                line-height: inherit;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+            .bottom-container{
+                .bottom-container-flex{
+                    .bottom-text{}
+                    .bottom-image{}
                 }
             }
         }
@@ -2178,6 +2330,47 @@ div.header {
                     }
                     .r-side{
                     }
+                }
+            }
+        }
+
+        .app_science_page{
+            .hero-background{
+                padding: 75px 0 14px 0;
+                background: url("../img/bg_Phone.jpg") no-repeat;
+                background-size: 160vw 110vh;
+                background-position:  inherit;
+                height: calc(100vh);
+                .container{
+                    .app-science-header{
+                    }
+                    div:nth-child(2){
+                        margin-top: 0;
+                    }
+                    div:nth-child(3){
+                        margin-top: 2px;
+                        margin-bottom: 24px;
+                    }
+                    .row{
+
+                    }
+
+                }
+
+            }
+            .visible-xs{
+                padding: 2rem;
+                .sub-header{
+                    @include set_font_size_family_color(17px, "Source Sans Semibold", #1B1B1B);
+                }
+                p{
+                    @include set_font_size_family_color(14px, "Source Sans Pro", #95989A);
+                }
+            }
+            .bottom-container{
+                .bottom-container-flex{
+                    .bottom-text{}
+                    .bottom-image{}
                 }
             }
         }

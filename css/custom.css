@@ -333,6 +333,56 @@ div.header {
     background-image: url("../img/locations/bg_India.jpg"); }
     .overflow-wrapper .contact_us_page .locations .city.india .l-side .card .city-header:after {
       width: 23%; }
+  .overflow-wrapper .app_science_page .hero-background {
+    background: url("../img/AppScience_bg.jpg") no-repeat;
+    background-size: 100vw 125vh;
+    height: calc(125vh); }
+    .overflow-wrapper .app_science_page .hero-background .container .app-science-header {
+      margin-top: 12px;
+      background-color: transparent;
+      text-align: center;
+      font-size: 72px;
+      font-family: "Source Sans Pro Semibold";
+      color: #FFFFFF; }
+    .overflow-wrapper .app_science_page .hero-background .container div:nth-child(2) {
+      line-height: 40px;
+      margin-top: 4px;
+      font-size: 60px;
+      font-family: "Source Sans Pro Light";
+      color: #FFFFFF; }
+    .overflow-wrapper .app_science_page .hero-background .container div:nth-child(3) {
+      margin-top: 24px;
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 40px;
+      font-family: "Source Sans Pro";
+      color: #FFFFFF; }
+    .overflow-wrapper .app_science_page .hero-background .container .row .app-text {
+      margin-left: 69%; }
+      .overflow-wrapper .app_science_page .hero-background .container .row .app-text .sub-header {
+        font-size: 20px;
+        font-family: "Source Sans Semibold";
+        color: #1B1B1B; }
+      .overflow-wrapper .app_science_page .hero-background .container .row .app-text p {
+        font-size: 18px;
+        font-family: "Source Sans Pro";
+        color: #95989A;
+        line-height: 26px; }
+  .overflow-wrapper .app_science_page .bottom-container {
+    margin-top: -90px; }
+    .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-text .sub-header {
+      font-size: 20px;
+      font-family: "Source Sans Semibold";
+      color: #1B1B1B; }
+    .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-text p {
+      font-size: 18px;
+      font-family: "Source Sans Pro";
+      color: #95989A;
+      line-height: 26px; }
+    .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-image {
+      margin-top: -22%; }
+      .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-image img {
+        margin-left: 29.33%; }
   .overflow-wrapper footer .yellow-top {
     height: 7px;
     width: 100%;
@@ -534,7 +584,26 @@ div.header {
       .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left {
         left: calc(50% - 13px); }
       .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
-        left: calc(50% - 1px); } }
+        left: calc(50% - 1px); }
+  .overflow-wrapper .app_science_page .hero-background {
+    padding: 14px 36px 14px 36px;
+    background-size: 100vw 160vh;
+    height: calc(150vh); }
+    .overflow-wrapper .app_science_page .hero-background .container .app-science-header {
+      margin-top: 36px; }
+    .overflow-wrapper .app_science_page .hero-background .container div:nth-child(2) {
+      margin-top: 4px; }
+    .overflow-wrapper .app_science_page .hero-background .container div:nth-child(3) {
+      margin-top: 24px;
+      margin-bottom: 60px; }
+    .overflow-wrapper .app_science_page .hero-background .container .row .app-text {
+      margin-left: 58%; }
+      .overflow-wrapper .app_science_page .hero-background .container .row .app-text p {
+        line-height: 26px; }
+  .overflow-wrapper .app_science_page .bottom-container {
+    margin-top: 25px; }
+    .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-image img {
+      margin-left: -1.7%; } }
 @media screen and (min-width: 768px) and (max-width: 990px) {
   .overflow-wrapper .our_team_page .owl-theme .owl-dots {
     bottom: -32px; }
@@ -569,6 +638,42 @@ div.header {
         left: calc(50% - 1px); }
   .overflow-wrapper .contact_us_page .locations .row.city {
     background-position-x: 60%; }
+  .overflow-wrapper .app_science_page .hero-background {
+    padding: 14px 36px 14px 36px;
+    background: url("../img/AppScience_bg.jpg") no-repeat;
+    background-size: 100vw 160vh;
+    height: calc(150vh); }
+    .overflow-wrapper .app_science_page .hero-background .container .app-science-header {
+      margin-top: 36px;
+      background-color: transparent;
+      text-align: center;
+      font-size: 72px;
+      font-family: "Source Sans Pro Semibold";
+      color: #FFFFFF; }
+    .overflow-wrapper .app_science_page .hero-background .container div:nth-child(2) {
+      margin-top: 4px;
+      text-align: center;
+      font-size: 60px;
+      font-family: "Source Sans Pro Light";
+      color: #FFFFFF; }
+    .overflow-wrapper .app_science_page .hero-background .container div:nth-child(3) {
+      margin-top: 24px;
+      margin-bottom: 60px;
+      text-align: center;
+      font-size: 40px;
+      font-family: "Source Sans Pro";
+      color: #FFFFFF; }
+    .overflow-wrapper .app_science_page .hero-background .container .row .app-text {
+      margin-left: 58%; }
+      .overflow-wrapper .app_science_page .hero-background .container .row .app-text .sub-header {
+        font-size: 20px;
+        font-family: "Source Sans Semibold";
+        color: #1B1B1B; }
+      .overflow-wrapper .app_science_page .hero-background .container .row .app-text p {
+        font-size: 18px;
+        font-family: "Source Sans Pro";
+        color: #95989A;
+        line-height: inherit; }
   .overflow-wrapper footer .content .logo-link .social-links-container .link {
     line-height: 41px; }
     .overflow-wrapper footer .content .logo-link .social-links-container .link i {
@@ -684,6 +789,27 @@ div.header {
               font-size: 12px;
               font-family: "Source Sans Pro Semibold";
               color: #323232; }
+  .overflow-wrapper .app_science_page .hero-background {
+    padding: 75px 0 14px 0;
+    background: url("../img/bg_Phone.jpg") no-repeat;
+    background-size: 160vw 110vh;
+    background-position: inherit;
+    height: calc(100vh); }
+    .overflow-wrapper .app_science_page .hero-background .container div:nth-child(2) {
+      margin-top: 0; }
+    .overflow-wrapper .app_science_page .hero-background .container div:nth-child(3) {
+      margin-top: 2px;
+      margin-bottom: 24px; }
+  .overflow-wrapper .app_science_page .visible-xs {
+    padding: 2rem; }
+    .overflow-wrapper .app_science_page .visible-xs .sub-header {
+      font-size: 17px;
+      font-family: "Source Sans Semibold";
+      color: #1B1B1B; }
+    .overflow-wrapper .app_science_page .visible-xs p {
+      font-size: 14px;
+      font-family: "Source Sans Pro";
+      color: #95989A; }
   .overflow-wrapper footer .content .logo-link .footer-heading {
     text-align: center;
     font-size: 30px;
