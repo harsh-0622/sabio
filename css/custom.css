@@ -123,11 +123,11 @@ div.header {
       text-align: center; }
       .overflow-wrapper .landing-page .clients-and-partners .heading-text div {
         font-size: 53px;
-        font-family: "Source Sans Semibold";
+        font-family: "Source Sans Pro Semibold";
         color: #323232; }
       .overflow-wrapper .landing-page .clients-and-partners .heading-text p {
         font-size: 26px;
-        font-family: "Source Sans Semibold";
+        font-family: "Source Sans Pro Semibold";
         color: #95989A; }
     .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel {
       margin-bottom: 40px; }
@@ -361,7 +361,7 @@ div.header {
       margin-left: 69%; }
       .overflow-wrapper .app_science_page .hero-background .container .row .app-text .sub-header {
         font-size: 20px;
-        font-family: "Source Sans Semibold";
+        font-family: "Source Sans Pro Semibold";
         color: #1B1B1B; }
       .overflow-wrapper .app_science_page .hero-background .container .row .app-text p {
         font-size: 18px;
@@ -372,7 +372,7 @@ div.header {
     margin-top: -90px; }
     .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-text .sub-header {
       font-size: 20px;
-      font-family: "Source Sans Semibold";
+      font-family: "Source Sans Pro Semibold";
       color: #1B1B1B; }
     .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-text p {
       font-size: 18px;
@@ -502,7 +502,7 @@ div.header {
             text-align: left;
             width: 140px;
             font-size: 14px;
-            font-family: "Source Sans Semibold";
+            font-family: "Source Sans Pro Semibold";
             color: black; }
           .overflow-wrapper footer .content .connect .form-container form div i {
             position: absolute;
@@ -521,7 +521,7 @@ div.header {
         .overflow-wrapper footer .content .bottom-tabs .slide-tabs a {
           margin-right: 25px;
           font-size: 14px;
-          font-family: "Source Sans Semibold";
+          font-family: "Source Sans Pro Semibold";
           color: #B4B4B4; }
     @media screen and (max-width: 480px) {
       .overflow-wrapper footer .content .bottom-tabs {
@@ -667,7 +667,7 @@ div.header {
       margin-left: 58%; }
       .overflow-wrapper .app_science_page .hero-background .container .row .app-text .sub-header {
         font-size: 20px;
-        font-family: "Source Sans Semibold";
+        font-family: "Source Sans Pro Semibold";
         color: #1B1B1B; }
       .overflow-wrapper .app_science_page .hero-background .container .row .app-text p {
         font-size: 18px;
@@ -804,7 +804,7 @@ div.header {
     padding: 2rem; }
     .overflow-wrapper .app_science_page .visible-xs .sub-header {
       font-size: 17px;
-      font-family: "Source Sans Semibold";
+      font-family: "Source Sans Pro Semibold";
       color: #1B1B1B; }
     .overflow-wrapper .app_science_page .visible-xs p {
       font-size: 14px;

@@ -184,10 +184,10 @@ div.header {
                 margin-bottom: 40px;
                 text-align: center;
                 div {
-                    @include set_font_size_family_color(53px, "Source Sans Semibold", #323232);
+                    @include set_font_size_family_color(53px, "Source Sans Pro Semibold", #323232);
                 }
                 p{
-                    @include set_font_size_family_color(26px, "Source Sans Semibold", #95989A);
+                    @include set_font_size_family_color(26px, "Source Sans Pro Semibold", #95989A);
                 }
             }
             .carousel-sec {
@@ -648,7 +648,7 @@ div.header {
                     .app-text{
                         margin-left: 69%;
                         .sub-header{
-                            @include set_font_size_family_color(20px, "Source Sans Semibold", #1B1B1B);
+                            @include set_font_size_family_color(20px, "Source Sans Pro Semibold", #1B1B1B);
                         }
                         p{
                             @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
@@ -665,7 +665,7 @@ div.header {
             .bottom-container-flex{
                 .bottom-text{
                     .sub-header{
-                        @include set_font_size_family_color(20px, "Source Sans Semibold", #1B1B1B);
+                        @include set_font_size_family_color(20px, "Source Sans Pro Semibold", #1B1B1B);
                     }
                     p{
                         @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
@@ -824,7 +824,7 @@ div.header {
                                 border: none;
                                 text-align: left;
                                 width: 140px;
-                                @include set_font_size_family_color(14px, "Source Sans Semibold", black);
+                                @include set_font_size_family_color(14px, "Source Sans Pro Semibold", black);
                             }
                             i {
                                 position: absolute;
@@ -847,7 +847,7 @@ div.header {
                     margin-left: 40px;
                     a {
                         margin-right: 25px;
-                        @include set_font_size_family_color(14px, "Source Sans Semibold", #B4B4B4);
+                        @include set_font_size_family_color(14px, "Source Sans Pro Semibold", #B4B4B4);
                     }
                 }
 
@@ -1775,6 +1775,7 @@ div.header {
                             }
                             .direction-link{
                                 a{
+
                                 }
                             }
                         }
@@ -1813,7 +1814,7 @@ div.header {
                         .app-text{
                             margin-left: 58%;
                             .sub-header{
-                                @include set_font_size_family_color(20px, "Source Sans Semibold", #1B1B1B);
+                                @include set_font_size_family_color(20px, "Source Sans Pro Semibold", #1B1B1B);
                             }
                             p{
                                 @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
@@ -2361,7 +2362,7 @@ div.header {
             .visible-xs{
                 padding: 2rem;
                 .sub-header{
-                    @include set_font_size_family_color(17px, "Source Sans Semibold", #1B1B1B);
+                    @include set_font_size_family_color(17px, "Source Sans Pro Semibold", #1B1B1B);
                 }
                 p{
                     @include set_font_size_family_color(14px, "Source Sans Pro", #95989A);
