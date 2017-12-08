@@ -10,7 +10,7 @@ $darkBlack: #1B1B1B;
 $sps: "Source Sans Pro Semibold";
 $spr: "Source Sans Pro Regular";
 
-@mixin set_font_size_family_color($size, $family, $color){
+@mixin set_font_size_family_color($size, $family, $color) {
     font-size: $size;
     font-family: $family;
     color: $color;
@@ -186,7 +186,7 @@ div.header {
                 div {
                     @include set_font_size_family_color(53px, "Source Sans Pro Semibold", #323232);
                 }
-                p{
+                p {
                     @include set_font_size_family_color(26px, "Source Sans Pro Semibold", #95989A);
                 }
             }
@@ -378,72 +378,72 @@ div.header {
         }
     }
 
-    .contact_us_page{
-        .connect-heading{
+    .contact_us_page {
+        .connect-heading {
             text-align: center;
             margin-top: 50px;
             margin-bottom: 40px;
-            h1{
+            h1 {
                 font-size: 53px;
                 font-family: "Source Sans Pro Semibold";
                 color: #1B1B1B;
             }
-            p{
+            p {
                 font-size: 26px;
                 font-family: "Source Sans Pro";
                 color: #95989A;
             }
         }
-        .locations{
-            .row.city{
+        .locations {
+            .row.city {
                 margin: 0;
             }
-            .city{
+            .city {
                 background-repeat: no-repeat;
                 background-size: cover;
                 height: 453px;
                 width: 100%;
-                .l-side{
+                .l-side {
                     margin-top: 50px;
                     margin-left: 50px;
-                    .card{
-                        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                    .card {
+                        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
                         background-color: $white;
                         padding: 12px 20px 12px 20px;
-                        .city-header{
+                        .city-header {
                             margin-top: 15px;
                             @include set_font_size_family_color(22px, "Source Sans Pro Black", #323232);
                             line-height: 6px;
 
                         }
-                        .city-header:after{
+                        .city-header:after {
                             content: '';
                             display: block;
                             padding-top: 10px;
                             border-bottom: 1px solid $yellow;
                         }
-                        .sabio-address{
+                        .sabio-address {
                             margin: 20px 0;
                             @include set_font_size_family_color(18px, "Source Sans Pro Light", #323232);
                         }
-                        .email-us{
+                        .email-us {
                             @include set_font_size_family_color(18px, "Source Sans Pro", #323232);
                             font-size: 16px;
                             font-weight: 600;
                             line-height: 6px;
                             padding-top: 15px;
                         }
-                        .email-us:after{
-                                content: '';
-                                display: block;
-                                padding-top: 10px;
-                                width: 24%;
-                                border-bottom: 1px solid $yellow;
+                        .email-us:after {
+                            content: '';
+                            display: block;
+                            padding-top: 10px;
+                            width: 24%;
+                            border-bottom: 1px solid $yellow;
                         }
-                        .direction-link{
+                        .direction-link {
                             margin-top: 28px;
                             margin-bottom: 15px;
-                            a{
+                            a {
                                 padding: 12px 14px 12px 14px;
                                 @include set_font_size_family_color(18px, "Source Sans Pro Semibold", #323232);
                                 background-color: $yellow;
@@ -451,206 +451,206 @@ div.header {
                         }
                     }
                 }
-                .r-side{
+                .r-side {
                 }
             }
-            .city.santa-monica{
+            .city.santa-monica {
                 background-image: url("../img/locations/bg_Santa_Monica.jpg");
-                .l-side{
-                    .card{
-                        .city-header{
+                .l-side {
+                    .card {
+                        .city-header {
 
                         }
-                        .city-header:after{
+                        .city-header:after {
                             width: 61%;
                         }
-                        .sabio-address{
+                        .sabio-address {
                         }
-                        .email-us{
+                        .email-us {
                         }
-                        .direction-link{
-                            a{
+                        .direction-link {
+                            a {
                             }
                         }
                     }
                 }
-                .r-side{
+                .r-side {
                 }
             }
-            .city.san-francisco{
+            .city.san-francisco {
                 background-image: url("../img/locations/bg_San_Francisco.jpg");
-                .l-side{
-                    .card{
-                        .city-header{
+                .l-side {
+                    .card {
+                        .city-header {
 
                         }
-                        .city-header:after{
+                        .city-header:after {
                             width: 63%;
                         }
-                        .sabio-address{
+                        .sabio-address {
                         }
-                        .email-us{
+                        .email-us {
                         }
-                        .direction-link{
-                            a{
+                        .direction-link {
+                            a {
                             }
                         }
                     }
                 }
-                .r-side{
+                .r-side {
                 }
             }
-            .city.new-york{
+            .city.new-york {
                 background-image: url("../img/locations/bg_NY.jpg");
-                .l-side{
-                    .card{
-                        .city-header{
+                .l-side {
+                    .card {
+                        .city-header {
 
                         }
-                        .city-header:after{
+                        .city-header:after {
                             width: 63%;
                         }
-                        .sabio-address{
+                        .sabio-address {
                         }
-                        .email-us{
+                        .email-us {
                         }
-                        .direction-link{
-                            a{
+                        .direction-link {
+                            a {
                             }
                         }
                     }
                 }
-                .r-side{
+                .r-side {
                 }
             }
-            .city.chicago{
+            .city.chicago {
                 background-image: url("../img/locations/bg_Chicago.jpg");
-                .l-side{
-                    .card{
-                        .city-header{
+                .l-side {
+                    .card {
+                        .city-header {
 
                         }
-                        .city-header:after{
+                        .city-header:after {
                             width: 36%;
                         }
-                        .sabio-address{
+                        .sabio-address {
                         }
-                        .email-us{
+                        .email-us {
                         }
-                        .direction-link{
-                            a{
+                        .direction-link {
+                            a {
                             }
                         }
                     }
                 }
-                .r-side{
+                .r-side {
                 }
             }
-            .city.detroit{
+            .city.detroit {
                 background-image: url("../img/locations/bg_Detroit.jpg");
-                .l-side{
-                    .card{
-                        .city-header{
+                .l-side {
+                    .card {
+                        .city-header {
 
                         }
-                        .city-header:after{
+                        .city-header:after {
                             width: 35%;
                         }
-                        .sabio-address{
+                        .sabio-address {
                         }
-                        .email-us{
+                        .email-us {
                         }
-                        .direction-link{
-                            a{
+                        .direction-link {
+                            a {
                             }
                         }
                     }
                 }
-                .r-side{
+                .r-side {
                 }
             }
-            .city.washington-dc{
+            .city.washington-dc {
                 background-image: url("../img/locations/bg_DC.jpg");
-                .l-side{
-                    .card{
-                        .city-header{
+                .l-side {
+                    .card {
+                        .city-header {
 
                         }
-                        .city-header:after{
+                        .city-header:after {
                             width: 68%;
                         }
-                        .sabio-address{
+                        .sabio-address {
                         }
-                        .email-us{
+                        .email-us {
                         }
-                        .email-us:after{
+                        .email-us:after {
                         }
-                        .direction-link{
-                            a{
+                        .direction-link {
+                            a {
                             }
                         }
                     }
                 }
-                .r-side{
+                .r-side {
                 }
             }
-            .city.india{
+            .city.india {
                 background-image: url("../img/locations/bg_India.jpg");
-                .l-side{
-                    .card{
-                        .city-header{
+                .l-side {
+                    .card {
+                        .city-header {
                         }
-                        .city-header:after{
+                        .city-header:after {
                             width: 23%;
                         }
-                        .sabio-address{
+                        .sabio-address {
                         }
-                        .email-us{
+                        .email-us {
                         }
-                        .email-us:after{
+                        .email-us:after {
                         }
-                        .direction-link{
-                            a{
+                        .direction-link {
+                            a {
                             }
                         }
                     }
                 }
-                .r-side{
+                .r-side {
                 }
             }
         }
     }
 
-    .app_science_page{
-        .hero-background{
+    .app_science_page {
+        .hero-background {
             background: url("../img/AppScience_bg.jpg") no-repeat;
             background-size: 100vw 125vh;
             height: calc(125vh);
-            .container{
-                .app-science-header{
+            .container {
+                .app-science-header {
                     margin-top: 12px;
                     background-color: transparent;
                     text-align: center;
                     @include set_font_size_family_color(72px, "Source Sans Pro Semibold", #FFFFFF);
                 }
-                div:nth-child(2){
+                div:nth-child(2) {
                     line-height: 40px;
                     margin-top: 4px;
                     @include set_font_size_family_color(60px, "Source Sans Pro Light", #FFFFFF);
                 }
-                div:nth-child(3){
+                div:nth-child(3) {
                     margin-top: 24px;
                     margin-bottom: 40px;
                     text-align: center;
                     @include set_font_size_family_color(40px, "Source Sans Pro", #FFFFFF);
                 }
-                .row{
-                    .app-text{
+                .row {
+                    .app-text {
                         margin-left: 69%;
-                        .sub-header{
+                        .sub-header {
                             @include set_font_size_family_color(20px, "Source Sans Pro Semibold", #1B1B1B);
                         }
-                        p{
+                        p {
                             @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
                             line-height: 26px;
                         }
@@ -660,23 +660,148 @@ div.header {
             }
 
         }
-        .bottom-container{
+        .bottom-container {
             margin-top: -90px;
-            .bottom-container-flex{
-                .bottom-text{
-                    .sub-header{
+            .bottom-container-flex {
+                .bottom-text {
+                    .sub-header {
                         @include set_font_size_family_color(20px, "Source Sans Pro Semibold", #1B1B1B);
                     }
-                    p{
+                    p {
                         @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
                         line-height: 26px;
                     }
                 }
-                .bottom-image{
+                .bottom-image {
                     margin-top: -22%;
-                    img{
+                    img {
                         margin-left: 29.33%;
                     }
+                }
+            }
+        }
+    }
+
+    .our_services{
+        .line-1 {
+            margin-top: 80px;
+            .services_headline{
+                h2{
+                    @include set_font_size_family_color(50px, "Source Sans Pro Light", #2C3F46);
+                    margin-top: 0;
+                }
+            }
+            .right{
+                p{
+                    width: 95%;
+                    margin-left: 5%;
+                    @include set_font_size_family_color(20px, "Sourse Sanse Pro Regular", #2C3F46);
+                    line-height: 30px;
+                }
+            }
+        }
+        .line-2{
+            background: url(../img/tabs_bg.png);
+            background-position: 50% 50%;
+            background-size: cover;
+            margin: 75px 0;
+            h2{
+                @include set_font_size_family_color(50px, "Sourse Sanse Pro Light", #FFFFFF);
+                text-transform: capitalize;
+                margin-top: 70px;
+            }
+        }
+        .line-3{
+            .col-md-12 {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                height: 420px;
+                .col-md-6:nth-last-of-type(1){
+                    -webkit-align-self: flex-end;
+                    align-self: flex-end;
+                    .content{
+                        text-align: center;
+                        padding: 0 17%;
+                        h2{
+                            @include set_font_size_family_color(50px, "Sourse Sanse Pro Light", #2c3f46);
+                            margin-bottom: 20px;
+                        }
+                        .learn-more{
+                            @include set_font_size_family_color(18px, "Sourse Sanse Pro Bold", #20ad9d);
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+        .hr.col-md-12{
+            hr{
+                border-top: 2px solid #c3c3c5;
+                margin: 80px 0 70px;
+            }
+        }
+        .line-4{
+            margin-bottom: 145px;
+            .col-md-6{
+                .caption{
+                    @include set_font_size_family_color(18px, "Sourse Sanse Pro Bold", #aab1b9);
+                    margin-top: 0;
+                    text-align: left;
+                    line-height: 30px;
+                }
+                h3{
+                    @include set_font_size_family_color(32px, "Sourse Sanse Pro Light", #000000);
+                    margin: 30px 0;
+                    text-transform: capitalize;
+                }
+                .p-type3{
+                    @include set_font_size_family_color(20px, "Sourse Sanse Pro", #2c3f46);
+                    line-height: 30px;
+                }
+            }
+            .green-markers{
+                li{
+                    color: #c3c3c5;
+                    text-transform: uppercase;
+                    font-family: "SourseSanseProBold", Arial;
+                    font-size: 18px;
+                    margin-bottom: 40px;
+                    list-style-image: url(../img/marker.png);
+                    padding-left: 10px;
+                }
+            }
+        }
+        .line-5{
+            background: #f5f5f6;
+            padding-bottom: 100px;
+            .creative0{
+                width: 304px !important;
+                height: 580px;
+                background: url(../img/iphone.png) 50% 10px no-repeat;
+                background-size: 100%;
+            }
+            .right{
+                h3{
+                    @include set_font_size_family_color(20px, "Sourse Sanse Pro Light", #2c3f46);
+                    width: 83%;
+                    margin-left: 9%;
+                    margin-top: 95px;
+                    font-size: 32px;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+                }
+                p{
+                    @include set_font_size_family_color(20px, "Sourse Sanse Pro", #2c3f46);
+                    width: 83%;
+                    margin-left: 9%;
+                    font-size: 20px;
+                    line-height: 30px;
                 }
             }
         }
@@ -1036,252 +1161,254 @@ div.header {
             }
         }
 
-        .contact_us_page{
-            .connect-heading{
-                h1{}
-                p{}
+        .contact_us_page {
+            .connect-heading {
+                h1 {
+                }
+                p {
+                }
             }
-            .locations{
-                .row.city{
+            .locations {
+                .row.city {
 
                 }
-                .city{
+                .city {
 
-                    .l-side{
-                        .card{
+                    .l-side {
+                        .card {
 
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                            .city-header {
 
                             }
-                            .sabio-address{
+                            .city-header:after {
 
                             }
-                            .email-us{
+                            .sabio-address {
 
                             }
-                            .email-us:after{
+                            .email-us {
 
                             }
-                            .direction-link{
-                                a{
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
 
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.santa-monica{
+                .city.santa-monica {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.san-francisco{
+                .city.san-francisco {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.new-york{
+                .city.new-york {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.chicago{
+                .city.chicago {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.detroit{
+                .city.detroit {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.washington-dc{
+                .city.washington-dc {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.india{
+                .city.india {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
             }
         }
 
-        .app_science_page{
-            .hero-background{
+        .app_science_page {
+            .hero-background {
                 padding: 14px 36px 14px 36px;
                 background-size: 100vw 160vh;
                 height: calc(150vh);
-                .container{
-                    .app-science-header{
+                .container {
+                    .app-science-header {
                         margin-top: 36px;
                     }
-                    div:nth-child(2){
+                    div:nth-child(2) {
                         margin-top: 4px;
                     }
-                    div:nth-child(3){
+                    div:nth-child(3) {
                         margin-top: 24px;
                         margin-bottom: 60px;
                     }
-                    .row{
-                        .app-text{
+                    .row {
+                        .app-text {
                             margin-left: 58%;
-                            .sub-header{
+                            .sub-header {
                             }
-                            p{
+                            p {
                                 line-height: 26px;
                             }
                         }
@@ -1290,15 +1417,59 @@ div.header {
                 }
 
             }
-            .bottom-container{
+            .bottom-container {
                 margin-top: 25px;
-                .bottom-container-flex{
-                    .bottom-text{}
-                    .bottom-image{
-                        img{
+                .bottom-container-flex {
+                    .bottom-text {
+                    }
+                    .bottom-image {
+                        img {
                             margin-left: -1.7%;
                         }
                     }
+                }
+            }
+        }
+
+        .our_services{
+            .line-1 {
+                .services_headline{
+                    h2{
+                        @include set_font_size_family_color(50px, "Source Sans Pro Light", #2C3F46);
+                        margin-top: 0;
+                    }
+                }
+                .right{
+                    p{
+                        width: 95%;
+                        margin-left: 5%;
+                        @include set_font_size_family_color(20px, "Sourse Sanse Pro Regular", #2C3F46);
+                        line-height: 30px;
+                    }
+                }
+            }
+            .line-2{
+                background: url(../img/tabs_bg.png);
+                background-position: 50% 50%;
+                background-size: cover;
+                margin: 75px 0;
+                h2{
+                    @include set_font_size_family_color(50px, "Sourse Sanse Pro Light", #FFFFFF);
+                    text-transform: capitalize;
+                    margin-top: 70px;
+                }
+            }
+            .line-3{
+                .col-md-12{
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    height: 420px;
                 }
             }
         }
@@ -1430,7 +1601,6 @@ div.header {
     }
 }
 
-
 @media screen and (min-width: 768px) and (max-width: 990px) {
     .overflow-wrapper {
         .overflow-wrapper-overlay {
@@ -1561,262 +1731,264 @@ div.header {
             }
         }
 
-        .contact_us_page{
-            .connect-heading{
-                h1{}
-                p{}
+        .contact_us_page {
+            .connect-heading {
+                h1 {
+                }
+                p {
+                }
             }
-            .locations{
-                .row.city{
+            .locations {
+                .row.city {
                     background-position-x: 60%;
                 }
-                .city{
+                .city {
 
-                    .l-side{
-                        .card{
+                    .l-side {
+                        .card {
 
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                            .city-header {
 
                             }
-                            .sabio-address{
+                            .city-header:after {
 
                             }
-                            .email-us{
+                            .sabio-address {
 
                             }
-                            .email-us:after{
+                            .email-us {
 
                             }
-                            .direction-link{
-                                a{
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
 
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.santa-monica{
+                .city.santa-monica {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.san-francisco{
+                .city.san-francisco {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.new-york{
+                .city.new-york {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.chicago{
+                .city.chicago {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.detroit{
+                .city.detroit {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.washington-dc{
+                .city.washington-dc {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.india{
+                .city.india {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
 
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
             }
         }
 
-        .app_science_page{
-            .hero-background{
+        .app_science_page {
+            .hero-background {
                 padding: 14px 36px 14px 36px;
                 background: url("../img/AppScience_bg.jpg") no-repeat;
                 background-size: 100vw 160vh;
                 height: calc(150vh);
-                .container{
-                    .app-science-header{
+                .container {
+                    .app-science-header {
                         margin-top: 36px;
                         background-color: transparent;
                         text-align: center;
                         @include set_font_size_family_color(72px, "Source Sans Pro Semibold", #FFFFFF);
                     }
-                    div:nth-child(2){
+                    div:nth-child(2) {
                         margin-top: 4px;
                         text-align: center;
                         @include set_font_size_family_color(60px, "Source Sans Pro Light", #FFFFFF);
                     }
-                    div:nth-child(3){
+                    div:nth-child(3) {
                         margin-top: 24px;
                         margin-bottom: 60px;
                         text-align: center;
                         @include set_font_size_family_color(40px, "Source Sans Pro", #FFFFFF);
                     }
-                    .row{
-                        .app-text{
+                    .row {
+                        .app-text {
                             margin-left: 58%;
-                            .sub-header{
+                            .sub-header {
                                 @include set_font_size_family_color(20px, "Source Sans Pro Semibold", #1B1B1B);
                             }
-                            p{
+                            p {
                                 @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
                                 line-height: inherit;
                             }
@@ -1826,10 +1998,12 @@ div.header {
                 }
 
             }
-            .bottom-container{
-                .bottom-container-flex{
-                    .bottom-text{}
-                    .bottom-image{}
+            .bottom-container {
+                .bottom-container-flex {
+                    .bottom-text {
+                    }
+                    .bottom-image {
+                    }
                 }
             }
         }
@@ -1962,7 +2136,6 @@ div.header {
     }
 }
 
-
 @media screen and (max-width: 767px) {
     .overflow-wrapper {
         .overflow-wrapper-overlay {
@@ -1981,7 +2154,7 @@ div.header {
                     div {
                         @include set_font_size_family_color(30px, "Source Sans Pro Semibold", #1B1B1B);
                     }
-                    p{
+                    p {
                         @include set_font_size_family_color(19px, "Source Sans Pro", #95989A);
                     }
                 }
@@ -1995,7 +2168,7 @@ div.header {
                                     width: 80px;
                                     margin: 0 auto;
                                 }
-                                .width-expand{
+                                .width-expand {
                                     width: 120px;
                                 }
                             }
@@ -2105,275 +2278,299 @@ div.header {
             }
         }
 
-        .contact_us_page{
+        .contact_us_page {
             margin-top: 70px;
-            .connect-heading{
-                h1{}
-                p{}
+            .connect-heading {
+                h1 {
+                }
+                p {
+                }
             }
-            .locations{
-                .row.city{
+            .locations {
+                .row.city {
                     margin-bottom: 86px;
                     background-position-x: 56%;
                 }
-                .city{
+                .city {
                     height: 205px;
-                    .l-side{
+                    .l-side {
                         margin-left: 8px;
-                        .card{
+                        .card {
                             padding: 8px 14px 8px 14px;
-                            .city-header{
+                            .city-header {
                                 @include set_font_size_family_color(16px, "Source Sans Pro Black", #323232);
                             }
-                            .city-header:after{
+                            .city-header:after {
 
                             }
-                            .sabio-address{
+                            .sabio-address {
                                 margin: 16px 0;
                                 @include set_font_size_family_color(13px, "Source Sans Pro Light", #323232);
                             }
-                            .email-us{
+                            .email-us {
                                 padding-top: 0px;
                                 @include set_font_size_family_color(13px, "Source Sans Pro", #323232);
                             }
-                            .email-us:after{
+                            .email-us:after {
 
                             }
-                            .direction-link{
+                            .direction-link {
                                 margin-top: 20px;
-                                a{
+                                a {
                                     @include set_font_size_family_color(12px, "Source Sans Pro Semibold", #323232);
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.santa-monica{
+                .city.santa-monica {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.san-francisco{
+                .city.san-francisco {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.new-york{
+                .city.new-york {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.chicago{
+                .city.chicago {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.detroit{
+                .city.detroit {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.washington-dc{
+                .city.washington-dc {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
-                .city.india{
+                .city.india {
 
-                    .l-side{
-                        .card{
-                            .city-header{
-
-                            }
-                            .city-header:after{
+                    .l-side {
+                        .card {
+                            .city-header {
 
                             }
-                            .sabio-address{
-                            }
-                            .email-us{
-                            }
-                            .email-us:after{
+                            .city-header:after {
 
                             }
-                            .direction-link{
-                                a{
+                            .sabio-address {
+                            }
+                            .email-us {
+                            }
+                            .email-us:after {
+
+                            }
+                            .direction-link {
+                                a {
                                 }
                             }
                         }
                     }
-                    .r-side{
+                    .r-side {
                     }
                 }
             }
         }
 
-        .app_science_page{
-            .hero-background{
+        .app_science_page {
+            .hero-background {
                 padding: 75px 0 14px 0;
                 background: url("../img/bg_Phone.jpg") no-repeat;
                 background-size: 160vw 110vh;
-                background-position:  inherit;
+                background-position: inherit;
                 height: calc(100vh);
-                .container{
-                    .app-science-header{
+                .container {
+                    .app-science-header {
                     }
-                    div:nth-child(2){
+                    div:nth-child(2) {
                         margin-top: 0;
                     }
-                    div:nth-child(3){
+                    div:nth-child(3) {
                         margin-top: 2px;
                         margin-bottom: 24px;
                     }
-                    .row{
+                    .row {
 
                     }
 
                 }
 
             }
-            .visible-xs{
+            .visible-xs {
                 padding: 2rem;
-                .sub-header{
+                .sub-header {
                     @include set_font_size_family_color(17px, "Source Sans Pro Semibold", #1B1B1B);
                 }
-                p{
+                p {
                     @include set_font_size_family_color(14px, "Source Sans Pro", #95989A);
                 }
             }
-            .bottom-container{
-                .bottom-container-flex{
-                    .bottom-text{}
-                    .bottom-image{}
+            .bottom-container {
+                .bottom-container-flex {
+                    .bottom-text {
+                    }
+                    .bottom-image {
+                    }
                 }
             }
+        }
+
+        .our_services {
+                .line-1 {
+                    margin-top: 80px;
+                    .services_headline{
+                        h2{
+                            @include set_font_size_family_color(50px, "Source Sans Pro Light", #2C3F46);
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+
+            //div:nth-child(1) {
+            //    @include set_font_size_family_color(50px, "Source Sans Pro Light", #2C3F46);
+            //    margin-bottom: 20px;
+            //}
+            //div:nth-child(2) {
+            //    @include set_font_size_family_color(20px, "Source Sans Pro", #2C3F46);
+            //}
         }
 
         footer {
