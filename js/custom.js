@@ -174,5 +174,41 @@ $(function () {
     owl_our_team.on('mouseleave', function () {
         owl_our_team.trigger('stop.owl.autoplay'); //this is main line to resume auto-play
         owl_our_team.trigger('play.owl.autoplay', [owlCarouselTimeout]);
+    });
+
+    var owl_our_services = $('.owl-carousel#sync1');
+    owl_our_services.owlCarousel({
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: owlCarouselTimeout,
+        autoplayHoverPause: true,
+        nav: false,
+        navText: ["<i class='fa fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"],
+        moveSlides: 1,
+        dots: true,
+        responsive: {
+            320: {
+                items: 1
+            }
+        }
+    });
+
+    var owl_our_services_rightside = $('.owl-carousel#sync2');
+    owl_our_services_rightside.owlCarousel({
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: owlCarouselTimeout,
+        autoplayHoverPause: true,
+        nav: false,
+        navText: ["<i class='fa fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"],
+        moveSlides: 1,
+        dots: true,
+        responsive: {
+            320: {
+                items: 1
+            }
+        }
     })
 });
