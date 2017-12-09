@@ -172,9 +172,24 @@ div.header {
     }
     .landing-page {
         .sabio-video {
-            img {
+            position: relative;
+            video#video{
+                object-fit: initial;
                 height: calc(100vh - 169px);
                 width: 100%;
+            }
+            canvas#canvas{
+                position: absolute;
+                height: calc(100vh - 169px);
+                width: 100%;
+                left: 0;
+            }
+            img {
+                position: absolute;
+                height: calc(100vh - 169px);
+                width: 100%;
+                top: 0;
+                opacity: 0;
             }
         }
         .clients-and-partners {

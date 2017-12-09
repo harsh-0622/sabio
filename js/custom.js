@@ -211,4 +211,10 @@ $(function () {
             }
         }
     })
+
+    $('#video').on('ended',function () {
+        $('.sabio-video img').animate({
+            'opacity' : 1
+        })
+    });
 });
