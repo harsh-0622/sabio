@@ -32,6 +32,8 @@
 
 </head>
 <body>
+
+<!--Header-->
 <div id="mySidenav" class="sidenav">
     <div class="sabio-logo">
         <img class="img-responsive" src="img/logos/Sabio_logo_yellow.svg">
@@ -60,12 +62,16 @@
     </div>
 </div>
 <div class="header">
-    <div class="menu visible-xs col-xs-3">
-        <img class="img-responsive" src="img/menu.png" width="40px" height="40px">
+    <div class="container">
+
+
+    <div class="menu visible-xs flex-1" >
+        <img src="img/menu.svg" width="30px" >
     </div>
-    <div class="sabio-logo col-sm-3 col-lg-5 col-xs-9">
+    <div class="sabio-logo col-sm-3 col-lg-5 col-xs-9 flex-1">
         <img src="img/logos/Sabio_logo_yellow.svg">
     </div>
+    <div class="visible-xs flex-1"></div>
     <div class="header-tabs col-sm-9 col-lg-7 hidden-xs">
         <ul class="make-flex">
             <li class=""><a href="index.html">OUR TECHNOLOGY</a></li>
@@ -74,7 +80,10 @@
             <li class=""><a href="contact_us.html">CONTACT US</a></li>
         </ul>
     </div>
+    </div>
 </div>
+
+<!--Body-->
 <div class="overflow-wrapper">
     <div class="overflow-wrapper-overlay d-hidden"></div>
     <div class="landing-page">
@@ -92,12 +101,12 @@
         <div class="clients-and-partners">
             <div class="heading-text">
                 <div>Our Clients And Partners</div>
-                <p>Lorem ipsunm dolor sit amet,</p>
+                <p>Lorem ipsum dolor sit amet, </p><p>consectetur adipisicing elit, sed</p>
             </div>
             <div class="carousel-sec">
                 <div class="container-fluid">
-                    <div class="clients-carousel visible-xs" data-wrap="true">
-                        <div class="carousel-sec-inner owl-carousel" id="owl-carousel-clients">
+                    <div class="clients-carousel " data-wrap="true">
+                        <div class="carousel-sec-inner owl-carousel owl-carousel-clients-xs">
                             <div class="img-container">
                                 <img class="img-responsive" src="img/logos/Chevrolet-Logo_2007.svg">
                             </div>
@@ -124,8 +133,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="partners-carousel visible-xs" data-wrap="true">
-                        <div class="carousel-sec-inner owl-carousel" id="owl-carousel-partners">
+                    <div class="partners-carousel " data-wrap="true">
+                        <div class="carousel-sec-inner owl-carousel owl-carousel-clients-xs">
                             <div class="img-container">
                                 <img class="img-responsive width-expand" src="img/logos/Mars_Inc.svg">
                             </div>
@@ -140,66 +149,6 @@
                             </div>
                             <div class="img-container">
                                 <img class="img-responsive width-expand" src="img/logos/The_Wrigley_Company_logo._2012.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/Toyota_carlogo.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/Walgreens_Logo.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class=img-responsive"" src="img/logos/Wells_Fargo_Bank.svg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clients-carousel hidden-xs" data-wrap="true">
-                        <div class="carousel-sec-inner owl-carousel" id="owl-carousel-webOne">
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/Chevrolet-Logo_2007.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/Chevron_Logo.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/E!_logo.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/Ford_Motor_Company_Logo.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/Hulu_logo.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/Hyundai_Motor_Company_logo.svg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="partners-carousel hidden-xs" data-wrap="true">
-                        <div class="carousel-sec-inner owl-carousel" id="owl-carousel-webTwo">
-                            <div class="img-container">
-                                <img class="img-responsive width-expand" src="img/logos/Mars_Inc.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/Mcdonalds-90s-logo.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/Pandora_2016_logo.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/Showtime-Logo.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive width-expand" src="img/logos/The_Wrigley_Company_logo._2012.svg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="partners-carousel hidden-xs" data-wrap="true">
-                        <div class="carousel-sec-inner owl-carousel" id="owl-carousel-webThree">
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/KIA_logo2.svg">
-                            </div>
-                            <div class="img-container">
-                                <img class="img-responsive" src="img/logos/Lyft_logo.svg">
                             </div>
                             <div class="img-container">
                                 <img class="img-responsive" src="img/logos/Toyota_carlogo.svg">
@@ -216,11 +165,12 @@
             </div>
         </div>
     </div>
+    <!--Footer-->
     <footer>
         <!--<div class="footer-overlay d-hidden"></div>-->
         <div class="yellow-top"></div>
         <div class="content">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="mid-content make-flex">
                     <div class="logo-link make-flex">
                         <div class="footer-logo hidden-xs">
@@ -229,7 +179,7 @@
                         <div class="sabio-logo visible-xs">
                             <img class="img-responsive" src="img/logos/Sabio_logo_yellow.svg">
                         </div>
-                        <div class="follow-us footer-heading">Follow Us.</div>
+                        <div class="follow-us footer-heading">Follow Us</div>
                         <div class="social-links-container">
                             <div class="col-xs-3 link">
                                 <i class="fa fa-facebook fa-2x"></i>
@@ -252,84 +202,30 @@
                             </div>
                             <div class="tag">
                                 <p>Sabio Tweets</p>
-                                <div>@SABIOmobile.49s</div>
+                                <a href="https://twitter.com/SABIOmobile">
+                                    <div>@SABIOmobile.49s</div>
+                                </a>
                             </div>
                         </div>
                         <div class="tweets">
-                            <div class="user-tweet make-flex">
-                                <div class="image-message make-flex">
-                                    <div class="twitter-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="twitter-message">
-                                        <span class="profile-name">Harsh Sharma</span><span class="profile-tweet">Lorem ipsum
-                                        dolor sit amnet, consectetur dolor sit amnet, consectetur dolor sit amnet, consectetur</span>
-                                    </div>
-                                </div>
-                                <div class="vertical-dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>
-                            </div>
-                            <div class="user-tweet make-flex">
-                                <div class="image-message make-flex">
-                                    <div class="twitter-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="twitter-message">
-                                        <span class="profile-name">Harsh Sharma</span><span class="profile-tweet">Lorem ipsum
-                                        dolor sit amnet, consectetur dolor sit amnet, consectetur dolor sit amnet, consectetur</span>
-                                    </div>
-                                </div>
-                                <div class="vertical-dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>
-                            </div>
-                            <div class="user-tweet make-flex">
-                                <div class="image-message make-flex">
-                                    <div class="twitter-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="twitter-message">
-                                        <span class="profile-name">Harsh Sharma</span><span class="profile-tweet">Lorem ipsum
-                                        dolor sit amnet, consectetur dolor sit amnet, consectetur dolor sit amnet, consectetur</span>
-                                    </div>
-                                </div>
-                                <div class="vertical-dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>
-                            </div>
-                            <div class="user-tweet make-flex">
-                                <div class="image-message make-flex">
-                                    <div class="twitter-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="twitter-message">
-                                        <span class="profile-name">Harsh Sharma</span><span class="profile-tweet">Lorem ipsum
-                                        dolor sit amnet, consectetur dolor sit amnet, consectetur dolor sit amnet, consectetur</span>
-                                    </div>
-                                </div>
-                                <div class="vertical-dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>
-                            </div>
+                            <a class="twitter-timeline" style="width:50px"
+                               data-height="100%" data-dnt="true"
+                               data-theme="dark" data-chrome="transparent nofooter noheader"
+                               data-link-color="#FAB81E" href="https://twitter.com/SABIOmobile">
+                            </a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </div>
                     <div class="connect">
-                        <div class="footer-heading">Connect with us.</div>
+                        <div class="footer-heading connect-with-us">Connect with us.</div>
                         <div class="form-container">
-                            <form>
-                                <input class="form-control" type="text" name="user_name" fieldDisplayName="User name" placeholder="Your Name">
-                                <input class="form-control" type="email" name="email_id" fieldDisplayName="email" placeholder="Email Address">
+                            <form action="#" method="POST">
+                                <input class="form-control" type="text" name="user_name" fieldDisplayName="User name"
+                                       placeholder="Your Name">
+                                <input class="form-control" type="email" name="email_id" fieldDisplayName="email"
+                                       placeholder="Email Address">
                                 <input class="form-control" type="text" name="text_message" placeholder="Message">
-                                <div class="send-button">
+                                <div class="send-button pull-right">
                                     <button>Send Email</button>
                                     <i class="fa fa-angle-right fa-2x"></i>
                                 </div>

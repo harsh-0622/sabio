@@ -25,6 +25,10 @@ li {
 .d-hidden {
   display: none; }
 
+.flex-1 {
+  flex: 1;
+  -webkit-flex: 1; }
+
 .sidenav {
   height: 100vh;
   width: 250px;
@@ -70,6 +74,8 @@ li {
         line-height: 48px; }
         .sidenav .social-links .social-links-container .link i {
           color: #FFFFFF; }
+      .sidenav .social-links .social-links-container .link:focus i, .sidenav .social-links .social-links-container .link:hover i {
+        color: #FEC430; }
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -78,26 +84,33 @@ li {
   .sidenav a {
     font-size: 18px; } }
 div.header {
-  height: 70px;
+  height: 80px;
   background-color: #1B1B1B;
   width: 100%;
   z-index: 2; }
-  div.header .sabio-logo {
-    padding: 0 30px; }
-    div.header .sabio-logo img {
-      height: 70px;
-      width: 120px; }
-  div.header .header-tabs {
-    margin-top: 22px; }
-    div.header .header-tabs ul {
-      justify-content: space-around; }
-      div.header .header-tabs ul li a {
-        font-size: 18px;
-        font-family: "Source Sans Pro Semibold";
-        color: #FFFFFF; }
+  div.header .container {
+    height: 80px;
+    align-items: center;
+    display: flex; }
+  div.header .sabio-logo img {
+    height: 70px;
+    width: 120px; }
+  div.header .header-tabs ul {
+    justify-content: space-around;
+    margin-bottom: 0 !important; }
+    div.header .header-tabs ul li a {
+      font-size: 19px;
+      font-family: "Source Sans Pro";
+      color: #FFFFFF;
+      position: relative;
+      padding: 15px;
+      text-decoration: none;
+      font-weight: 600; }
+    div.header .header-tabs ul li a:hover {
+      border-bottom: 1px solid #D7D9DB; }
   @media screen and (max-width: 768px) {
     div.header .menu img {
-      margin-top: 15px; } }
+      padding-left: 10px; } }
 
 @media screen and (max-width: 480px) {
   .header {
@@ -132,60 +145,78 @@ div.header {
   .overflow-wrapper .landing-page .clients-and-partners {
     margin-bottom: 30px; }
     .overflow-wrapper .landing-page .clients-and-partners .heading-text {
-      margin-top: 15px;
-      margin-bottom: 40px;
+      padding: auto 10px;
+      margin: 20px auto 50px auto;
       text-align: center; }
       .overflow-wrapper .landing-page .clients-and-partners .heading-text div {
         font-size: 53px;
-        font-family: "Source Sans Pro Semibold";
-        color: #323232; }
+        font-family: "Source Sans Pro";
+        color: #1B1B1B;
+        font-weight: 600; }
       .overflow-wrapper .landing-page .clients-and-partners .heading-text p {
         font-size: 26px;
-        font-family: "Source Sans Pro Semibold";
-        color: #95989A; }
+        font-family: "Source Sans Pro";
+        color: #95989A;
+        font-weight: 500; }
     .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel {
       margin-bottom: 40px; }
       .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel .carousel-sec-inner .img-container img, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container img {
         width: 112px;
         height: 92px;
         margin: 0 auto; }
+  .overflow-wrapper .our_team_page .owl-parent {
+    position: relative; }
+    .overflow-wrapper .our_team_page .owl-parent .owl-page-count {
+      position: absolute;
+      bottom: -2px;
+      left: 40px; }
+      .overflow-wrapper .our_team_page .owl-parent .owl-page-count .current-page-count {
+        font-size: 19px;
+        font-family: "Source Sans Pro";
+        color: #323232;
+        font-weight: 600; }
+      .overflow-wrapper .our_team_page .owl-parent .owl-page-count .total-page-count {
+        font-size: 19px;
+        font-family: "Source Sans Pro";
+        color: #95989A;
+        font-weight: 600; }
   .overflow-wrapper .our_team_page .owl-carousel .carousel-img-container img {
     height: 80vh;
     width: 100vw; }
   .overflow-wrapper .our_team_page .owl-theme .owl-dots {
-    position: absolute;
-    bottom: -35px;
-    left: 50%;
-    transform: translate(-50%, 0%); }
+    margin-top: 40px; }
     .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot span {
-      width: 108px;
+      width: 75px;
       margin: 0;
-      height: 3px;
-      background: #D6D6D6;
+      height: 2px;
+      background: #D7D9DB;
       display: block;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease;
       border-radius: 0; }
     .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot.active span, .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot:hover span {
-      background: #C3C3C3; }
+      background: #8C8C8C; }
   .overflow-wrapper .our_team_page .owl-theme .owl-nav {
     position: absolute;
-    bottom: -47px;
-    right: 30px;
-    transform: translate(-50%, 0%); }
+    right: 40px;
+    margin-top: 30px; }
+    .overflow-wrapper .our_team_page .owl-theme .owl-nav .owl-prev, .overflow-wrapper .our_team_page .owl-theme .owl-nav .owl-next {
+      background-color: transparent !important; }
   .overflow-wrapper .our_team_page .our-team-text {
     margin: 0 auto;
     padding: 48px 0; }
     .overflow-wrapper .our_team_page .our-team-text h2 {
       text-align: center;
       font-size: 53px;
-      font-family: "Source Sans Pro Semibold";
-      color: #1B1B1B; }
+      font-family: "Source Sans Pro";
+      color: #1B1B1B;
+      font-weight: 600; }
     .overflow-wrapper .our_team_page .our-team-text p {
       margin-top: 36px;
       font-size: 18px;
       font-family: "Source Sans Pro";
-      color: #95989A; }
+      color: #95989A;
+      font-weight: 500; }
   .overflow-wrapper .our_team_page .team-profiles .row {
     background-color: #F4F5F3;
     width: fit-content;
@@ -260,24 +291,32 @@ div.header {
     margin-bottom: 40px; }
     .overflow-wrapper .contact_us_page .connect-heading h1 {
       font-size: 53px;
-      font-family: "Source Sans Pro Semibold";
-      color: #1B1B1B; }
+      font-family: "Source Sans Pro";
+      color: #1B1B1B;
+      font-weight: 600; }
     .overflow-wrapper .contact_us_page .connect-heading p {
       font-size: 26px;
       font-family: "Source Sans Pro";
-      color: #95989A; }
+      color: #95989A;
+      font-weight: 500; }
   .overflow-wrapper .contact_us_page .locations .row.city {
-    margin: 0; }
+    margin: 0;
+    position: relative; }
   .overflow-wrapper .contact_us_page .locations .city {
     background-repeat: no-repeat;
     background-size: cover;
     height: 453px;
     width: 100%; }
+    .overflow-wrapper .contact_us_page .locations .city .blk-sheet {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.1); }
     .overflow-wrapper .contact_us_page .locations .city .l-side {
       margin-top: 50px;
       margin-left: 50px; }
       .overflow-wrapper .contact_us_page .locations .city .l-side .card {
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        box-shadow: 6px 8px 16px 1px rgba(0, 0, 0, 0.2);
         background-color: #FFFFFF;
         padding: 12px 20px 12px 20px; }
         .overflow-wrapper .contact_us_page .locations .city .l-side .card .city-header {
@@ -294,14 +333,14 @@ div.header {
         .overflow-wrapper .contact_us_page .locations .city .l-side .card .sabio-address {
           margin: 20px 0;
           font-size: 18px;
-          font-family: "Source Sans Pro Light";
-          color: #323232; }
+          font-family: "Source Sans Pro";
+          color: #323232;
+          font-weight: 300; }
         .overflow-wrapper .contact_us_page .locations .city .l-side .card .email-us {
           font-size: 18px;
           font-family: "Source Sans Pro";
           color: #323232;
-          font-size: 16px;
-          font-weight: 600;
+          font-weight: 500;
           line-height: 6px;
           padding-top: 15px; }
         .overflow-wrapper .contact_us_page .locations .city .l-side .card .email-us:after {
@@ -312,13 +351,40 @@ div.header {
           border-bottom: 1px solid #FEC430; }
         .overflow-wrapper .contact_us_page .locations .city .l-side .card .direction-link {
           margin-top: 28px;
-          margin-bottom: 15px; }
+          margin-bottom: 15px;
+          cursor: pointer; }
           .overflow-wrapper .contact_us_page .locations .city .l-side .card .direction-link a {
             padding: 12px 14px 12px 14px;
-            font-size: 18px;
-            font-family: "Source Sans Pro Semibold";
+            font-size: 16px;
+            font-family: "Source Sans Pro";
             color: #323232;
-            background-color: #FEC430; }
+            font-weight: 600;
+            background-color: #FEC430;
+            -webkit-transition: background-color 0.3s;
+            -moz-transition: background-color 0.3s;
+            -ms-transition: background-color 0.3s;
+            -o-transition: background-color 0.3s;
+            transition: background-color 0.3s;
+            text-decoration: none; }
+          .overflow-wrapper .contact_us_page .locations .city .l-side .card .direction-link a:hover {
+            background-color: #e4a401; }
+    .overflow-wrapper .contact_us_page .locations .city .city-name {
+      position: absolute;
+      bottom: 20px;
+      right: 35px;
+      color: #fff;
+      width: auto;
+      font-family: "Source Sans Pro Light";
+      font-size: 110px;
+      font-weight: 300; }
+    .overflow-wrapper .contact_us_page .locations .city .time {
+      position: absolute;
+      right: 35px;
+      top: 20px;
+      font-family: "Source Sans Pro";
+      color: #000;
+      font-size: 37px;
+      font-weight: 400; }
   .overflow-wrapper .contact_us_page .locations .city.santa-monica {
     background-image: url("../img/locations/bg_Santa_Monica.jpg"); }
     .overflow-wrapper .contact_us_page .locations .city.santa-monica .l-side .card .city-header:after {
@@ -349,15 +415,16 @@ div.header {
       width: 23%; }
   .overflow-wrapper .app_science_page .hero-background {
     background: url("../img/AppScience_bg.jpg") no-repeat;
-    background-size: 100vw 125vh;
-    height: calc(125vh); }
+    background-size: 100vw 100%;
+    /*height: calc(125vh);*/ }
     .overflow-wrapper .app_science_page .hero-background .container .app-science-header {
       margin-top: 12px;
       background-color: transparent;
       text-align: center;
       font-size: 72px;
-      font-family: "Source Sans Pro Semibold";
-      color: #FFFFFF; }
+      font-family: "Source Sans Pro";
+      color: #FFFFFF;
+      font-weight: 600; }
     .overflow-wrapper .app_science_page .hero-background .container div:nth-child(2) {
       line-height: 40px;
       margin-top: 4px;
@@ -372,22 +439,25 @@ div.header {
       font-family: "Source Sans Pro";
       color: #FFFFFF; }
     .overflow-wrapper .app_science_page .hero-background .container .row .app-text {
-      margin-left: 69%; }
+      /*                        margin-left: 69%;*/ }
       .overflow-wrapper .app_science_page .hero-background .container .row .app-text .sub-header {
         font-size: 20px;
-        font-family: "Source Sans Pro Semibold";
-        color: #1B1B1B; }
+        font-family: "Source Sans Pro";
+        color: #1B1B1B;
+        font-weight: 700; }
       .overflow-wrapper .app_science_page .hero-background .container .row .app-text p {
         font-size: 18px;
         font-family: "Source Sans Pro";
         color: #95989A;
-        line-height: 26px; }
+        line-height: 26px;
+        font-weight: 500; }
   .overflow-wrapper .app_science_page .bottom-container {
     margin-top: -90px; }
     .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-text .sub-header {
       font-size: 20px;
-      font-family: "Source Sans Pro Semibold";
-      color: #1B1B1B; }
+      font-family: "Source Sans Pro";
+      color: #1B1B1B;
+      font-weight: 600; }
     .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-text p {
       font-size: 18px;
       font-family: "Source Sans Pro";
@@ -618,7 +688,7 @@ div.header {
         .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item:nth-of-type(3) {
           background-position: -160px -16px; }
   .overflow-wrapper footer .yellow-top {
-    height: 7px;
+    height: 12px;
     width: 100%;
     background-color: #FEC430; }
   .overflow-wrapper footer .content {
@@ -627,10 +697,12 @@ div.header {
       color: white; }
       .overflow-wrapper footer .content .logo-link .footer-heading {
         font-size: 18px;
-        font-family: "Source Sans Pro Semibold";
+        font-family: "Source Sans Pro";
         color: #FFFFFF;
         margin-bottom: 20px;
-        margin-left: 15px; }
+        margin-left: 15px;
+        font-weight: 600;
+        text-transform: uppercase; }
       .overflow-wrapper footer .content .logo-link .sabio-logo {
         margin-top: 30px; }
         .overflow-wrapper footer .content .logo-link .sabio-logo img {
@@ -645,11 +717,19 @@ div.header {
           border-radius: 50%;
           text-align: center;
           margin: 0 6px;
-          line-height: 48px; }
+          line-height: 48px;
+          cursor: pointer; }
           .overflow-wrapper footer .content .logo-link .social-links-container .link i {
-            color: #FFFFFF; }
+            color: #FFFFFF;
+            -webkit-transition: color 0.3s;
+            -moz-transition: color 0.3s;
+            -ms-transition: color 0.3s;
+            -o-transition: color 0.3s;
+            transition: color 0.3s; }
+        .overflow-wrapper footer .content .logo-link .social-links-container .link:hover i {
+          color: #FEC430; }
     .overflow-wrapper footer .content .mid-content {
-      justify-content: space-around;
+      justify-content: space-between;
       padding-top: 30px;
       padding-bottom: 30px; }
       .overflow-wrapper footer .content .mid-content .logo-link {
@@ -662,7 +742,8 @@ div.header {
       .overflow-wrapper footer .content .mid-content .sabio-tweets {
         overflow: hidden; }
         .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header {
-          display: flex; }
+          display: flex;
+          margin-bottom: 10px; }
           .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header div.tweet-bird {
             margin-right: 20px; }
             .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header div.tweet-bird i.fa-twitter {
@@ -672,17 +753,20 @@ div.header {
             color: #FFFFFF; }
             .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header .tag p {
               font-size: 22px;
-              font-family: "Source Sans Pro Semibold";
+              font-family: "Source Sans Pro";
               color: #FFFFFF;
-              margin-bottom: 4px; }
+              margin-bottom: 4px;
+              font-weight: 600; }
             .overflow-wrapper footer .content .mid-content .sabio-tweets .tweet-header .tag div {
               font-size: 14px;
               font-family: "Source Sans Pro";
               color: #FFFFFF; }
         .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets {
           overflow: auto;
-          height: 200px;
-          margin-top: 20px; }
+          height: 250px;
+          /*margin-top: 20px;*/ }
+          .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .timeline-header {
+            display: none; }
           .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet {
             margin-bottom: 20px; }
             .overflow-wrapper footer .content .mid-content .sabio-tweets .tweets .user-tweet .image-message {
@@ -710,10 +794,11 @@ div.header {
     .overflow-wrapper footer .content .connect {
       color: #FFFFFF; }
       .overflow-wrapper footer .content .connect .footer-heading {
-        font-size: 18px;
-        font-family: "Source Sans Pro Semibold";
+        font-size: 30px;
+        font-family: "Source Sans Pro";
         color: #FFFFFF;
-        margin-bottom: 20px; }
+        margin-bottom: 20px !important;
+        font-weight: 600; }
       .overflow-wrapper footer .content .connect .form-container form {
         padding: 0px; }
         .overflow-wrapper footer .content .connect .form-container form input.form-control {
@@ -734,29 +819,41 @@ div.header {
             padding: 10px;
             border: none;
             text-align: left;
-            width: 140px;
-            font-size: 14px;
-            font-family: "Source Sans Pro Semibold";
-            color: black; }
+            width: 150px;
+            font-size: 17px;
+            font-family: "Source Sans Pro";
+            color: black;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            border-radius: 2px;
+            -webkit-transition: background-color 0.3s;
+            -moz-transition: background-color 0.3s;
+            -ms-transition: background-color 0.3s;
+            -o-transition: background-color 0.3s;
+            transition: background-color 0.3s; }
+          .overflow-wrapper footer .content .connect .form-container form div button:hover {
+            background-color: #e4a401; }
           .overflow-wrapper footer .content .connect .form-container form div i {
             position: absolute;
-            left: 108px;
-            top: 7px;
+            right: 10px;
+            top: 8px;
             color: #1B1B1B;
-            font-size: 24px; }
+            font-size: 26px; }
     .overflow-wrapper footer .content .bottom-tabs {
       border-top: 1px solid #D7D9DB; }
       .overflow-wrapper footer .content .bottom-tabs .slide-tabs {
         padding-top: 20px;
         padding-bottom: 30px;
         flex-wrap: wrap;
-        justify-content: left;
-        margin-left: 40px; }
+        justify-content: left; }
         .overflow-wrapper footer .content .bottom-tabs .slide-tabs a {
-          margin-right: 25px;
+          margin-right: 30px;
           font-size: 14px;
-          font-family: "Source Sans Pro Semibold";
-          color: #B4B4B4; }
+          font-family: "Source Sans Pro";
+          color: #B4B4B4;
+          font-weight: 600; }
     @media screen and (max-width: 480px) {
       .overflow-wrapper footer .content .bottom-tabs {
         border: none; }
@@ -773,7 +870,9 @@ div.header {
             height: 27%;
             width: 1px;
             background-color: #D7D9DB;
-            margin-left: 10px; } }
+            margin-left: 10px; }
+          .overflow-wrapper footer .content .bottom-tabs .slide-tabs a:last-child:after {
+            display: none; } }
   @media screen and (max-width: 480px) {
     .overflow-wrapper footer .content .mid-content {
       flex-direction: column; }
@@ -821,8 +920,8 @@ div.header {
         left: calc(50% - 1px); }
   .overflow-wrapper .app_science_page .hero-background {
     padding: 14px 36px 14px 36px;
-    background-size: 100vw 160vh;
-    height: calc(150vh); }
+    background-size: 100vw 100%;
+    /*height: calc(150vh);*/ }
     .overflow-wrapper .app_science_page .hero-background .container .app-science-header {
       margin-top: 36px; }
     .overflow-wrapper .app_science_page .hero-background .container div:nth-child(2) {
@@ -835,7 +934,7 @@ div.header {
       .overflow-wrapper .app_science_page .hero-background .container .row .app-text p {
         line-height: 26px; }
   .overflow-wrapper .app_science_page .bottom-container {
-    margin-top: 25px; }
+    margin-top: -65px; }
     .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-image img {
       margin-left: -1.7%; }
   .overflow-wrapper .our_services .line-1 .services_headline h2 {
@@ -871,13 +970,12 @@ div.header {
     -ms-flex-align: center;
     align-items: center;
     height: 420px; } }
+@media screen and (min-width: 768px) {
+  .overflow-wrapper .contact_us_page .locations .city .l-side .card {
+    min-height: 275px; } }
 @media screen and (min-width: 768px) and (max-width: 990px) {
-  .overflow-wrapper .our_team_page .owl-theme .owl-dots {
-    bottom: -32px; }
-    .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot span {
-      width: 66px; }
-  .overflow-wrapper .our_team_page .owl-theme .owl-nav {
-    bottom: -43px; }
+  .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot span {
+    width: 66px; }
   .overflow-wrapper .our_team_page .team-profiles .row {
     width: 100%; }
     .overflow-wrapper .our_team_page .team-profiles .row .profile {
@@ -958,84 +1056,158 @@ div.header {
   .overflow-wrapper footer .content .connect .form-container form div i {
     font-size: 22px;
     top: 9px; } }
+@media screen and (max-width: 993px) {
+  .our_team_page .owl-parent {
+    position: relative;
+    margin-bottom: 30px; }
+    .our_team_page .owl-parent .owl-page-count {
+      bottom: -45px !important;
+      left: 60px !important; }
+  .our_team_page .owl-theme .owl-dots .owl-dot span {
+    width: 33px; }
+  .our_team_page .owl-theme .owl-nav {
+    right: 50px !important;
+    bottom: -50px !important; }
+  .our_team_page .our-team-text h2 {
+    font-size: 30px;
+    font-family: "Source Sans Pro Semibold";
+    color: #1B1B1B; }
+  .our_team_page .our-team-text p {
+    margin-top: 16px;
+    padding: 0 24px;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    color: #959894; }
+  .our_team_page .team-profiles .row .profile {
+    height: auto; }
+    .our_team_page .team-profiles .row .profile .pos_r .profile-img {
+      width: 50%; }
+      .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-over {
+        width: 100%;
+        height: 175px; }
+      .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
+        width: 100%;
+        height: 175px; }
+    .our_team_page .team-profiles .row .profile .pos_r .profile-description {
+      width: 50%;
+      height: 175px; }
+      .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-name {
+        font-size: 14px;
+        font-family: "Source Sans Pro Black";
+        color: #323232; }
+      .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-appointment {
+        font-size: 11px;
+        font-family: "Source Sans Pro Light";
+        color: #323232; }
+      .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-summary {
+        display: none; }
+    .our_team_page .team-profiles .row .profile .profile-caret-left, .our_team_page .team-profiles .row .profile .profile-caret-right {
+      top: 70px; }
+      .our_team_page .team-profiles .row .profile .profile-caret-left i, .our_team_page .team-profiles .row .profile .profile-caret-right i {
+        font-size: 40px; }
+    .our_team_page .team-profiles .row .profile .profile-caret-left {
+      left: calc(50% - 13px); }
+    .our_team_page .team-profiles .row .profile .profile-caret-right {
+      left: calc(50% - 1px); }
+  .our_team_page .team-profiles .toggle-img-description-mob .pos_r {
+    flex-direction: row-reverse; } }
+@media screen and (max-width: 320px) {
+  .app_science_page .hero-background .container div:nth-child(2) {
+    margin-top: 0;
+    font-size: 17px !important; }
+  .app_science_page .hero-background .container div:nth-child(3) {
+    font-size: 15px !important; } }
 @media screen and (max-width: 767px) {
   .overflow-wrapper .landing-page {
-    margin-top: 70px; }
+    margin-top: 80px; }
     .overflow-wrapper .landing-page .clients-and-partners .heading-text div {
       font-size: 30px;
-      font-family: "Source Sans Pro Semibold";
-      color: #1B1B1B; }
+      font-family: "Source Sans Pro";
+      color: #1B1B1B;
+      font-weight: 600; }
     .overflow-wrapper .landing-page .clients-and-partners .heading-text p {
       font-size: 19px;
       font-family: "Source Sans Pro";
-      color: #95989A; }
+      color: #95989A;
+      font-weight: 500; }
     .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel .carousel-sec-inner .img-container img, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container img {
       height: 80px;
       width: 80px;
       margin: 0 auto; }
     .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .clients-carousel .carousel-sec-inner .img-container .width-expand, .overflow-wrapper .landing-page .clients-and-partners .carousel-sec .partners-carousel .carousel-sec-inner .img-container .width-expand {
       width: 120px; }
-  .overflow-wrapper .our_team_page .owl-theme .owl-dots {
-    bottom: -33px; }
-    .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot span {
-      width: 33px; }
-  .overflow-wrapper .our_team_page .owl-theme .owl-nav {
-    bottom: -44px;
-    right: -22px; }
-  .overflow-wrapper .our_team_page .our-team-text h2 {
-    font-size: 30px;
-    font-family: "Source Sans Pro Semibold";
-    color: #1B1B1B; }
-  .overflow-wrapper .our_team_page .our-team-text p {
-    margin-top: 16px;
-    padding: 0 24px;
-    font-size: 14px;
-    font-family: "Source Sans Pro";
-    color: #959894; }
-  .overflow-wrapper .our_team_page .team-profiles .row .profile {
-    height: auto; }
-    .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img {
-      width: 50%; }
-      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-over {
-        width: 100%;
+  .overflow-wrapper .our_team_page {
+    margin-top: 80px; }
+    .overflow-wrapper .our_team_page .owl-parent {
+      position: relative;
+      margin-bottom: 30px; }
+      .overflow-wrapper .our_team_page .owl-parent .owl-page-count {
+        bottom: -45px;
+        left: 60px; }
+    .overflow-wrapper .our_team_page .owl-carousel .carousel-img-container img {
+      height: 275px !important; }
+    .overflow-wrapper .our_team_page .owl-theme .owl-dots {
+      bottom: -33px; }
+      .overflow-wrapper .our_team_page .owl-theme .owl-dots .owl-dot span {
+        width: 33px; }
+    .overflow-wrapper .our_team_page .owl-theme .owl-nav {
+      right: 50px;
+      bottom: -50px; }
+    .overflow-wrapper .our_team_page .our-team-text h2 {
+      font-size: 30px;
+      font-family: "Source Sans Pro Semibold";
+      color: #1B1B1B; }
+    .overflow-wrapper .our_team_page .our-team-text p {
+      margin-top: 16px;
+      padding: 0 24px;
+      font-size: 14px;
+      font-family: "Source Sans Pro";
+      color: #959894; }
+    .overflow-wrapper .our_team_page .team-profiles .row .profile {
+      height: auto; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img {
+        width: 50%; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-over {
+          width: 100%;
+          height: 175px; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
+          width: 100%;
+          height: 175px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description {
+        width: 50%;
         height: 175px; }
-      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-img .img-up-over .img-up {
-        width: 100%;
-        height: 175px; }
-    .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description {
-      width: 50%;
-      height: 175px; }
-      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-name {
-        font-size: 14px;
-        font-family: "Source Sans Pro Black";
-        color: #323232; }
-      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-appointment {
-        font-size: 11px;
-        font-family: "Source Sans Pro Light";
-        color: #323232; }
-      .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-summary {
-        display: none; }
-    .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
-      top: 70px; }
-      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left i, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right i {
-        font-size: 40px; }
-    .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left {
-      left: calc(50% - 13px); }
-    .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
-      left: calc(50% - 1px); }
-  .overflow-wrapper .our_team_page .team-profiles .toggle-img-description-mob .pos_r {
-    flex-direction: row-reverse; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-name {
+          font-size: 14px;
+          font-family: "Source Sans Pro Black";
+          color: #323232; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-appointment {
+          font-size: 11px;
+          font-family: "Source Sans Pro Light";
+          color: #323232; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .pos_r .profile-description .profile-summary {
+          display: none; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
+        top: 70px; }
+        .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left i, .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right i {
+          font-size: 40px; }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-left {
+        left: calc(50% - 13px); }
+      .overflow-wrapper .our_team_page .team-profiles .row .profile .profile-caret-right {
+        left: calc(50% - 1px); }
+    .overflow-wrapper .our_team_page .team-profiles .toggle-img-description-mob .pos_r {
+      flex-direction: row-reverse; }
   .overflow-wrapper .contact_us_page {
-    margin-top: 70px; }
+    margin-top: 80px; }
     .overflow-wrapper .contact_us_page .locations .row.city {
-      margin-bottom: 86px;
+      margin-bottom: 100px;
       background-position-x: 56%; }
     .overflow-wrapper .contact_us_page .locations .city {
       height: 205px; }
       .overflow-wrapper .contact_us_page .locations .city .l-side {
         margin-left: 8px; }
         .overflow-wrapper .contact_us_page .locations .city .l-side .card {
-          padding: 8px 14px 8px 14px; }
+          padding: 8px 14px 8px 14px;
+          box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.15); }
           .overflow-wrapper .contact_us_page .locations .city .l-side .card .city-header {
             font-size: 16px;
             font-family: "Source Sans Pro Black";
@@ -1056,34 +1228,75 @@ div.header {
               font-size: 12px;
               font-family: "Source Sans Pro Semibold";
               color: #323232; }
-  .overflow-wrapper .app_science_page .hero-background {
-    padding: 75px 0 14px 0;
-    background: url("../img/bg_Phone.jpg") no-repeat;
-    background-size: 160vw 110vh;
-    background-position: inherit;
-    height: calc(100vh); }
-    .overflow-wrapper .app_science_page .hero-background .container div:nth-child(2) {
-      margin-top: 0; }
-    .overflow-wrapper .app_science_page .hero-background .container div:nth-child(3) {
-      margin-top: 2px;
-      margin-bottom: 24px; }
-  .overflow-wrapper .app_science_page .visible-xs {
-    padding: 2rem; }
+  .overflow-wrapper .app_science_page {
+    margin-top: 80px; }
+    .overflow-wrapper .app_science_page .hero-background {
+      background: url("../img/bg_Phone.jpg") no-repeat;
+      background-size: 160vw 110vh;
+      background-position: inherit;
+      height: calc(100vh);
+      margin-bottom: 25px; }
+      .overflow-wrapper .app_science_page .hero-background .container .app-science-header {
+        background-color: transparent;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Source Sans Pro";
+        color: #FFFFFF;
+        font-weight: 600; }
+      .overflow-wrapper .app_science_page .hero-background .container div:nth-child(2) {
+        margin-top: 0;
+        font-size: 20px; }
+      .overflow-wrapper .app_science_page .hero-background .container div:nth-child(3) {
+        margin-top: 2px;
+        margin-bottom: 24px;
+        font-size: 16px;
+        font-weight: 500; }
+      .overflow-wrapper .app_science_page .hero-background .container .row {
+        margin-top: calc(100vh - 110px); }
+        .overflow-wrapper .app_science_page .hero-background .container .row .app-text .sub-header {
+          font-size: 17px;
+          font-family: "Source Sans Pro";
+          color: #1B1B1B;
+          font-weight: 600; }
+        .overflow-wrapper .app_science_page .hero-background .container .row .app-text p {
+          font-size: 14px;
+          font-family: "Source Sans Pro";
+          color: #95989A;
+          font-weight: 500; }
+    .overflow-wrapper .app_science_page .apps-mobiles {
+      margin-top: -125px; }
+      .overflow-wrapper .app_science_page .apps-mobiles .background-col {
+        background: url(../img/apps_mobile.png);
+        background-size: 100vw 100vh;
+        height: 100vh; }
     .overflow-wrapper .app_science_page .visible-xs .sub-header {
       font-size: 17px;
-      font-family: "Source Sans Pro Semibold";
-      color: #1B1B1B; }
+      font-family: "Source Sans Pro";
+      color: #1B1B1B;
+      font-weight: 600; }
     .overflow-wrapper .app_science_page .visible-xs p {
       font-size: 14px;
       font-family: "Source Sans Pro";
-      color: #95989A; }
-  .overflow-wrapper .our_services .line-1 {
+      color: #95989A;
+      font-weight: 500; }
+    .overflow-wrapper .app_science_page .bottom-container {
+      margin-top: 0; }
+      .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex {
+        margin-top: -100px;
+        padding-bottom: 20px; }
+        .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-text .sub-header {
+          font-size: 17px; }
+        .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-text p {
+          font-size: 14px; }
+  .overflow-wrapper .our_services {
     margin-top: 80px; }
-    .overflow-wrapper .our_services .line-1 .services_headline h2 {
-      font-size: 50px;
-      font-family: "Source Sans Pro Light";
-      color: #2C3F46;
-      margin-bottom: 20px; }
+    .overflow-wrapper .our_services .line-1 {
+      margin-top: 80px; }
+      .overflow-wrapper .our_services .line-1 .services_headline h2 {
+        font-size: 50px;
+        font-family: "Source Sans Pro Light";
+        color: #2C3F46;
+        margin-bottom: 20px; }
   .overflow-wrapper footer .content .logo-link .footer-heading {
     text-align: center;
     font-size: 30px;
@@ -1104,7 +1317,9 @@ div.header {
     padding: 15px; }
     .overflow-wrapper footer .content .connect .form-container form input.form-control {
       width: 100%; }
-  .overflow-wrapper footer .content .sabio-tweets::after, .overflow-wrapper footer .content .connect::after {
+    .overflow-wrapper footer .content .connect .form-container form div.send-button {
+      float: left !important; }
+  .overflow-wrapper footer .content .sabio-tweets::after {
     content: '';
     height: 1px;
     width: 100%;
@@ -1112,6 +1327,15 @@ div.header {
     opacity: .7;
     display: block;
     margin-top: 30px;
+    margin-bottom: 30px; }
+  .overflow-wrapper footer .content .connect::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #D7D9DB;
+    opacity: .7;
+    display: block;
+    margin-top: 90px;
     margin-bottom: 30px; }
   .overflow-wrapper footer .content .bottom-tabs .slide-tabs {
     justify-content: center; }

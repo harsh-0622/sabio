@@ -5,6 +5,7 @@ $silver: #D7D9DB;
 $silverGrey: #95989A;
 $grey: #8C8C8C;
 $yellow: #FEC430;
+$darkYellow: #e4a401;
 $lightBlack: #323232;
 $darkBlack: #1B1B1B;
 $sps: "Source Sans Pro Semibold";
@@ -53,6 +54,11 @@ li {
 
 .d-hidden {
     display: none;
+}
+
+.flex-1 {
+    flex: 1;
+    -webkit-flex: 1;
 }
 
 .sidenav {
@@ -106,6 +112,11 @@ li {
                     color: $white;
                 }
             }
+            .link:focus, .link:hover{
+                i{
+                    color: $yellow;
+                }
+            }
         }
     }
 
@@ -121,24 +132,35 @@ li {
 }
 
 div.header {
-    height: 70px;
+    height: 80px;
     background-color: $darkBlack;
     width: 100%;
     z-index: 2;
+    .container {
+        height: 80px;
+        align-items: center;
+        display: flex;
+    }
     .sabio-logo {
-        padding: 0 30px;
         img {
             height: 70px;
             width: 120px;
         }
     }
     .header-tabs {
-        margin-top: 22px;
         ul {
             justify-content: space-around;
+            margin-bottom: 0 !important;
             li {
                 a {
-                    @include set_font_size_family_color(18px, "Source Sans Pro Semibold", #FFFFFF);
+                    @include set_font_size_family_color(19px, "Source Sans Pro", #FFFFFF);
+                    position: relative;
+                    padding: 15px;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+                a:hover {
+                    border-bottom: 1px solid $silver;
                 }
             }
         }
@@ -146,7 +168,7 @@ div.header {
     @media screen and (max-width: 768px) {
         .menu {
             img {
-                margin-top: 15px;
+                padding-left: 10px;
             }
         }
 
@@ -173,12 +195,12 @@ div.header {
     .landing-page {
         .sabio-video {
             position: relative;
-            video#video{
+            video#video {
                 object-fit: initial;
                 height: calc(100vh - 169px);
                 width: 100%;
             }
-            canvas#canvas{
+            canvas#canvas {
                 position: absolute;
                 height: calc(100vh - 169px);
                 width: 100%;
@@ -195,14 +217,16 @@ div.header {
         .clients-and-partners {
             margin-bottom: 30px;
             .heading-text {
-                margin-top: 15px;
-                margin-bottom: 40px;
+                padding: auto 10px;
+                margin: 20px auto 50px auto;
                 text-align: center;
                 div {
-                    @include set_font_size_family_color(53px, "Source Sans Pro Semibold", #323232);
+                    @include set_font_size_family_color(53px, "Source Sans Pro", $darkBlack);
+                    font-weight: 600;
                 }
                 p {
-                    @include set_font_size_family_color(26px, "Source Sans Pro Semibold", #95989A);
+                    @include set_font_size_family_color(26px, "Source Sans Pro", $silverGrey);
+                    font-weight: 500;
                 }
             }
             .carousel-sec {
@@ -224,6 +248,22 @@ div.header {
     }
 
     .our_team_page {
+        .owl-parent {
+            position: relative;
+            .owl-page-count {
+                position: absolute;
+                bottom: -2px;
+                left: 40px;
+                .current-page-count {
+                    @include set_font_size_family_color(19px, "Source Sans Pro", $lightBlack);
+                    font-weight: 600;
+                }
+                .total-page-count {
+                    @include set_font_size_family_color(19px, "Source Sans Pro", $silverGrey);
+                    font-weight: 600;
+                }
+            }
+        }
         .owl-carousel {
             .carousel-img-container {
                 img {
@@ -234,16 +274,13 @@ div.header {
         }
         .owl-theme {
             .owl-dots {
-                position: absolute;
-                bottom: -35px;
-                left: 50%;
-                transform: translate(-50%, 0%);
+                margin-top: 40px;
                 .owl-dot {
                     span {
-                        width: 108px;
+                        width: 75px;
                         margin: 0;
-                        height: 3px;
-                        background: #D6D6D6;
+                        height: 2px;
+                        background: $silver;
                         display: block;
                         -webkit-backface-visibility: visible;
                         transition: opacity 200ms ease;
@@ -252,15 +289,17 @@ div.header {
                 }
                 .owl-dot.active, .owl-dot:hover {
                     span {
-                        background: #C3C3C3;
+                        background: $grey;
                     }
                 }
             }
             .owl-nav {
                 position: absolute;
-                bottom: -47px;
-                right: 30px;
-                transform: translate(-50%, 0%);
+                right: 40px;
+                margin-top: 30px;
+                .owl-prev, .owl-next {
+                    background-color: transparent !important;
+                }
             }
         }
 
@@ -269,11 +308,13 @@ div.header {
             padding: 48px 0;
             h2 {
                 text-align: center;
-                @include set_font_size_family_color(53px, "Source Sans Pro Semibold", #1B1B1B);
+                @include set_font_size_family_color(53px, "Source Sans Pro", $darkBlack);
+                font-weight: 600;
             }
             p {
                 margin-top: 36px;
-                @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
+                @include set_font_size_family_color(18px, "Source Sans Pro", $silverGrey);
+                font-weight: 500;
             }
         }
         .team-profiles {
@@ -400,34 +441,43 @@ div.header {
             margin-bottom: 40px;
             h1 {
                 font-size: 53px;
-                font-family: "Source Sans Pro Semibold";
-                color: #1B1B1B;
+                font-family: "Source Sans Pro";
+                color: $darkBlack;
+                font-weight: 600;
             }
             p {
                 font-size: 26px;
                 font-family: "Source Sans Pro";
-                color: #95989A;
+                color: $silverGrey;
+                font-weight: 500;
             }
         }
         .locations {
             .row.city {
                 margin: 0;
+                position: relative;
             }
             .city {
                 background-repeat: no-repeat;
                 background-size: cover;
                 height: 453px;
                 width: 100%;
+                .blk-sheet {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.10);
+                }
                 .l-side {
                     margin-top: 50px;
                     margin-left: 50px;
                     .card {
-                        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                        box-shadow: 6px 8px 16px 1px rgba(0, 0, 0, 0.20);
                         background-color: $white;
                         padding: 12px 20px 12px 20px;
                         .city-header {
                             margin-top: 15px;
-                            @include set_font_size_family_color(22px, "Source Sans Pro Black", #323232);
+                            @include set_font_size_family_color(22px, "Source Sans Pro Black", $lightBlack);
                             line-height: 6px;
 
                         }
@@ -439,12 +489,12 @@ div.header {
                         }
                         .sabio-address {
                             margin: 20px 0;
-                            @include set_font_size_family_color(18px, "Source Sans Pro Light", #323232);
+                            @include set_font_size_family_color(18px, "Source Sans Pro", $lightBlack);
+                            font-weight: 300;
                         }
                         .email-us {
-                            @include set_font_size_family_color(18px, "Source Sans Pro", #323232);
-                            font-size: 16px;
-                            font-weight: 600;
+                            @include set_font_size_family_color(18px, "Source Sans Pro", $lightBlack);
+                            font-weight: 500;
                             line-height: 6px;
                             padding-top: 15px;
                         }
@@ -458,15 +508,43 @@ div.header {
                         .direction-link {
                             margin-top: 28px;
                             margin-bottom: 15px;
+                            cursor: pointer;
                             a {
                                 padding: 12px 14px 12px 14px;
-                                @include set_font_size_family_color(18px, "Source Sans Pro Semibold", #323232);
+                                @include set_font_size_family_color(16px, "Source Sans Pro", $lightBlack);
+                                font-weight: 600;
                                 background-color: $yellow;
+                                -webkit-transition: background-color 0.3s;
+                                -moz-transition: background-color 0.3s;
+                                -ms-transition: background-color 0.3s;
+                                -o-transition: background-color 0.3s;
+                                transition: background-color 0.3s;
+                                text-decoration: none;
+                            }
+                            a:hover {
+                                background-color: $darkYellow;
                             }
                         }
                     }
                 }
-                .r-side {
+                .city-name {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 35px;
+                    color: #fff;
+                    width: auto;
+                    font-family: "Source Sans Pro Light";
+                    font-size: 110px;
+                    font-weight: 300;
+                }
+                .time {
+                    position: absolute;
+                    right: 35px;
+                    top: 20px;
+                    font-family: "Source Sans Pro";
+                    color: #000;
+                    font-size: 37px;
+                    font-weight: 400;
                 }
             }
             .city.santa-monica {
@@ -639,35 +717,38 @@ div.header {
     .app_science_page {
         .hero-background {
             background: url("../img/AppScience_bg.jpg") no-repeat;
-            background-size: 100vw 125vh;
-            height: calc(125vh);
+            background-size: 100vw 100%;
+            /*height: calc(125vh);*/
             .container {
                 .app-science-header {
                     margin-top: 12px;
                     background-color: transparent;
                     text-align: center;
-                    @include set_font_size_family_color(72px, "Source Sans Pro Semibold", #FFFFFF);
+                    @include set_font_size_family_color(72px, "Source Sans Pro", $white);
+                    font-weight: 600;
                 }
                 div:nth-child(2) {
                     line-height: 40px;
                     margin-top: 4px;
-                    @include set_font_size_family_color(60px, "Source Sans Pro Light", #FFFFFF);
+                    @include set_font_size_family_color(60px, "Source Sans Pro Light", $white);
                 }
                 div:nth-child(3) {
                     margin-top: 24px;
                     margin-bottom: 40px;
                     text-align: center;
-                    @include set_font_size_family_color(40px, "Source Sans Pro", #FFFFFF);
+                    @include set_font_size_family_color(40px, "Source Sans Pro", $white);
                 }
                 .row {
                     .app-text {
-                        margin-left: 69%;
+/*                        margin-left: 69%;*/
                         .sub-header {
-                            @include set_font_size_family_color(20px, "Source Sans Pro Semibold", #1B1B1B);
+                            @include set_font_size_family_color(20px, "Source Sans Pro", #1B1B1B);
+                            font-weight: 700;
                         }
                         p {
                             @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
                             line-height: 26px;
+                            font-weight: 500;
                         }
                     }
                 }
@@ -680,7 +761,8 @@ div.header {
             .bottom-container-flex {
                 .bottom-text {
                     .sub-header {
-                        @include set_font_size_family_color(20px, "Source Sans Pro Semibold", #1B1B1B);
+                        @include set_font_size_family_color(20px, "Source Sans Pro", #1B1B1B);
+                        font-weight: 600;
                     }
                     p {
                         @include set_font_size_family_color(18px, "Source Sans Pro", #95989A);
@@ -697,17 +779,17 @@ div.header {
         }
     }
 
-    .our_services{
+    .our_services {
         .line-1 {
             margin-top: 80px;
-            .services_headline{
-                h2{
+            .services_headline {
+                h2 {
                     @include set_font_size_family_color(50px, "Source Sans Pro Light", #2C3F46);
                     margin-top: 0;
                 }
             }
-            .right{
-                p{
+            .right {
+                p {
                     width: 95%;
                     margin-left: 5%;
                     @include set_font_size_family_color(20px, "Sourse Sanse Pro Regular", #2C3F46);
@@ -715,26 +797,26 @@ div.header {
                 }
             }
         }
-        .line-2{
+        .line-2 {
             background: url(../img/tabs_bg.png);
             background-position: 50% 50%;
             background-size: cover;
             margin: 75px 0;
-            h2{
+            h2 {
                 text-align: center;
                 @include set_font_size_family_color(50px, "Sourse Sanse Pro Light", #FFFFFF);
                 text-transform: capitalize;
                 margin-top: 70px;
             }
-            section.tabs{
+            section.tabs {
                 position: relative;
                 margin: 0 auto;
                 text-align: center;
-                input{
+                input {
                     position: absolute;
                     left: -9999px;
                 }
-                label{
+                label {
                     cursor: pointer;
                     display: inline-block;
                     width: 85px;
@@ -748,25 +830,25 @@ div.header {
                     margin-bottom: 30px;
                     margin-right: 40px;
                 }
-                label:nth-of-type(1){
+                label:nth-of-type(1) {
                     background-position: -23px 1px;
                 }
-                label:nth-of-type(2){
+                label:nth-of-type(2) {
                     background-position: -108px 1px;;
                 }
-                label:nth-of-type(3){
+                label:nth-of-type(3) {
                     background-position: -1px -83px;
                 }
-                label:nth-of-type(4){
+                label:nth-of-type(4) {
                     background-position: -167px -84px;
                 }
-                label:nth-of-type(5){
+                label:nth-of-type(5) {
                     background-position: 84px -168px;
                 }
-                label:nth-of-type(6){
+                label:nth-of-type(6) {
                     background-position: 1px -168px;
                 }
-                #tab_1:checked~#tab_l1:after, #tab_2:checked~#tab_l2:after, #tab_3:checked~#tab_l3:after, #tab_4:checked~#tab_l4:after, #tab_5:checked~#tab_l5:after, #tab_6:checked~#tab_l6:after {
+                #tab_1:checked ~ #tab_l1:after, #tab_2:checked ~ #tab_l2:after, #tab_3:checked ~ #tab_l3:after, #tab_4:checked ~ #tab_l4:after, #tab_5:checked ~ #tab_l5:after, #tab_6:checked ~ #tab_l6:after {
                     display: block;
                     width: 125px;
                     height: 24px;
@@ -777,38 +859,38 @@ div.header {
                     position: absolute;
                     bottom: -35px;
                 }
-                .tabs_cont{
+                .tabs_cont {
                     position: relative;
                     z-index: 2;
                     min-height: 230px;
                     width: 50%;
                     margin: 45px auto 0;
-                    &>div{
+                    & > div {
                         position: absolute;
                         left: -9999px;
                         top: 0;
                         opacity: 0;
                         -webkit-transition: opacity .5s ease-in-out;
                         transition: opacity .5s ease-in-out;
-                        h3{
+                        h3 {
                             @include set_font_size_family_color(32px, "Source Sans Pro Light", #FFFFFF);
                             text-transform: capitalize;
                             margin-bottom: 20px;
                         }
-                        p{
+                        p {
                             @include set_font_size_family_color(16px, "Source Sans Pro", #FFFFFF);
                             line-height: 30px;
                         }
                     }
                 }
-                #tab_1:checked~.tabs_cont #tab_c1, #tab_2:checked~.tabs_cont #tab_c2, #tab_3:checked~.tabs_cont #tab_c3, #tab_4:checked~.tabs_cont #tab_c4, #tab_5:checked~.tabs_cont #tab_c5, #tab_6:checked~.tabs_cont #tab_c6 {
+                #tab_1:checked ~ .tabs_cont #tab_c1, #tab_2:checked ~ .tabs_cont #tab_c2, #tab_3:checked ~ .tabs_cont #tab_c3, #tab_4:checked ~ .tabs_cont #tab_c4, #tab_5:checked ~ .tabs_cont #tab_c5, #tab_6:checked ~ .tabs_cont #tab_c6 {
                     position: static;
                     left: 0;
                     opacity: 1;
                 }
             }
         }
-        .line-3{
+        .line-3 {
             padding: 0;
             .col-md-12 {
                 padding: 0;
@@ -821,17 +903,17 @@ div.header {
                 -ms-flex-align: center;
                 align-items: center;
                 height: 420px;
-                .col-md-6:nth-last-of-type(1){
+                .col-md-6:nth-last-of-type(1) {
                     -webkit-align-self: flex-end;
                     align-self: flex-end;
-                    .content{
+                    .content {
                         text-align: center;
                         padding: 0 17%;
-                        h2{
+                        h2 {
                             @include set_font_size_family_color(50px, "Sourse Sanse Pro Light", #2c3f46);
                             margin-bottom: 20px;
                         }
-                        .learn-more{
+                        .learn-more {
                             @include set_font_size_family_color(18px, "Sourse Sanse Pro Bold", #20ad9d);
                             text-transform: uppercase;
                         }
@@ -839,33 +921,33 @@ div.header {
                 }
             }
         }
-        .hr.col-md-12{
-            hr{
+        .hr.col-md-12 {
+            hr {
                 border-top: 2px solid #c3c3c5;
                 margin: 80px 0 70px;
             }
         }
-        .line-4{
+        .line-4 {
             margin-bottom: 145px;
-            .col-md-6{
-                .caption{
+            .col-md-6 {
+                .caption {
                     @include set_font_size_family_color(18px, "Sourse Sanse Pro Bold", #aab1b9);
                     margin-top: 0;
                     text-align: left;
                     line-height: 30px;
                 }
-                h3{
+                h3 {
                     @include set_font_size_family_color(32px, "Sourse Sanse Pro Light", #000000);
                     margin: 30px 0;
                     text-transform: capitalize;
                 }
-                .p-type3{
+                .p-type3 {
                     @include set_font_size_family_color(20px, "Sourse Sanse Pro", #2c3f46);
                     line-height: 30px;
                 }
             }
-            .green-markers{
-                li{
+            .green-markers {
+                li {
                     color: #c3c3c5;
                     text-transform: uppercase;
                     font-family: "SourseSanseProBold", Arial;
@@ -876,21 +958,21 @@ div.header {
                 }
             }
         }
-        .line-5{
+        .line-5 {
             background: #f5f5f6;
             padding-bottom: 100px;
-            .creative0{
+            .creative0 {
                 width: 304px !important;
                 height: 580px;
                 background: url(../img/iphone.png) 50% 10px no-repeat;
                 background-size: 100%;
                 margin: 0 auto;
-                #sync1{
+                #sync1 {
                     //width: 245px;
-                    .owl-stage-outer{
+                    .owl-stage-outer {
                         width: 245px;
                         margin: 50px auto 80px;
-                        .creative2{
+                        .creative2 {
                             /* margin-left: -31px!important; */
                             height: 434px;
                             /* margin-bottom: 21px; */
@@ -900,8 +982,8 @@ div.header {
                     }
                 }
             }
-            .right{
-                h3{
+            .right {
+                h3 {
                     @include set_font_size_family_color(20px, "Sourse Sanse Pro Light", #2c3f46);
                     width: 83%;
                     margin-left: 9%;
@@ -910,28 +992,28 @@ div.header {
                     text-transform: capitalize;
                     margin-bottom: 20px;
                 }
-                p{
+                p {
                     @include set_font_size_family_color(20px, "Sourse Sanse Pro", #2c3f46);
                     width: 83%;
                     margin-left: 9%;
                     font-size: 20px;
                     line-height: 30px;
                 }
-                &>div{
+                & > div {
                     width: 83%;
                     margin-left: 9%;
-                    #sync2{
-                        .owl-stage{
+                    #sync2 {
+                        .owl-stage {
                             width: 100% !important;
-                            .owl-item{
+                            .owl-item {
                                 width: 100% !important;
                                 text-align: left;
                                 margin-top: 10px;
                                 margin-bottom: 10px;
-                                .item{
+                                .item {
                                     text-align: center;
                                     cursor: pointer;
-                                    img{
+                                    img {
                                         margin-top: 35px;
                                         background-image: url(../img/services-sprite.png);
                                         background-repeat: no-repeat;
@@ -943,13 +1025,13 @@ div.header {
                                     }
                                 }
                             }
-                            .owl-item:nth-of-type(1){
+                            .owl-item:nth-of-type(1) {
                                 background-position: -70px -85px;
                             }
-                            .owl-item:nth-of-type(2){
+                            .owl-item:nth-of-type(2) {
                                 background-position: -140px -156px;
                             }
-                            .owl-item:nth-of-type(3){
+                            .owl-item:nth-of-type(3) {
                                 background-position: -160px -16px;
                             }
                         }
@@ -961,7 +1043,7 @@ div.header {
 
     footer {
         .yellow-top {
-            height: 7px;
+            height: 12px;
             width: 100%;
             background-color: $yellow;
         }
@@ -970,9 +1052,11 @@ div.header {
             .logo-link {
                 color: white;
                 .footer-heading {
-                    @include set_font_size_family_color(18px, "Source Sans Pro Semibold", #FFFFFF);
+                    @include set_font_size_family_color(18px, "Source Sans Pro", #FFFFFF);
                     margin-bottom: 20px;
                     margin-left: 15px;
+                    font-weight: 600;
+                    text-transform: uppercase;
                 }
                 .sabio-logo {
                     margin-top: 30px;
@@ -991,14 +1075,25 @@ div.header {
                         text-align: center;
                         margin: 0 6px;
                         line-height: 48px;
+                        cursor: pointer;
                         i {
                             color: $white;
+                            -webkit-transition: color 0.3s;
+                            -moz-transition: color 0.3s;
+                            -ms-transition: color 0.3s;
+                            -o-transition: color 0.3s;
+                            transition: color 0.3s;
+                        }
+                    }
+                    .link:hover {
+                        i {
+                            color: $yellow;
                         }
                     }
                 }
             }
             .mid-content {
-                justify-content: space-around;
+                justify-content: space-between;
                 padding-top: 30px;
                 padding-bottom: 30px;
                 .logo-link {
@@ -1015,6 +1110,7 @@ div.header {
                     overflow: hidden;
                     .tweet-header {
                         display: flex;
+                        margin-bottom: 10px;
                         div.tweet-bird {
                             margin-right: 20px;
                             i.fa-twitter {
@@ -1025,8 +1121,9 @@ div.header {
                         .tag {
                             color: $white;
                             p {
-                                @include set_font_size_family_color(22px, "Source Sans Pro Semibold", #FFFFFF);
+                                @include set_font_size_family_color(22px, "Source Sans Pro", #FFFFFF);
                                 margin-bottom: 4px;
+                                font-weight: 600;
                             }
                             div {
                                 @include set_font_size_family_color(14px, "Source Sans Pro", #FFFFFF);
@@ -1035,8 +1132,11 @@ div.header {
                     }
                     .tweets {
                         overflow: auto;
-                        height: 200px;
-                        margin-top: 20px;
+                        height: 250px;
+                        /*margin-top: 20px;*/
+                        .timeline-header {
+                            display: none;
+                        }
                         .user-tweet {
                             margin-bottom: 20px;
                             .image-message {
@@ -1072,13 +1172,15 @@ div.header {
                             }
                         }
                     }
+
                 }
             }
             .connect {
                 color: $white;
                 .footer-heading {
-                    @include set_font_size_family_color(18px, "Source Sans Pro Semibold", #FFFFFF);
-                    margin-bottom: 20px;
+                    @include set_font_size_family_color(30px, "Source Sans Pro", #FFFFFF);
+                    margin-bottom: 20px !important;
+                    font-weight: 600;
                 }
                 .form-container {
                     form {
@@ -1096,19 +1198,34 @@ div.header {
                             position: relative;
                             margin-top: 30px;
                             button {
-                                background-color: $yellow;
+                                background-color: #FEC430;
                                 padding: 10px;
                                 border: none;
                                 text-align: left;
-                                width: 140px;
-                                @include set_font_size_family_color(14px, "Source Sans Pro Semibold", black);
+                                width: 150px;
+                                font-size: 17px;
+                                font-family: "Source Sans Pro";
+                                color: black;
+                                font-weight: 600;
+                                display: flex;
+                                align-items: center;
+                                align-content: center;
+                                border-radius: 2px;
+                                -webkit-transition: background-color 0.3s;
+                                -moz-transition: background-color 0.3s;
+                                -ms-transition: background-color 0.3s;
+                                -o-transition: background-color 0.3s;
+                                transition: background-color 0.3s;
+                            }
+                            button:hover {
+                                background-color: #e4a401;
                             }
                             i {
                                 position: absolute;
-                                left: 108px;
-                                top: 7px;
-                                color: $darkBlack;
-                                font-size: 24px;
+                                right: 10px;
+                                top: 8px;
+                                color: #1B1B1B;
+                                font-size: 26px;
                             }
                         }
                     }
@@ -1121,10 +1238,10 @@ div.header {
                     padding-bottom: 30px;
                     flex-wrap: wrap;
                     justify-content: left;
-                    margin-left: 40px;
                     a {
-                        margin-right: 25px;
-                        @include set_font_size_family_color(14px, "Source Sans Pro Semibold", #B4B4B4);
+                        margin-right: 30px;
+                        @include set_font_size_family_color(14px, "Source Sans Pro", #B4B4B4);
+                        font-weight: 600;
                     }
                 }
 
@@ -1147,6 +1264,9 @@ div.header {
                             width: 1px;
                             background-color: $silver;
                             margin-left: 10px;
+                        }
+                        a:last-child:after {
+                            display: none;
                         }
                     }
                 }
@@ -1542,8 +1662,8 @@ div.header {
         .app_science_page {
             .hero-background {
                 padding: 14px 36px 14px 36px;
-                background-size: 100vw 160vh;
-                height: calc(150vh);
+                background-size: 100vw 100%;
+                /*height: calc(150vh);*/
                 .container {
                     .app-science-header {
                         margin-top: 36px;
@@ -1570,7 +1690,7 @@ div.header {
 
             }
             .bottom-container {
-                margin-top: 25px;
+                margin-top: -65px;
                 .bottom-container-flex {
                     .bottom-text {
                     }
@@ -1583,16 +1703,16 @@ div.header {
             }
         }
 
-        .our_services{
+        .our_services {
             .line-1 {
-                .services_headline{
-                    h2{
+                .services_headline {
+                    h2 {
                         @include set_font_size_family_color(50px, "Source Sans Pro Light", #2C3F46);
                         margin-top: 0;
                     }
                 }
-                .right{
-                    p{
+                .right {
+                    p {
                         width: 95%;
                         margin-left: 5%;
                         @include set_font_size_family_color(20px, "Sourse Sanse Pro Regular", #2C3F46);
@@ -1600,19 +1720,19 @@ div.header {
                     }
                 }
             }
-            .line-2{
+            .line-2 {
                 background: url(../img/tabs_bg.png);
                 background-position: 50% 50%;
                 background-size: cover;
                 margin: 75px 0;
-                h2{
+                h2 {
                     @include set_font_size_family_color(50px, "Sourse Sanse Pro Light", #FFFFFF);
                     text-transform: capitalize;
                     margin-top: 70px;
                 }
             }
-            .line-3{
-                .col-md-12{
+            .line-3 {
+                .col-md-12 {
                     display: -webkit-box;
                     display: -webkit-flex;
                     display: -ms-flexbox;
@@ -1753,6 +1873,13 @@ div.header {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .overflow-wrapper .contact_us_page .locations .city .l-side .card {
+        min-height: 275px;
+    }
+
+}
+
 @media screen and (min-width: 768px) and (max-width: 990px) {
     .overflow-wrapper {
         .overflow-wrapper-overlay {
@@ -1797,7 +1924,6 @@ div.header {
             }
             .owl-theme {
                 .owl-dots {
-                    bottom: -32px;
                     .owl-dot {
                         span {
                             width: 66px;
@@ -1808,9 +1934,6 @@ div.header {
 
                         }
                     }
-                }
-                .owl-nav {
-                    bottom: -43px
                 }
             }
 
@@ -2288,13 +2411,138 @@ div.header {
     }
 }
 
+@media screen and (max-width: 993px) {
+    .our_team_page {
+
+        .owl-parent {
+            position: relative;
+            margin-bottom: 30px;
+            .owl-page-count {
+                bottom: -45px !important;
+                left: 60px !important;
+            }
+        }
+        .owl-carousel {
+            .carousel-img-container {
+                img {
+
+                }
+            }
+        }
+        .owl-theme {
+            .owl-dots {
+                .owl-dot {
+                    span {
+                        width: 33px;
+                    }
+                }
+                .owl-dot.active, .owl-dot:hover {
+                    span {
+
+                    }
+                }
+            }
+            .owl-nav {
+                right: 50px !important;
+                bottom: -50px !important;
+            }
+        }
+
+        .our-team-text {
+
+            h2 {
+                @include set_font_size_family_color(30px, "Source Sans Pro Semibold", #1B1B1B);
+            }
+            p {
+                margin-top: 16px;
+                padding: 0 24px;
+                @include set_font_size_family_color(14px, "Source Sans Pro", #959894);
+            }
+        }
+        .team-profiles {
+            .row {
+                .profile {
+                    height: auto;
+                    .pos_r {
+                        .profile-img {
+                            width: 50%;
+                            .img-up-over {
+                                .img-over {
+                                    width: 100%;
+                                    height: 175px;
+                                }
+                                .img-up {
+                                    width: 100%;
+                                    height: 175px;
+                                }
+                            }
+                        }
+                        .profile-description {
+                            width: 50%;
+                            height: 175px;
+                            .profile-name {
+                                @include set_font_size_family_color(14px, "Source Sans Pro Black", #323232);
+                            }
+                            .profile-appointment {
+                                @include set_font_size_family_color(11px, "Source Sans Pro Light", #323232);
+                            }
+                            .profile-summary {
+                                display: none;
+                            }
+                        }
+                    }
+                    .profile-caret-left, .profile-caret-right {
+                        top: 70px;
+                        i {
+                            font-size: 40px;
+                        }
+                    }
+                    .profile-caret-left {
+                        left: calc(50% - 13px);
+                    }
+                    .profile-caret-right {
+                        left: calc(50% - 1px);
+                    }
+                }
+            }
+            .toggle-img-description-mob {
+                .pos_r {
+                    flex-direction: row-reverse;
+                    .profile-img {
+
+                    }
+                    .profile-description {
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .app_science_page {
+        .hero-background {
+            .container {
+                .app-science-header {
+                }
+                div:nth-child(2) {
+                    margin-top: 0;
+                    font-size: 17px !important;
+                }
+                div:nth-child(3) {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 767px) {
     .overflow-wrapper {
         .overflow-wrapper-overlay {
 
         }
         .landing-page {
-            margin-top: 70px;
+            margin-top: 80px;
             .sabio-video {
                 img {
 
@@ -2304,10 +2552,12 @@ div.header {
                 .heading-text {
 
                     div {
-                        @include set_font_size_family_color(30px, "Source Sans Pro Semibold", #1B1B1B);
+                        @include set_font_size_family_color(30px, "Source Sans Pro", #1B1B1B);
+                        font-weight: 600;
                     }
                     p {
                         @include set_font_size_family_color(19px, "Source Sans Pro", #95989A);
+                        font-weight: 500;
                     }
                 }
                 .carousel-sec {
@@ -2332,10 +2582,19 @@ div.header {
         }
 
         .our_team_page {
+            margin-top: 80px;
+            .owl-parent {
+                position: relative;
+                margin-bottom: 30px;
+                .owl-page-count {
+                    bottom: -45px;
+                    left: 60px;
+                }
+            }
             .owl-carousel {
                 .carousel-img-container {
                     img {
-
+                        height: 275px !important;
                     }
                 }
             }
@@ -2354,8 +2613,8 @@ div.header {
                     }
                 }
                 .owl-nav {
-                    bottom: -44px;
-                    right: -22px;
+                    right: 50px;
+                    bottom: -50px;
                 }
             }
 
@@ -2431,7 +2690,7 @@ div.header {
         }
 
         .contact_us_page {
-            margin-top: 70px;
+            margin-top: 80px;
             .connect-heading {
                 h1 {
                 }
@@ -2440,7 +2699,7 @@ div.header {
             }
             .locations {
                 .row.city {
-                    margin-bottom: 86px;
+                    margin-bottom: 100px;
                     background-position-x: 56%;
                 }
                 .city {
@@ -2449,6 +2708,7 @@ div.header {
                         margin-left: 8px;
                         .card {
                             padding: 8px 14px 8px 14px;
+                            box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.15);
                             .city-header {
                                 @include set_font_size_family_color(16px, "Source Sans Pro Black", #323232);
                             }
@@ -2663,41 +2923,81 @@ div.header {
         }
 
         .app_science_page {
+            margin-top: 80px;
             .hero-background {
-                padding: 75px 0 14px 0;
                 background: url("../img/bg_Phone.jpg") no-repeat;
                 background-size: 160vw 110vh;
                 background-position: inherit;
                 height: calc(100vh);
+                margin-bottom: 25px;
                 .container {
                     .app-science-header {
+                        background-color: transparent;
+                        text-align: center;
+                        font-size: 30px;
+                        font-family: "Source Sans Pro";
+                        color: #FFFFFF;
+                        font-weight: 600;
                     }
                     div:nth-child(2) {
                         margin-top: 0;
+                        font-size: 20px;
                     }
                     div:nth-child(3) {
                         margin-top: 2px;
                         margin-bottom: 24px;
+                        font-size: 16px;
+                        font-weight: 500;
                     }
                     .row {
-
+                        margin-top: calc(100vh - 110px);
+                        .app-text {
+                            .sub-header {
+                                @include set_font_size_family_color(17px, "Source Sans Pro", #1B1B1B);
+                                font-weight: 600;
+                            }
+                            p {
+                                @include set_font_size_family_color(14px, "Source Sans Pro", #95989A);
+                                font-weight: 500;
+                            }
+                        }
                     }
 
                 }
 
             }
+            .apps-mobiles{
+                margin-top: -125px;
+                .background-col{
+                    background: url(../img/apps_mobile.png);
+                    background-size: 100vw 100vh;
+                    height: 100vh;
+                }
+            }
             .visible-xs {
-                padding: 2rem;
                 .sub-header {
-                    @include set_font_size_family_color(17px, "Source Sans Pro Semibold", #1B1B1B);
+                    @include set_font_size_family_color(17px, "Source Sans Pro", #1B1B1B);
+                    font-weight: 600;
                 }
                 p {
                     @include set_font_size_family_color(14px, "Source Sans Pro", #95989A);
+                    font-weight: 500;
                 }
             }
+
+
             .bottom-container {
+                margin-top: 0;
                 .bottom-container-flex {
+                    margin-top: -100px;
+                    padding-bottom: 20px;
                     .bottom-text {
+                        .sub-header{
+                            font-size: 17px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
                     }
                     .bottom-image {
                     }
@@ -2706,15 +3006,16 @@ div.header {
         }
 
         .our_services {
-                .line-1 {
-                    margin-top: 80px;
-                    .services_headline{
-                        h2{
-                            @include set_font_size_family_color(50px, "Source Sans Pro Light", #2C3F46);
-                            margin-bottom: 20px;
-                        }
+            margin-top: 80px;
+            .line-1 {
+                margin-top: 80px;
+                .services_headline {
+                    h2 {
+                        @include set_font_size_family_color(50px, "Source Sans Pro Light", #2C3F46);
+                        margin-bottom: 20px;
                     }
                 }
+            }
 
             //div:nth-child(1) {
             //    @include set_font_size_family_color(50px, "Source Sans Pro Light", #2C3F46);
@@ -2825,8 +3126,8 @@ div.header {
                             input.form-control {
                                 width: 100%;
                             }
-                            div {
-
+                            div.send-button {
+                                float: left !important;
                                 button {
 
                                 }
@@ -2837,7 +3138,7 @@ div.header {
                         }
                     }
                 }
-                .sabio-tweets::after, .connect::after {
+                .sabio-tweets::after {
                     content: '';
                     height: 1px;
                     width: 100%;
@@ -2846,6 +3147,18 @@ div.header {
                     display: block;
                     margin-top: 30px;
                     margin-bottom: 30px;
+
+                }
+                .connect::after {
+                    content: '';
+                    height: 1px;
+                    width: 100%;
+                    background-color: $silver;
+                    opacity: .7;
+                    display: block;
+                    margin-top: 90px;
+                    margin-bottom: 30px;
+
                 }
                 .bottom-tabs {
 
@@ -2861,7 +3174,3 @@ div.header {
         }
     }
 }
-
-
-
-

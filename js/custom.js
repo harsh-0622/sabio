@@ -1,117 +1,21 @@
 $(function () {
-    var owl = $('.owl-carousel#owl-carousel-clients');
+    var owl = $('.owl-carousel.owl-carousel-clients-xs');
     owl.owlCarousel({
-        loop: true,
+        loop: false,
         margin: 40,
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 4000,
         autoplayHoverPause: true,
         nav: true,
         navText: [""],
-        moveSlides: 4,
+        slideBy: 'page',
         dots: false,
+        autoplaySpeed: 450,
         responsive: {
             320: {
                 items: 2
             },
             767: {
-                items: 3
-            },
-            992: {
-                items: 4
-            }
-        }
-    });
-
-
-    var owl1 = $('.owl-carousel#owl-carousel-partners');
-    owl1.owlCarousel({
-        loop: true,
-        margin: 40,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        nav: true,
-        navText: [""],
-        moveSlides: 1,
-        dots: false,
-        responsive: {
-            320: {
-                items: 2
-            },
-            767: {
-                items: 3
-            },
-            992: {
-                items: 4
-            }
-        }
-    });
-
-    var owl2 = $('.owl-carousel#owl-carousel-webOne');
-    owl2.owlCarousel({
-        loop: true,
-        margin: 40,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        nav: true,
-        navText: [""],
-        moveSlides: 1,
-        dots: false,
-        responsive: {
-            320: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            992: {
-                items: 4
-            }
-        }
-    });
-
-    var owl3 = $('.owl-carousel#owl-carousel-webTwo');
-    owl3.owlCarousel({
-        loop: true,
-        margin: 40,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        nav: true,
-        navText: [""],
-        moveSlides: 1,
-        dots: false,
-        responsive: {
-            320: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            992: {
-                items: 4
-            }
-        }
-    });
-
-    var owl4 = $('.owl-carousel#owl-carousel-webThree');
-    owl4.owlCarousel({
-        loop: true,
-        margin: 40,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        nav: true,
-        navText: [""],
-        moveSlides: 1,
-        dots: false,
-        responsive: {
-            320: {
-                items: 2
-            },
-            768: {
                 items: 3
             },
             992: {
@@ -162,7 +66,7 @@ $(function () {
         autoplayTimeout: owlCarouselTimeout,
         autoplayHoverPause: true,
         nav: true,
-        navText: ["<i class='fa fa-arrow-left'></i>", "<i class='fa fa-arrow-right'></i>"],
+        navText: ["<img src='img/team/Arrow_back.svg' width='20px'>", "<img src='img/team/Arrow_forward.svg' width='20px'>"],
         moveSlides: 1,
         dots: true,
         responsive: {
@@ -170,6 +74,10 @@ $(function () {
                 items: 1
             }
         }
+    });
+    owl_our_team.on('changed.owl.carousel', function (event) {
+        page_no = event.page && event.page.index ? event.page.index + 1 : 1;
+        $('.our_team_page .owl-parent .owl-page-count .current-page-count').html('0' + page_no).siblings('.total-page-count').html('/ 0' + event.page.count);
     });
     owl_our_team.on('mouseleave', function () {
         owl_our_team.trigger('stop.owl.autoplay'); //this is main line to resume auto-play
@@ -212,9 +120,9 @@ $(function () {
         }
     })
 
-    $('#video').on('ended',function () {
+    $('#video').on('ended', function () {
         $('.sabio-video img').animate({
-            'opacity' : 1
+            'opacity': 1
         })
     });
 });

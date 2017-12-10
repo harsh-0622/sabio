@@ -32,6 +32,8 @@
 
 </head>
 <body>
+
+<!--Header-->
 <div id="mySidenav" class="sidenav">
     <div class="sabio-logo">
         <img class="img-responsive" src="img/logos/Sabio_logo_yellow.svg">
@@ -60,21 +62,27 @@
     </div>
 </div>
 <div class="header">
-    <div class="menu visible-xs col-xs-3">
-        <img class="img-responsive" src="img/menu.png" width="40px" height="40px">
-    </div>
-    <div class="sabio-logo col-sm-3 col-lg-5 col-xs-9">
-        <img src="img/logos/Sabio_logo_yellow.svg">
-    </div>
-    <div class="header-tabs col-sm-9 col-lg-7 hidden-xs">
-        <ul class="make-flex">
-            <li class=""><a href="index.html">OUR TECHNOLOGY</a></li>
-            <li class=""><a href="app_science.html">OUR WORK</a></li>
-            <li class=""><a href="our_team.html">OUR TEAM</a></li>
-            <li class=""><a href="contact_us.html">CONTACT US</a></li>
-        </ul>
+    <div class="container">
+
+
+        <div class="menu visible-xs flex-1" >
+            <img src="img/menu.svg" width="30px" >
+        </div>
+        <div class="sabio-logo col-sm-3 col-lg-5 col-xs-9 flex-1">
+            <img src="img/logos/Sabio_logo_yellow.svg">
+        </div>
+        <div class="visible-xs flex-1"></div>
+        <div class="header-tabs col-sm-9 col-lg-7 hidden-xs">
+            <ul class="make-flex">
+                <li class=""><a href="index.html">OUR TECHNOLOGY</a></li>
+                <li class=""><a href="app_science.html">OUR WORK</a></li>
+                <li class=""><a href="our_team.html">OUR TEAM</a></li>
+                <li class=""><a href="contact_us.html">CONTACT US</a></li>
+            </ul>
+        </div>
     </div>
 </div>
+
 <div class="overflow-wrapper">
     <div class="overflow-wrapper-overlay d-hidden"></div>
     <div class="app_science_page">
@@ -83,9 +91,10 @@
                 <div class="app-science-header">App Science</div>
                 <div class="text-center">The First Predictive AI for Mobile Data</div>
                 <div>250MM Devices and Counting</div>
+                <!--Desktop hero text-->
                 <div class="row">
-                    <div class="col-sm-6"></div>
-                    <div class="col-sm-6 col-md-5 hidden-xs app-text">
+                    <div class="col-sm-7 col-lg-7 col-md-7"></div>
+                    <div class="col-sm-5 col-md-5 col-lg-5 hidden-xs app-text">
                         <div class="sub-header">“ YOU ARE WHAT YOU APP ”</div>
                         <p>
                             <br>App Science® is our proprietary machine learning
@@ -121,7 +130,8 @@
                 </div>
             </div>
         </div>
-        <div class="visible-xs">
+        <!--Hero Text for mobile-->
+        <div class="visible-xs container">
             <div class="sub-header">“ YOU ARE WHAT YOU APP ”</div>
             <p>
                 <br>App Science® is our proprietary machine learning
@@ -154,9 +164,17 @@
                 Today...there is a better way.
             </p>
         </div>
+
+        <!--Apps mobile-->
+        <div class="container-fluid visible-xs apps-mobiles">
+            <div class="row">
+                <div class="col-xs-12 background-col"></div>
+            </div>
+        </div>
+
         <div class="bottom-container container">
             <div class="row bottom-container-flex">
-                <div class="bottom-text col-sm-6 col-md-5">
+                <div class="bottom-text col-sm-5 col-md-5 col-lg-5">
                     <div class="sub-header">APP SCIENCE ® A BETTER WAY TO KNOW YOUR CUSTOMER</div>
                     <p>
                         <br>Every day, hundreds of millions of American consumers
@@ -184,17 +202,20 @@
                         that lead to cost savings and a better ROI .
                     </p>
                 </div>
-                <div class="bottom-image col-sm-6">
-                    <img class="" src="img/Apps_desktop.png">
+                <div class="col-sm-2 col-md-2 col-lg-2 hidden-xs"></div>
+                <div class="col-sm-5 col-md-5 col-lg-5">
+                    <img class="hidden-xs" src="img/Apps_desktop.png" height="100%" width="100%">
                 </div>
             </div>
         </div>
     </div>
+
+    <!--Footer-->
     <footer>
         <!--<div class="footer-overlay d-hidden"></div>-->
         <div class="yellow-top"></div>
         <div class="content">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="mid-content make-flex">
                     <div class="logo-link make-flex">
                         <div class="footer-logo hidden-xs">
@@ -203,7 +224,7 @@
                         <div class="sabio-logo visible-xs">
                             <img class="img-responsive" src="img/logos/Sabio_logo_yellow.svg">
                         </div>
-                        <div class="follow-us footer-heading">Follow Us.</div>
+                        <div class="follow-us footer-heading">Follow Us</div>
                         <div class="social-links-container">
                             <div class="col-xs-3 link">
                                 <i class="fa fa-facebook fa-2x"></i>
@@ -226,84 +247,30 @@
                             </div>
                             <div class="tag">
                                 <p>Sabio Tweets</p>
-                                <div>@SABIOmobile.49s</div>
+                                <a href="https://twitter.com/SABIOmobile">
+                                    <div>@SABIOmobile.49s</div>
+                                </a>
                             </div>
                         </div>
                         <div class="tweets">
-                            <div class="user-tweet make-flex">
-                                <div class="image-message make-flex">
-                                    <div class="twitter-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="twitter-message">
-                                        <span class="profile-name">Harsh Sharma</span><span class="profile-tweet">Lorem ipsum
-                                        dolor sit amnet, consectetur dolor sit amnet, consectetur dolor sit amnet, consectetur</span>
-                                    </div>
-                                </div>
-                                <div class="vertical-dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>
-                            </div>
-                            <div class="user-tweet make-flex">
-                                <div class="image-message make-flex">
-                                    <div class="twitter-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="twitter-message">
-                                        <span class="profile-name">Harsh Sharma</span><span class="profile-tweet">Lorem ipsum
-                                        dolor sit amnet, consectetur dolor sit amnet, consectetur dolor sit amnet, consectetur</span>
-                                    </div>
-                                </div>
-                                <div class="vertical-dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>
-                            </div>
-                            <div class="user-tweet make-flex">
-                                <div class="image-message make-flex">
-                                    <div class="twitter-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="twitter-message">
-                                        <span class="profile-name">Harsh Sharma</span><span class="profile-tweet">Lorem ipsum
-                                        dolor sit amnet, consectetur dolor sit amnet, consectetur dolor sit amnet, consectetur</span>
-                                    </div>
-                                </div>
-                                <div class="vertical-dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>
-                            </div>
-                            <div class="user-tweet make-flex">
-                                <div class="image-message make-flex">
-                                    <div class="twitter-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="twitter-message">
-                                        <span class="profile-name">Harsh Sharma</span><span class="profile-tweet">Lorem ipsum
-                                        dolor sit amnet, consectetur dolor sit amnet, consectetur dolor sit amnet, consectetur</span>
-                                    </div>
-                                </div>
-                                <div class="vertical-dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>
-                            </div>
+                            <a class="twitter-timeline" style="width:50px"
+                               data-height="100%" data-dnt="true"
+                               data-theme="dark" data-chrome="transparent nofooter noheader"
+                               data-link-color="#FAB81E" href="https://twitter.com/SABIOmobile">
+                            </a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </div>
                     <div class="connect">
-                        <div class="footer-heading">Connect with us.</div>
+                        <div class="footer-heading connect-with-us">Connect with us.</div>
                         <div class="form-container">
-                            <form>
-                                <input class="form-control" type="text" name="user_name" fieldDisplayName="User name" placeholder="Your Name">
-                                <input class="form-control" type="email" name="email_id" fieldDisplayName="email" placeholder="Email Address">
+                            <form action="#" method="POST">
+                                <input class="form-control" type="text" name="user_name" fieldDisplayName="User name"
+                                       placeholder="Your Name">
+                                <input class="form-control" type="email" name="email_id" fieldDisplayName="email"
+                                       placeholder="Email Address">
                                 <input class="form-control" type="text" name="text_message" placeholder="Message">
-                                <div class="send-button">
+                                <div class="send-button pull-right">
                                     <button>Send Email</button>
                                     <i class="fa fa-angle-right fa-2x"></i>
                                 </div>
