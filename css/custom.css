@@ -478,7 +478,7 @@ div.header {
       width: 95%;
       margin-left: 5%;
       font-size: 20px;
-      font-family: "Sourse Sanse Pro Regular";
+      font-family: "Source Sans Pro Regular";
       color: #2C3F46;
       line-height: 30px; }
   .overflow-wrapper .our_services .line-2 {
@@ -489,7 +489,7 @@ div.header {
     .overflow-wrapper .our_services .line-2 h2 {
       text-align: center;
       font-size: 50px;
-      font-family: "Sourse Sanse Pro Light";
+      font-family: "Source Sans Pro Light";
       color: #FFFFFF;
       text-transform: capitalize;
       margin-top: 70px; }
@@ -584,12 +584,12 @@ div.header {
           padding: 0 17%; }
           .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-last-of-type(1) .content h2 {
             font-size: 50px;
-            font-family: "Sourse Sanse Pro Light";
+            font-family: "Source Sans Pro Light";
             color: #2c3f46;
             margin-bottom: 20px; }
           .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-last-of-type(1) .content .learn-more {
             font-size: 18px;
-            font-family: "Sourse Sanse Pro Bold";
+            font-family: "Source Sans Pro Bold";
             color: #20ad9d;
             text-transform: uppercase; }
   .overflow-wrapper .our_services .hr.col-md-12 hr {
@@ -599,20 +599,20 @@ div.header {
     margin-bottom: 145px; }
     .overflow-wrapper .our_services .line-4 .col-md-6 .caption {
       font-size: 18px;
-      font-family: "Sourse Sanse Pro Bold";
+      font-family: "Source Sans Pro Bold";
       color: #aab1b9;
       margin-top: 0;
       text-align: left;
       line-height: 30px; }
     .overflow-wrapper .our_services .line-4 .col-md-6 h3 {
       font-size: 32px;
-      font-family: "Sourse Sanse Pro Light";
+      font-family: "Source Sans Pro Light";
       color: #000000;
       margin: 30px 0;
       text-transform: capitalize; }
     .overflow-wrapper .our_services .line-4 .col-md-6 .p-type3 {
       font-size: 20px;
-      font-family: "Sourse Sanse Pro";
+      font-family: "Source Sans Pro";
       color: #2c3f46;
       line-height: 30px; }
     .overflow-wrapper .our_services .line-4 .green-markers li {
@@ -643,7 +643,7 @@ div.header {
           width: 245px; }
     .overflow-wrapper .our_services .line-5 .right h3 {
       font-size: 20px;
-      font-family: "Sourse Sanse Pro Light";
+      font-family: "Source Sans Pro Light";
       color: #2c3f46;
       width: 83%;
       margin-left: 9%;
@@ -653,7 +653,7 @@ div.header {
       margin-bottom: 20px; }
     .overflow-wrapper .our_services .line-5 .right p {
       font-size: 20px;
-      font-family: "Sourse Sanse Pro";
+      font-family: "Source Sans Pro";
       color: #2c3f46;
       width: 83%;
       margin-left: 9%;
@@ -946,7 +946,7 @@ div.header {
     width: 95%;
     margin-left: 5%;
     font-size: 20px;
-    font-family: "Sourse Sanse Pro Regular";
+    font-family: "Source Sans Pro Regular";
     color: #2C3F46;
     line-height: 30px; }
   .overflow-wrapper .our_services .line-2 {
@@ -956,7 +956,7 @@ div.header {
     margin: 75px 0; }
     .overflow-wrapper .our_services .line-2 h2 {
       font-size: 50px;
-      font-family: "Sourse Sanse Pro Light";
+      font-family: "Source Sans Pro Light";
       color: #FFFFFF;
       text-transform: capitalize;
       margin-top: 70px; }
@@ -969,7 +969,227 @@ div.header {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 420px; } }
+    height: 420px; }
+  .overflow-wrapper .our_services .line-1 {
+    margin-top: 80px; }
+    .overflow-wrapper .our_services .line-1 .services_headline h2 {
+      font-size: 50px;
+      font-family: "Source Sans Pro Light";
+      color: #2C3F46;
+      margin-top: 0; }
+    .overflow-wrapper .our_services .line-1 .right p {
+      width: 95%;
+      margin-left: 5%;
+      font-size: 20px;
+      font-family: "Source Sans Pro Regular";
+      color: #2C3F46;
+      line-height: 30px; }
+  .overflow-wrapper .our_services .line-2 {
+    background: url(../img/tabs_bg.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    margin: 75px 0; }
+    .overflow-wrapper .our_services .line-2 h2 {
+      text-align: center;
+      font-size: 50px;
+      font-family: "Source Sans Pro Light";
+      color: #FFFFFF;
+      text-transform: capitalize;
+      margin-top: 70px; }
+    .overflow-wrapper .our_services .line-2 section.tabs {
+      position: relative;
+      margin: 0 auto;
+      text-align: center; }
+      .overflow-wrapper .our_services .line-2 section.tabs input {
+        position: absolute;
+        left: -9999px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label {
+        cursor: pointer;
+        display: inline-block;
+        width: 85px;
+        height: 85px;
+        position: relative;
+        top: 2px;
+        text-align: center;
+        background-image: url(../img/services-sprite.png);
+        background-repeat: no-repeat;
+        background-size: 351%;
+        margin-bottom: 30px;
+        margin-right: 40px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(1) {
+        background-position: -23px 1px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(2) {
+        background-position: -108px 1px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(3) {
+        background-position: -1px -83px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(4) {
+        background-position: -167px -84px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(5) {
+        background-position: 84px -168px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(6) {
+        background-position: 1px -168px; }
+      .overflow-wrapper .our_services .line-2 section.tabs #tab_1:checked ~ #tab_l1:after, .overflow-wrapper .our_services .line-2 section.tabs #tab_2:checked ~ #tab_l2:after, .overflow-wrapper .our_services .line-2 section.tabs #tab_3:checked ~ #tab_l3:after, .overflow-wrapper .our_services .line-2 section.tabs #tab_4:checked ~ #tab_l4:after, .overflow-wrapper .our_services .line-2 section.tabs #tab_5:checked ~ #tab_l5:after, .overflow-wrapper .our_services .line-2 section.tabs #tab_6:checked ~ #tab_l6:after {
+        display: block;
+        width: 125px;
+        height: 24px;
+        content: '.';
+        font-size: 0;
+        margin-left: -23px;
+        background: url(../img/v_arrow.png) no-repeat;
+        position: absolute;
+        bottom: -35px; }
+      .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont {
+        position: relative;
+        z-index: 2;
+        min-height: 230px;
+        width: 50%;
+        margin: 45px auto 0; }
+        .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont > div {
+          position: absolute;
+          left: -9999px;
+          top: 0;
+          opacity: 0;
+          -webkit-transition: opacity .5s ease-in-out;
+          transition: opacity .5s ease-in-out; }
+          .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont > div h3 {
+            font-size: 32px;
+            font-family: "Source Sans Pro Light";
+            color: #FFFFFF;
+            text-transform: capitalize;
+            margin-bottom: 20px; }
+          .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont > div p {
+            font-size: 16px;
+            font-family: "Source Sans Pro";
+            color: #FFFFFF;
+            line-height: 30px; }
+      .overflow-wrapper .our_services .line-2 section.tabs #tab_1:checked ~ .tabs_cont #tab_c1, .overflow-wrapper .our_services .line-2 section.tabs #tab_2:checked ~ .tabs_cont #tab_c2, .overflow-wrapper .our_services .line-2 section.tabs #tab_3:checked ~ .tabs_cont #tab_c3, .overflow-wrapper .our_services .line-2 section.tabs #tab_4:checked ~ .tabs_cont #tab_c4, .overflow-wrapper .our_services .line-2 section.tabs #tab_5:checked ~ .tabs_cont #tab_c5, .overflow-wrapper .our_services .line-2 section.tabs #tab_6:checked ~ .tabs_cont #tab_c6 {
+        position: static;
+        left: 0;
+        opacity: 1; }
+  .overflow-wrapper .our_services .line-3 {
+    padding: 0; }
+    .overflow-wrapper .our_services .line-3 .col-md-12 {
+      padding: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 420px; }
+      .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-last-of-type(1) {
+        -webkit-align-self: flex-end;
+        align-self: flex-end; }
+        .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-last-of-type(1) .content {
+          text-align: center;
+          padding: 0 17%; }
+          .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-last-of-type(1) .content h2 {
+            font-size: 50px;
+            font-family: "Source Sans Pro Light";
+            color: #2c3f46;
+            margin-bottom: 20px; }
+          .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-last-of-type(1) .content .learn-more {
+            font-size: 18px;
+            font-family: "Source Sans Pro Bold";
+            color: #20ad9d;
+            text-transform: uppercase; }
+  .overflow-wrapper .our_services .hr.col-md-12 hr {
+    border-top: 2px solid #c3c3c5;
+    margin: 80px 0 70px; }
+  .overflow-wrapper .our_services .line-4 {
+    margin-bottom: 145px; }
+    .overflow-wrapper .our_services .line-4 .col-md-6 .caption {
+      font-size: 18px;
+      font-family: "Source Sans Pro Bold";
+      color: #aab1b9;
+      margin-top: 0;
+      text-align: left;
+      line-height: 30px; }
+    .overflow-wrapper .our_services .line-4 .col-md-6 h3 {
+      font-size: 32px;
+      font-family: "Source Sans Pro Light";
+      color: #000000;
+      margin: 30px 0;
+      text-transform: capitalize; }
+    .overflow-wrapper .our_services .line-4 .col-md-6 .p-type3 {
+      font-size: 20px;
+      font-family: "Source Sans Pro";
+      color: #2c3f46;
+      line-height: 30px; }
+    .overflow-wrapper .our_services .line-4 .green-markers li {
+      color: #c3c3c5;
+      text-transform: uppercase;
+      font-family: "SourseSanseProBold", Arial;
+      font-size: 18px;
+      margin-bottom: 40px;
+      list-style-image: url(../img/marker.png);
+      padding-left: 10px; }
+  .overflow-wrapper .our_services .line-5 {
+    background: #f5f5f6;
+    padding-bottom: 100px; }
+    .overflow-wrapper .our_services .line-5 .creative0 {
+      width: 304px !important;
+      height: 580px;
+      background: url(../img/iphone.png) 50% 10px no-repeat;
+      background-size: 100%;
+      margin: 0 auto; }
+      .overflow-wrapper .our_services .line-5 .creative0 #sync1 .owl-stage-outer {
+        width: 245px;
+        margin: 50px auto 80px; }
+        .overflow-wrapper .our_services .line-5 .creative0 #sync1 .owl-stage-outer .creative2 {
+          /* margin-left: -31px!important; */
+          height: 434px;
+          /* margin-bottom: 21px; */
+          margin-top: 80px;
+          width: 245px; }
+    .overflow-wrapper .our_services .line-5 .right h3 {
+      font-size: 20px;
+      font-family: "Source Sans Pro Light";
+      color: #2c3f46;
+      width: 83%;
+      margin-left: 9%;
+      margin-top: 95px;
+      font-size: 32px;
+      text-transform: capitalize;
+      margin-bottom: 20px; }
+    .overflow-wrapper .our_services .line-5 .right p {
+      font-size: 20px;
+      font-family: "Source Sans Pro";
+      color: #2c3f46;
+      width: 83%;
+      margin-left: 9%;
+      font-size: 20px;
+      line-height: 30px; }
+    .overflow-wrapper .our_services .line-5 .right > div {
+      width: 83%;
+      margin-left: 9%; }
+      .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage {
+        width: 100% !important; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item {
+          width: 100% !important;
+          text-align: left;
+          margin-top: 10px;
+          margin-bottom: 10px; }
+          .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item .item {
+            text-align: center;
+            cursor: pointer; }
+            .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item .item img {
+              margin-top: 35px;
+              background-image: url(../img/services-sprite.png);
+              background-repeat: no-repeat;
+              background-size: 418%;
+              width: 60px;
+              height: 40px;
+              opacity: 0.5;
+              margin-left: -10px; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item:nth-of-type(1) {
+          background-position: -70px -85px; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item:nth-of-type(2) {
+          background-position: -140px -156px; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item:nth-of-type(3) {
+          background-position: -160px -16px; } }
 @media screen and (min-width: 768px) {
   .overflow-wrapper .contact_us_page .locations .city .l-side .card {
     min-height: 275px; } }
@@ -1039,6 +1259,226 @@ div.header {
         font-family: "Source Sans Pro";
         color: #95989A;
         line-height: inherit; }
+  .overflow-wrapper .our_services .line-1 {
+    margin-top: 80px; }
+    .overflow-wrapper .our_services .line-1 .services_headline h2 {
+      font-size: 50px;
+      font-family: "Source Sans Pro Light";
+      color: #2C3F46;
+      margin-top: 0; }
+    .overflow-wrapper .our_services .line-1 .right p {
+      width: 95%;
+      margin-left: 5%;
+      font-size: 20px;
+      font-family: "Source Sans Pro Regular";
+      color: #2C3F46;
+      line-height: 30px; }
+  .overflow-wrapper .our_services .line-2 {
+    background: url(../img/tabs_bg.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    margin: 75px 0; }
+    .overflow-wrapper .our_services .line-2 h2 {
+      text-align: center;
+      font-size: 50px;
+      font-family: "Source Sans Pro Light";
+      color: #FFFFFF;
+      text-transform: capitalize;
+      margin-top: 70px; }
+    .overflow-wrapper .our_services .line-2 section.tabs {
+      position: relative;
+      margin: 0 auto;
+      text-align: center; }
+      .overflow-wrapper .our_services .line-2 section.tabs input {
+        position: absolute;
+        left: -9999px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label {
+        cursor: pointer;
+        display: inline-block;
+        width: 85px;
+        height: 85px;
+        position: relative;
+        top: 2px;
+        text-align: center;
+        background-image: url(../img/services-sprite.png);
+        background-repeat: no-repeat;
+        background-size: 351%;
+        margin-bottom: 30px;
+        margin-right: 40px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(1) {
+        background-position: -23px 1px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(2) {
+        background-position: -108px 1px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(3) {
+        background-position: -1px -83px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(4) {
+        background-position: -167px -84px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(5) {
+        background-position: 84px -168px; }
+      .overflow-wrapper .our_services .line-2 section.tabs label:nth-of-type(6) {
+        background-position: 1px -168px; }
+      .overflow-wrapper .our_services .line-2 section.tabs #tab_1:checked ~ #tab_l1:after, .overflow-wrapper .our_services .line-2 section.tabs #tab_2:checked ~ #tab_l2:after, .overflow-wrapper .our_services .line-2 section.tabs #tab_3:checked ~ #tab_l3:after, .overflow-wrapper .our_services .line-2 section.tabs #tab_4:checked ~ #tab_l4:after, .overflow-wrapper .our_services .line-2 section.tabs #tab_5:checked ~ #tab_l5:after, .overflow-wrapper .our_services .line-2 section.tabs #tab_6:checked ~ #tab_l6:after {
+        display: block;
+        width: 125px;
+        height: 24px;
+        content: '.';
+        font-size: 0;
+        margin-left: -23px;
+        background: url(../img/v_arrow.png) no-repeat;
+        position: absolute;
+        bottom: -35px; }
+      .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont {
+        position: relative;
+        z-index: 2;
+        min-height: 230px;
+        width: 50%;
+        margin: 45px auto 0; }
+        .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont > div {
+          position: absolute;
+          left: -9999px;
+          top: 0;
+          opacity: 0;
+          -webkit-transition: opacity .5s ease-in-out;
+          transition: opacity .5s ease-in-out; }
+          .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont > div h3 {
+            font-size: 32px;
+            font-family: "Source Sans Pro Light";
+            color: #FFFFFF;
+            text-transform: capitalize;
+            margin-bottom: 20px; }
+          .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont > div p {
+            font-size: 16px;
+            font-family: "Source Sans Pro";
+            color: #FFFFFF;
+            line-height: 30px; }
+      .overflow-wrapper .our_services .line-2 section.tabs #tab_1:checked ~ .tabs_cont #tab_c1, .overflow-wrapper .our_services .line-2 section.tabs #tab_2:checked ~ .tabs_cont #tab_c2, .overflow-wrapper .our_services .line-2 section.tabs #tab_3:checked ~ .tabs_cont #tab_c3, .overflow-wrapper .our_services .line-2 section.tabs #tab_4:checked ~ .tabs_cont #tab_c4, .overflow-wrapper .our_services .line-2 section.tabs #tab_5:checked ~ .tabs_cont #tab_c5, .overflow-wrapper .our_services .line-2 section.tabs #tab_6:checked ~ .tabs_cont #tab_c6 {
+        position: static;
+        left: 0;
+        opacity: 1; }
+  .overflow-wrapper .our_services .line-3 {
+    padding: 0; }
+    .overflow-wrapper .our_services .line-3 .col-md-12 {
+      padding: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 420px; }
+      .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-last-of-type(1) {
+        -webkit-align-self: flex-end;
+        align-self: flex-end; }
+        .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-last-of-type(1) .content {
+          text-align: center;
+          padding: 0 17%; }
+          .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-last-of-type(1) .content h2 {
+            font-size: 50px;
+            font-family: "Source Sans Pro Light";
+            color: #2c3f46;
+            margin-bottom: 20px; }
+          .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-last-of-type(1) .content .learn-more {
+            font-size: 18px;
+            font-family: "Source Sans Pro Bold";
+            color: #20ad9d;
+            text-transform: uppercase; }
+  .overflow-wrapper .our_services .hr.col-md-12 hr {
+    border-top: 2px solid #c3c3c5;
+    margin: 80px 0 70px; }
+  .overflow-wrapper .our_services .line-4 {
+    margin-bottom: 145px; }
+    .overflow-wrapper .our_services .line-4 .col-md-6 .caption {
+      font-size: 18px;
+      font-family: "Source Sans Pro Bold";
+      color: #aab1b9;
+      margin-top: 0;
+      text-align: left;
+      line-height: 30px; }
+    .overflow-wrapper .our_services .line-4 .col-md-6 h3 {
+      font-size: 32px;
+      font-family: "Source Sans Pro Light";
+      color: #000000;
+      margin: 30px 0;
+      text-transform: capitalize; }
+    .overflow-wrapper .our_services .line-4 .col-md-6 .p-type3 {
+      font-size: 20px;
+      font-family: "Source Sans Pro";
+      color: #2c3f46;
+      line-height: 30px; }
+    .overflow-wrapper .our_services .line-4 .green-markers li {
+      color: #c3c3c5;
+      text-transform: uppercase;
+      font-family: "SourseSanseProBold", Arial;
+      font-size: 18px;
+      margin-bottom: 40px;
+      list-style-image: url(../img/marker.png);
+      padding-left: 10px; }
+  .overflow-wrapper .our_services .line-5 {
+    background: #f5f5f6;
+    padding-bottom: 100px; }
+    .overflow-wrapper .our_services .line-5 .creative0 {
+      width: 304px !important;
+      height: 580px;
+      background: url(../img/iphone.png) 50% 10px no-repeat;
+      background-size: 100%;
+      margin: 0 auto; }
+      .overflow-wrapper .our_services .line-5 .creative0 #sync1 .owl-stage-outer {
+        width: 245px;
+        margin: 50px auto 80px; }
+        .overflow-wrapper .our_services .line-5 .creative0 #sync1 .owl-stage-outer .creative2 {
+          /* margin-left: -31px!important; */
+          height: 434px;
+          /* margin-bottom: 21px; */
+          margin-top: 80px;
+          width: 245px; }
+    .overflow-wrapper .our_services .line-5 .right h3 {
+      font-size: 20px;
+      font-family: "Source Sans Pro Light";
+      color: #2c3f46;
+      width: 83%;
+      margin-left: 9%;
+      margin-top: 95px;
+      font-size: 32px;
+      text-transform: capitalize;
+      margin-bottom: 20px; }
+    .overflow-wrapper .our_services .line-5 .right p {
+      font-size: 20px;
+      font-family: "Source Sans Pro";
+      color: #2c3f46;
+      width: 83%;
+      margin-left: 9%;
+      font-size: 20px;
+      line-height: 30px; }
+    .overflow-wrapper .our_services .line-5 .right > div {
+      width: 83%;
+      margin-left: 9%; }
+      .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage {
+        width: 100% !important; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item {
+          width: 100% !important;
+          text-align: left;
+          margin-top: 10px;
+          margin-bottom: 10px; }
+          .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item .item {
+            text-align: center;
+            cursor: pointer; }
+            .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item .item img {
+              margin-top: 35px;
+              background-image: url(../img/services-sprite.png);
+              background-repeat: no-repeat;
+              background-size: 418%;
+              width: 60px;
+              height: 40px;
+              opacity: 0.5;
+              margin-left: -10px; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item:nth-of-type(1) {
+          background-position: -70px -85px; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item:nth-of-type(2) {
+          background-position: -140px -156px; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item:nth-of-type(3) {
+          background-position: -160px -16px; }
   .overflow-wrapper footer .content .logo-link .social-links-container .link {
     line-height: 41px; }
     .overflow-wrapper footer .content .logo-link .social-links-container .link i {
@@ -1288,15 +1728,176 @@ div.header {
           font-size: 17px; }
         .overflow-wrapper .app_science_page .bottom-container .bottom-container-flex .bottom-text p {
           font-size: 14px; }
-  .overflow-wrapper .our_services {
-    margin-top: 80px; }
-    .overflow-wrapper .our_services .line-1 {
-      margin-top: 80px; }
-      .overflow-wrapper .our_services .line-1 .services_headline h2 {
-        font-size: 50px;
-        font-family: "Source Sans Pro Light";
-        color: #2C3F46;
-        margin-bottom: 20px; }
+  .overflow-wrapper .our_services .container {
+    width: 100%;
+    padding: 0; }
+    .overflow-wrapper .our_services .container .line-1 {
+      margin-top: 150px; }
+      .overflow-wrapper .our_services .container .line-1 .right {
+        margin-top: 45px;
+        padding: 0; }
+        .overflow-wrapper .our_services .container .line-1 .right p {
+          width: 100%;
+          margin-left: 0; }
+  .overflow-wrapper .our_services .line-2 {
+    margin-bottom: -20px;
+    background: #2c3f46;
+    padding-top: 1px;
+    padding-bottom: 60px; }
+    .overflow-wrapper .our_services .line-2 h2 {
+      margin-top: 40px;
+      margin-bottom: -40px; }
+    .overflow-wrapper .our_services .line-2 section.tabs {
+      padding: 0 15px;
+      position: relative;
+      text-align: center; }
+      .overflow-wrapper .our_services .line-2 section.tabs label {
+        margin-right: 0;
+        margin-top: 60px; }
+      .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont {
+        width: 100%; }
+        .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont > div {
+          position: absolute;
+          left: -9999px;
+          top: 0;
+          opacity: 0;
+          -webkit-transition: opacity .5s ease-in-out;
+          transition: opacity .5s ease-in-out; }
+          .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont > div h3 {
+            margin: -10px 0 20px; }
+          .overflow-wrapper .our_services .line-2 section.tabs .tabs_cont > div p {
+            font-size: 16px;
+            font-family: "Source Sans Pro";
+            color: #FFFFFF;
+            line-height: 30px; }
+      .overflow-wrapper .our_services .line-2 section.tabs #tab_1:checked ~ .tabs_cont #tab_c1, .overflow-wrapper .our_services .line-2 section.tabs #tab_2:checked ~ .tabs_cont #tab_c2, .overflow-wrapper .our_services .line-2 section.tabs #tab_3:checked ~ .tabs_cont #tab_c3, .overflow-wrapper .our_services .line-2 section.tabs #tab_4:checked ~ .tabs_cont #tab_c4, .overflow-wrapper .our_services .line-2 section.tabs #tab_5:checked ~ .tabs_cont #tab_c5, .overflow-wrapper .our_services .line-2 section.tabs #tab_6:checked ~ .tabs_cont #tab_c6 {
+        position: static;
+        left: 0;
+        opacity: 1; }
+      .overflow-wrapper .our_services .line-2 section.tabs #tab_c1, .overflow-wrapper .our_services .line-2 section.tabs #tab_c2, .overflow-wrapper .our_services .line-2 section.tabs #tab_c3, .overflow-wrapper .our_services .line-2 section.tabs #tab_c4, .overflow-wrapper .our_services .line-2 section.tabs #tab_c5, .overflow-wrapper .our_services .line-2 section.tabs #tab_c6 {
+        display: block;
+        position: static;
+        left: 0;
+        opacity: 1; }
+  .overflow-wrapper .our_services .line-3 {
+    padding: 0; }
+    .overflow-wrapper .our_services .line-3 .col-md-12 {
+      display: block;
+      height: auto; }
+      .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-of-type(1) {
+        height: auto;
+        margin: 20px 0;
+        padding: 0; }
+        .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-of-type(1) img {
+          display: block !important; }
+        .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-of-type(1) .content {
+          text-align: center;
+          padding: 0 17%; }
+          .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-of-type(1) .content h2 {
+            font-size: 50px;
+            font-family: "Source Sans Pro Light";
+            color: #2c3f46;
+            margin-bottom: 20px; }
+          .overflow-wrapper .our_services .line-3 .col-md-12 .col-md-6:nth-of-type(1) .content .learn-more {
+            font-size: 18px;
+            font-family: "Source Sans Pro Bold";
+            color: #20ad9d;
+            text-transform: uppercase; }
+  .overflow-wrapper .our_services .hr.col-md-12 hr {
+    border-top: 2px solid #c3c3c5;
+    margin: 80px 0 70px; }
+  .overflow-wrapper .our_services .line-4 {
+    margin-bottom: 145px; }
+    .overflow-wrapper .our_services .line-4 .col-md-6 .caption {
+      font-size: 18px;
+      font-family: "Source Sans Pro Bold";
+      color: #aab1b9;
+      margin-top: 0;
+      text-align: left;
+      line-height: 30px; }
+    .overflow-wrapper .our_services .line-4 .col-md-6 h3 {
+      font-size: 32px;
+      font-family: "Source Sans Pro Light";
+      color: #000000;
+      margin: 30px 0;
+      text-transform: capitalize; }
+    .overflow-wrapper .our_services .line-4 .col-md-6 .p-type3 {
+      font-size: 20px;
+      font-family: "Source Sans Pro";
+      color: #2c3f46;
+      line-height: 30px; }
+    .overflow-wrapper .our_services .line-4 .green-markers li {
+      color: #c3c3c5;
+      text-transform: uppercase;
+      font-family: "SourseSanseProBold", Arial;
+      font-size: 18px;
+      margin-bottom: 40px;
+      list-style-image: url(../img/marker.png);
+      padding-left: 10px; }
+  .overflow-wrapper .our_services .line-5 {
+    background: #f5f5f6;
+    padding-bottom: 100px; }
+    .overflow-wrapper .our_services .line-5 .creative0 {
+      width: 304px !important;
+      height: 580px;
+      background: url(../img/iphone.png) 50% 10px no-repeat;
+      background-size: 100%;
+      margin: 0 auto; }
+      .overflow-wrapper .our_services .line-5 .creative0 #sync1 .owl-stage-outer {
+        width: 245px;
+        margin: 50px auto 80px; }
+        .overflow-wrapper .our_services .line-5 .creative0 #sync1 .owl-stage-outer .creative2 {
+          /* margin-left: -31px!important; */
+          height: 434px;
+          /* margin-bottom: 21px; */
+          margin-top: 80px;
+          width: 245px; }
+    .overflow-wrapper .our_services .line-5 .right h3 {
+      font-size: 20px;
+      font-family: "Source Sans Pro Light";
+      color: #2c3f46;
+      width: 83%;
+      margin-left: 9%;
+      margin-top: 95px;
+      font-size: 32px;
+      text-transform: capitalize;
+      margin-bottom: 20px; }
+    .overflow-wrapper .our_services .line-5 .right p {
+      font-size: 20px;
+      font-family: "Source Sans Pro";
+      color: #2c3f46;
+      width: 83%;
+      margin-left: 9%;
+      font-size: 20px;
+      line-height: 30px; }
+    .overflow-wrapper .our_services .line-5 .right > div {
+      width: 83%;
+      margin-left: 9%; }
+      .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage {
+        width: 100% !important; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item {
+          width: 100% !important;
+          text-align: left;
+          margin-top: 10px;
+          margin-bottom: 10px; }
+          .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item .item {
+            text-align: center;
+            cursor: pointer; }
+            .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item .item img {
+              margin-top: 35px;
+              background-image: url(../img/services-sprite.png);
+              background-repeat: no-repeat;
+              background-size: 418%;
+              width: 60px;
+              height: 40px;
+              opacity: 0.5;
+              margin-left: -10px; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item:nth-of-type(1) {
+          background-position: -70px -85px; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item:nth-of-type(2) {
+          background-position: -140px -156px; }
+        .overflow-wrapper .our_services .line-5 .right > div #sync2 .owl-stage .owl-item:nth-of-type(3) {
+          background-position: -160px -16px; }
   .overflow-wrapper footer .content .logo-link .footer-heading {
     text-align: center;
     font-size: 30px;
