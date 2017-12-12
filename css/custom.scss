@@ -385,6 +385,8 @@ div.header {
                                     height: 285px;
                                     width: 325px;
                                     transition: opacity .3s linear;
+                                    filter: grayscale(1);
+                                    -webkit-filter: grayscale(1);
                                 }
                             }
                         }
@@ -394,6 +396,7 @@ div.header {
                             width: 325px;
                             background-color: #F4F5F3;
                             transition: background-color .3s linear;
+                            overflow: scroll;
                             .profile-name {
                                 @include set_font_size_family_color(22px, "Source Sans Pro Black", #323232);
                                 text-align: center;
@@ -408,6 +411,16 @@ div.header {
                                 opacity: 0;
                                 transition: opacity 0.3s linear;
                             }
+                        }
+                        .profile-description::-webkit-scrollbar{
+                            width: 1.5px;
+                            background: transparent/* make scrollbar transparent */
+                        }
+                        .profile-description:hover::-webkit-scrollbar{
+                            background-color: #dbdbdb;
+                        }
+                        .profile-description:hover::-webkit-scrollbar-thumb{
+                            background-color: #323232;
                         }
                     }
                     .profile-caret-left, .profile-caret-right {
@@ -434,7 +447,8 @@ div.header {
                                     opacity: 0;
                                 }
                                 .img-up {
-                                    opacity: 1;
+                                    filter: grayscale(0);
+                                    -webkit-filter: grayscale(0);
                                 }
                             }
                         }
@@ -1428,17 +1442,17 @@ div.header {
                                 .img-up-over {
                                     .img-over {
                                         width: 100%;
-                                        height: 240px;
+                                        height: 260px;
                                     }
                                     .img-up {
                                         width: 100%;
-                                        height: 240px;
+                                        height: 260px;
                                     }
                                 }
                             }
                             .profile-description {
                                 width: 50%;
-                                height: 240px;
+                                height: 260px;
                                 .profile-name {
 
                                 }
@@ -1446,7 +1460,7 @@ div.header {
 
                                 }
                                 .profile-summary {
-                                    display: none;
+                                    opacity: 0;
                                 }
                             }
                         }
@@ -2301,10 +2315,10 @@ div.header {
                 .toggle-img-description-mob {
                     .pos_r {
                         .profile-img {
-
+                            order: 1;
                         }
                         .profile-description {
-
+                            order: 2;
                         }
                     }
                 }
@@ -3072,14 +3086,13 @@ div.header {
                     }
                 }
             }
-            .toggle-img-description-mob {
+            .toggle-img-description {
                 .pos_r {
-                    flex-direction: row-reverse;
                     .profile-img {
-
+                        order: 2;
                     }
                     .profile-description {
-
+                        order: 1;
                     }
                 }
             }

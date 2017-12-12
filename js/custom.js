@@ -149,6 +149,7 @@ $(function () {
             $(this).closest('.position-play-button .play-button-container').animate({
                 'opacity': 0
             });
+            $(this).css('pointer-events', 'none');
         }
     });
 
@@ -160,5 +161,6 @@ $(function () {
             'opacity': 1
         });
         $('.position-play-button .play-button-container .button').removeClass('paused');
+        $('.position-play-button .play-button-container .button').css('pointer-events', 'unset');
     });
 });
