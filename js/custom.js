@@ -85,8 +85,8 @@ $(function () {
     });
     owl_our_team.on('changed.owl.carousel', function (event) {
         page_no = event.page && event.page.index ? event.page.index + 1 : 1;
-        $('.our_team_page .owl-parent .owl-page-count .current-page-count').html('0' + page_no).siblings('.total-page-count').html('/ 0' + event.page.count);
-        //parent.find('div:nth-child(1)').addClass('active').siblings().removeClass('active');
+        $('.our_team_page .owl-parent .owl-page-count .'+page_no).html('0' + page_no).siblings('.total-page-count').html('/ 0' + event.page.count);
+        $('#sync2').find('div:nth-child('+page_no+')').addClass('active').siblings().removeClass('active');
         /*
         * var parent = $(div);
         * parent.find('div')
