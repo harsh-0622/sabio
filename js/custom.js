@@ -56,6 +56,14 @@ $(function () {
         }
     });
 
+    //Play/Pause button toggle script
+
+    var btn = $(".button");
+    btn.click(function() {
+        btn.toggleClass("paused");
+        return false;
+    });
+
 
     var owl_our_team = $('.owl-carousel#owl_our_team');
     var owlCarouselTimeout = 2500;
@@ -78,6 +86,12 @@ $(function () {
     owl_our_team.on('changed.owl.carousel', function (event) {
         page_no = event.page && event.page.index ? event.page.index + 1 : 1;
         $('.our_team_page .owl-parent .owl-page-count .current-page-count').html('0' + page_no).siblings('.total-page-count').html('/ 0' + event.page.count);
+        //parent.find('div:nth-child(1)').addClass('active').siblings().removeClass('active');
+        /*
+        * var parent = $(div);
+        * parent.find('div')
+        * */
+
     });
     owl_our_team.on('mouseleave', function () {
         owl_our_team.trigger('stop.owl.autoplay'); //this is main line to resume auto-play
@@ -118,11 +132,33 @@ $(function () {
                 items: 1
             }
         }
-    })
+    });
+
+    /*********** Play/Pause button toggle script ****************/
+
+    $('.position-play-button .play-button-container .button').on('click', function () {
+        var video = $('#video').get(0);
+        video.play();
+        if ( video.paused ) {
+            $(".play").hide();
+            $(".pause").show();
+        } else {
+            $('.sabio-video img').animate({
+                'opacity': 0
+            });
+            $(this).closest('.position-play-button .play-button-container').animate({
+                'opacity': 0
+            });
+        }
+    });
 
     $('#video').on('ended', function () {
         $('.sabio-video img').animate({
             'opacity': 1
-        })
+        });
+        $('.position-play-button .play-button-container').animate({
+            'opacity': 1
+        });
+        $('.position-play-button .play-button-container .button').removeClass('paused');
     });
 });

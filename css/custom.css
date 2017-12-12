@@ -131,6 +131,42 @@ div.header {
       object-fit: initial;
       height: calc(100vh - 169px);
       width: 100%; }
+    .overflow-wrapper .landing-page .sabio-video .position-play-button {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      top: 50%;
+      position: absolute; }
+      .overflow-wrapper .landing-page .sabio-video .position-play-button .play-button-container {
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        height: 125px;
+        width: 125px;
+        position: relative; }
+        .overflow-wrapper .landing-page .sabio-video .position-play-button .play-button-container .button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: 0;
+          margin-left: 11px;
+          background: transparent;
+          box-sizing: border-box;
+          width: 0;
+          height: 74px;
+          border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+          transition: 100ms all ease;
+          cursor: pointer;
+          border-style: solid;
+          border-width: 37px 0 37px 60px; }
+        .overflow-wrapper .landing-page .sabio-video .position-play-button .play-button-container .button.paused {
+          border-style: double;
+          border-width: 0px 0 0px 60px;
+          margin-left: 6px; }
+        .overflow-wrapper .landing-page .sabio-video .position-play-button .play-button-container .button:hover {
+          border-color: transparent transparent transparent rgba(255, 255, 255, 0.6); }
+        .overflow-wrapper .landing-page .sabio-video .position-play-button .play-button-container .button:focus {
+          outline: none; }
     .overflow-wrapper .landing-page .sabio-video canvas#canvas {
       position: absolute;
       height: calc(100vh - 169px);
@@ -141,7 +177,7 @@ div.header {
       height: calc(100vh - 169px);
       width: 100%;
       top: 0;
-      opacity: 0; }
+      opacity: 1; }
   .overflow-wrapper .landing-page .clients-and-partners {
     margin-bottom: 30px; }
     .overflow-wrapper .landing-page .clients-and-partners .heading-text {
